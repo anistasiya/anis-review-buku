@@ -65,7 +65,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         penerbit: "Penerbit: Penerbit Baca",
         genre: "fiksi",
         rating: "⭐ 4,3/5",
-        gambar: "gambar/alley2.png", 
+        gambar: "gambar/alley2.zip", 
         teksReview: `Kazu adalah anak kelas 5 SD yang tinggal di sebuah rumah tua milik keluarganya. Suatu malam, ia tak sengaja melihat seorang gadis keluar dari kuil di area rumahnya. Kazu yang awalnya mengira gadis itu adalah hantu, terkejut saat tahu bahwa ia ternyata adalah teman sekelasnya. Hidup Kazu yang membosankan perlahan mulai berubah semenjak bertemu Akari. Namun, banyak hal janggal yang terjadi di sekitar Akari, hingga membuat Kazu bertanya-tanya: apakah Akari sebenarnya hantu? Apakah mitos tentang Gang Kuil Kimyo yang bisa membuat orang mati hidup kembali itu benar-benar ada? Novel fiksi ringan ini cocok untuk kamu yang menyukai bacaan tanpa istilah rumit. Jalan ceritanya santai tapi tidak membosankan, pas untuk bacaan di waktu luang.`
 
 },
@@ -211,7 +211,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         penerbit: "Penerbit: Mizan",
         genre: "non-fiksi",
         rating: "⭐ 4,2/5",
-        gambar: "gambar/bahagia.png", 
+        gambar: "gambar/bahagia.zip", 
         teksReview:`Apa yang terlintas di benak Anda ketika mendengar kata "bahagia"? Seperti apakah wujud kebahagiaan itu sebenarnya? Faktanya, sebagian besar orang tidak mampu mendeskripsikannya dengan rumusan yang pasti. Kebahagiaan adalah hal yang subjektif; bisa jadi sesuatu yang membahagiakan bagi kita, justru terasa kurang menyenangkan bagi orang lain, dan begitu pula sebaliknya. Melalui karya Filsafat Kebahagiaan, Fahruddin Faiz kembali memukau pembaca dengan merangkum secara halus pemikiran para filsuf besar, mulai dari Plato, Al-Farabi, Al-Ghazali, hingga tokoh kebanggaan Indonesia, Ki Ageng Suryomentaram. Hebatnya, masing-masing dari mereka menawarkan teori bahagia yang masih sangat relevan untuk diaplikasikan di era modern ini.`
 
 },

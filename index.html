@@ -340,7 +340,7 @@
         /* --- SIHIR KHUSUS LAYAR HP (Buku & Rajutan) --- */
         @media (max-width: 768px) {
         /* Perhatikan tambahan " > div" di bawah ini! */
-        #review-buku, #galeri-rajutan > div { 
+        #review-buku > div , #galeri-rajutan > div { 
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
@@ -352,6 +352,7 @@
 
         .kartu-khusus-buku, .kartu-review {
         min-width: 260px !important;
+        flex-shrink: 0 !important;
         scroll-snap-align: start;
         }
         }

@@ -294,7 +294,7 @@ daftarBuku.forEach(function(buku) {
             <button class="tombol-baca" onclick="bukaModal('${buku.id}')">Baca Review 📖</button>
         </div>
         
-        <div id="${buku.id}" class="modal"> 
+        <div id="${buku.id}" class="modal" style="display: none;">
             <div class="isi-modal">
                 <span class="tombol-tutup" onclick="tutupModal('${buku.id}')">&times;</span>
                 <h2>${buku.judul}</h2>

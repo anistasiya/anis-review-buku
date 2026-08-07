@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- MANTRA BIAR WEBSITE RAPI DI HP -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anis Review</title>
 
-    <!-- INI KARTU PERPUSTAKAAN FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style> 
@@ -28,32 +26,29 @@
         }
 
         img {
-            width: 350px; /* Mengatur ukuran gambar agar pas */
-            border-radius: 20px; /* Membuat sudut bingkai jadi membulat */
-            margin-top: 25px; /* Memberi jarak dari teks di atasnya */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan tipis ala desainer */
+            width: 350px; 
+            border-radius: 20px; 
+            margin-top: 25px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             }
 
         .tombol-mantap {
-            background-color: #305982; /* Warna biru dongker, senada dengan judul */
-            color: #ffffff; /* Warna teks putih */
-            padding: 12px 30px; /* Bantalan dalam: 12px atas-bawah, 30px kiri-kanan */
-            text-decoration: none; /* Menghilangkan garis bawah bawaan link */
-            border-radius: 25px; /* Membuat ujung tombol melingkar estetik */
-            font-size: 18px; /* Ukuran huruf tombol */
-            font-weight: bold; /* Menebalkan huruf */
-            display: inline-block; /* Agar bantalan (padding) bekerja sempurna */
-            margin-top: 20px; /* Jarak dari gambar di atasnya */
-            transition: 0.3s; /* Durasi animasi saat disentuh */
+            background-color: #305982; 
+            color: #ffffff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block; 
+            margin-top: 20px;
+            transition: 0.3s;
         }
-
-        /* INI EFEK Saat mouse ditaruh di atas tombol (:hover) */
         .tombol-mantap:hover {
-            background-color: #740e33; /* Berubah warna jadi pink tua */
-            transform: scale(1.10); /* Membesar sedikit  */
-            box-shadow: 0 5px 15px rgba(216, 27, 96, 0.4); /* Keluar cahaya pink */
+            background-color: #740e33;
+            transform: scale(1.10);
+            box-shadow: 0 5px 15px rgba(216, 27, 96, 0.4);
         }
-
         h2 {
             color: #2c3e50;
             margin-top: 50px;
@@ -61,127 +56,101 @@
 
         ul {
             list-style-type: none;
-            display: inline-block; /* Membuat area list berada di tengah layar */
-            text-align: left; /* Memastikan teks list-nya tetap rapi rata kiri */
-            color: #7f8c8d; /* Warna teks abu-abu kalem */
-            font-size: 18px; /* Ukuran huruf */
-            line-height: 1.8; /* Memberi jarak nafas antar baris supaya tidak berdempetan */
+            display: inline-block;
+            text-align: left;
+            color: #7f8c8d;
+            font-size: 18px;
+            line-height: 1.8;
         }
-
-        /* HIASAN UNTUK KOTAK MENU NAVIGASI */
         .navbar {
-            background-color: #fdf6f6; /* Warna latar putih */
-            position: fixed; /* Membuatnya melayang menempel di layar */
-            top: 0; /* Menempel di atap paling atas */
+            background-color: #fdf6f6;
+            position: fixed;
+            top: 0;
             left: 0; 
-            width: 100%; /* Merentang penuh dari ujung ke ujung */
-            padding: 15px 0; /* Bantalan atas-bawah */
-            box-shadow: 0 2px 10px rgba(65, 65, 65, 0.1); /* Bayangan tipis estetik */
+            width: 100%;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(65, 65, 65, 0.1);
         }
-
-        /* HIASAN UNTUK TEKS LINK DI DALAM NAVIGASI */
         .navbar a {
-            color: #15293c; /* Warna biru navy */
-            text-decoration: none; /* Menghilangkan garis bawah link */
-            margin: 0 20px; /* Jarak antar kata menu */
+            color: #15293c;
+            text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
             font-size: 16px;
             transition: 0.3s;
         }
-
-        /* EFEK SIHIR SAAT MENU DISENTUH MOUSE */
         .navbar a:hover {
-            color: #b81550; /* Berubah jadi pink saat disentuh */
+            color: #b81550;
         }
-        /* --- SIHIR NAVBAR GESER --- */
         .navbar {
         display: flex;
-        flex-wrap: nowrap; /* Memaksa menu tetap 1 baris, pantang mundur ke bawah! */
-        overflow-x: auto; /* Menyalakan fitur geser ke samping */
-        gap: 15px; /* Jarak estetik antar menu */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
         padding: 15px 20px;
-        white-space: nowrap; /* Mencegah teks terpotong ke bawah */
-        -webkit-overflow-scrolling: touch; /* Sihir khusus biar geserannya mulus di layar HP */
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
         }
-
-        /* Sembunyikan garis scrollbar biar terlihat mahal dan bersih */
         .navbar::-webkit-scrollbar {
         display: none; 
         }
 
-        /* --- SIHIR KHUSUS LAYAR HP --- */
         @media screen and (max-width: 600px) {
         .navbar {
-        /* Memberi ruang kosong di sebelah kanan agar menu terakhir 
-           tidak tertutup oleh tombol Dark Mode yang melayang */
             padding-right: 140px; 
         }
         }
-        /* --- SIHIR NAVBAR KHUSUS LAYAR LEBAR (LAPTOP) --- */
         @media screen and (min-width: 601px) {
         .navbar {
-        justify-content: center; /* Memaksa menu baris ke tengah */
+        justify-content: center;
         }
         }
 
-        /* HIASAN UNTUK KOTAK ISIAN & TEKS PANJANG */
         .kotak-pesan input, .kotak-pesan textarea {
-            display: block; /* Memaksa kotak untuk berbaris ke bawah */
-            margin: 15px auto; /* Menaruh kotak di tengah layar */
-            width: 350px; /* Lebar kotak */
-            padding: 15px; /* Bantalan dalam agar teks tidak mepet */
-            border: 2px solid #8ab1cb; /* warna Garis pinggir */
-            border-radius: 10px; /* Ujung membulat */
+            display: block;
+            margin: 15px auto;
+            width: 350px;
+            padding: 15px;
+            border: 2px solid #8ab1cb;
+            border-radius: 10px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 14px;
             transition: 0.3s;
         }
 
-        /* EFEK SIHIR: Garis kotak menyala pink saat sedang diketik */
         .kotak-pesan input:focus, .kotak-pesan textarea:focus {
             border-color: #b61751; 
-            outline: none; /* Menghilangkan garis biru bawaan browser */
+            outline: none;
         }
-        
-        /* SEDIKIT MODIFIKASI UNTUK TOMBOL BARU */
         button.tombol-mantap {
-            border: none; /* Menghilangkan garis pinggir bawaan tombol */
-            cursor: pointer; /* Mengubah kursor jadi tangan saat disentuh */
+            border: none;
+            cursor: pointer;
         }
-
-        /* HIASAN GARIS PEMBATAS */
         hr {
-            width: 70%; /* Panjang garis 70% dari layar */
-            border: 1px solid #f1f3f5; /* Warna abu-abu pudar */
+            width: 70%;
+            border: 1px solid #f1f3f5;
             margin-top: 40px;
         }
 
-        /* HIASAN KOTAK KARTU UTAMA */
         .kartu-review {
-            background-color: #f8f3f7; /* Warna latar kartu */
-            width: 320px; /* Lebar kartu */
-            margin: 0 auto; /* Posisi di tengah layar */
-            border-radius: 15px; /* Ujung membulat ala aplikasi modern */
-            box-shadow: 0 4px 15px rgba(184, 173, 173, 0.1); /* Bayangan tipis di bawah kartu */
-            padding: 20px; /* Jarak lega di dalam kartu */
-            text-align: left; /* Memaksa teks rata kiri agar enak dibaca */
-            transition: 0.3s; /* Durasi animasi */
+            background-color: #f8f3f7;
+            width: 320px;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(184, 173, 173, 0.1);
+            padding: 20px;
+            text-align: left;
+            transition: 0.3s;
         }
-
-        /* EFEK SIHIR: KARTU MELAYANG SAAT DISENTUH */
         .kartu-review:hover {
-            transform: translateY(-10px); /* Kartu terangkat naik 10 pixel */
-            box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* Bayangan menebal */
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
         }
-
-        /* MENGATUR GAMBAR DI DALAM KARTU */
         .kartu-review img {
-            width: 100%; /* Gambar memenuhi lebar kartu */
-            border-radius: 10px; /* Ujung gambar ikut membulat */
-            margin-bottom: 15px; /* Jarak dari gambar ke judul */
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
-
-        /* MENGATUR UKURAN TEKS DI DALAM KARTU */
         .kartu-review h3 {
             color: #f7f8fa;
             margin: 0 0 5px 0;
@@ -190,7 +159,7 @@
         .kartu-review .penulis {
             color: #ad03a2;
             font-size: 14px;
-            font-style: italic; /* Tulisan miring */
+            font-style: italic;
             margin: 0 0 10px 0;
         }
 
@@ -198,86 +167,74 @@
             margin: 0 0 15px 0;
             font-size: 18px;
         }
-
         .kartu-review .teks-review {
             color: #04498e;
             font-size: 15px;
-            line-height: 1.6; /* Jarak antar baris kalimat agar lega */
+            line-height: 1.6;
             margin: 0;
         }
-        /* MANTRA RAK BUKU (FLEXBOX) */
         .rak-buku {
-            display: flex; /* Menyulap kotak biasa jadi rak fleksibel */
-            justify-content: center; /* Menaruh semua kartu pas di tengah layar */
-            gap: 30px; /* Memberi jarak spasi antar kartu ke kiri dan kanan */
-            flex-wrap: wrap; /* Kalau layarnya sempit, kartu otomatis turun ke baris bawah */
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
             padding: 20px;
         }
         .catatan-kaki .sosmed a {
             color: #ff9ff3; 
             text-decoration: none; 
-            margin: 0 15px; /* Jarak antar ikon sedikit dilebarkan */
-            font-size: 24px; /* INI YANG DIUBAH: Ukuran ikon jadi lebih besar */
+            margin: 0 15px;
+            font-size: 24px;
             transition: 0.3s;
-
-            .catatan-kaki .sosmed a i {
-            font-size: 24px; /* Logonya tetap besar */
-            margin-right: 8px; /* Memberi jarak spasi antara logo dan tulisan */
-            vertical-align: middle; /* Memastikan logo dan teks sejajar di tengah */
         }
-
-        /* Efek Menyala Saat Disentuh Mouse */
+            .catatan-kaki .sosmed a i {
+            font-size: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
         .catatan-kaki .sosmed a:hover {
             color: #ffffff; 
         }
-        }
-        /* DESAIN TOMBOL BACA ULASAN */
+
         .tombol-baca {
-            background-color: #ff9ff3; /* Warna pink andalanmu */
+            background-color: #ff9ff3;
             color: white;
             border: none;
             padding: 10px 15px;
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
-            width: 100%; /* Tombol memenuhi lebar kartu */
+            width: 100%;
             transition: 0.3s;
             margin-top: 10px;
         }
-
         .tombol-baca:hover {
-            background-color: #f368e0; /* Pink sedikit gelap saat disentuh */
+            background-color: #f368e0;
         }
-
-        /* EFEK LATAR BELAKANG REDUP SAAT JENDELA MUNCUL */
         .modal {
-            display: none; /* Disembunyikan secara default */
+            display: none;
             position: fixed; 
-            z-index: 1000; /* Memaksa jendela ada di lapisan paling depan */
+            z-index: 1000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6); /* Warna hitam transparan */
+            background-color: rgba(0, 0, 0, 0.6);
         }
-
-        /* KOTAK JENDELA ULASAN */
         .isi-modal {
             background-color: #ffffff;
-            margin: 10% auto; /* Jarak dari atas layar */
+            margin: 10% auto;
             padding: 30px;
             border-radius: 15px;
             width: 80%;
-            max-width: 500px; /* Lebar maksimal jendela */
+            max-width: 500px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            max-height: 70vh; /* Membatasi tinggi maksimal kotak sebesar 70% dari tinggi layar */
-            overflow-y: auto; /* Memunculkan scrollbar otomatis di DALAM kotak jika teks panjang */
+            max-height: 70vh;
+            overflow-y: auto;
         }
-
-        /* DESAIN TOMBOL X UNTUK MENUTUP JENDELA */
         .tombol-tutup {
             color: #bdc3c7;
-            float: right; /* Berada di pojok kanan atas */
+            float: right;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
@@ -285,61 +242,52 @@
         }
 
         .tombol-tutup:hover {
-            color: #e74c3c; /* Berubah merah saat mau ditutup */
+            color: #e74c3c;
         }
-        /* Sihir Khusus Layar HP (Lebar maksimal 768px) */
         @media (max-width: 768px) {
-        #review-buku { /* Ganti dengan ID atau Class tempat buku-bukumu bersarang */
+        #review-buku {
         display: flex;
-        overflow-x: auto; /* Memunculkan scroll ke samping */
-        scroll-snap-type: x mandatory; /* Bikin swipe-nya mulus berhenti di tiap kartu */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
         gap: 15px;
         padding-bottom: 15px;
         }
 
         .kartu-review {
-        min-width: 260px; /* Mengunci lebar kartu agar tidak gepeng di HP */
+        min-width: 260px;
         scroll-snap-align: start;
         }
         }
 
-        /* ================= DESAIN ABOUT ME ================= */
         .container-about {
             flex-direction: column !important;
-            text-align: center !important; /* Teks dan foto sejajar di tengah */
+            text-align: center !important;
             justify-content: center;
-            gap: 20px !important; /* Jarak antara foto dan teks */
-            max-width: 800px; /* Lebar maksimal ruangan */
-            margin: 40px auto; /* Membuatnya ke tengah layar dan memberi jarak atas-bawah */
-            background-color: #fff0f6; /* Latar belakang pink sangat muda */
+            gap: 20px !important;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff0f6;
             padding: 20px !important;
-            border-radius: 20px; /* Ujung yang membulat estetik */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Bayangan super tipis */
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
-
-        /* Desain bingkai foto bulat */
         .foto-profil img {
             width: 180px;
             height: 180px;
-            object-fit: cover; /* Biar foto tidak gepeng */
-            border-radius: 50%; /* Mantra untuk membuat foto jadi bulat sempurna */
-            border: 6px solid #ff9ff3; /* Garis pinggir warna pink andalanmu */
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #ff9ff3;
         }
-
         .teks-about h2 {
             margin-top: 0;
             color: #333;
         }
-
         .teks-about p {
-            line-height: 1.6; /* Jarak antar baris biar enak dibaca */
+            line-height: 1.6;
             color: #555;
             margin-bottom: 15px;
         }
-
-        /* --- SIHIR KHUSUS LAYAR HP (Buku & Rajutan) --- */
         @media (max-width: 768px) {
-        /* Perhatikan tambahan " > div" di bawah ini! */
         #review-buku, #galeri-rajutan > div {
         display: flex !important;
         flex-direction: row !important;
@@ -358,41 +306,32 @@
         }
         }
 
-    /* Ukuran kartu bukunya dikunci agar tidak gepeng */
     .kartu-khusus-buku .kartu-review {
         min-width: 260px !important;
         scroll-snap-align: start;
         }
 
-    /* ================= DESAIN PROYEK TULISAN ================= */
         .area-proyek {
             max-width: 800px;
-            margin: 50px auto; /* Memberikan jarak atas-bawah yang lega dan posisi di tengah */
+            margin: 50px auto;
             padding: 40px;
-            background-color: #ffffff; /* Latar belakang putih bersih */
-            border-radius: 20px; /* Ujung membulat */
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Bayangan estetik super tipis */
-            text-align: center; /* Membuat semua isi di dalamnya rata tengah */
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
         }
-
-        /* Memberi jarak antara tombol dan judul target belajar */
         .area-proyek h2 {
             margin-top: 40px;
             color: #333;
         }
-
-    /* ================= DESAIN FORMULIR KONTAK ================= */
-
-        /* --- SIHIR FORM KONTAK ESTETIK --- */
         .kartu-form {
-        max-width: 450px; /* Membatasi lebarnya biar nggak melar dan pas di tengah */
-        margin: 0 auto; /* Memaksa kotak selalu berada di tengah layar */
+        max-width: 450px;
+        margin: 0 auto;
         background: white;
         padding: 30px;
         border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Bayangan lembut estetik */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
         .input-estetik {
         width: 100%;
         padding: 15px;
@@ -400,23 +339,20 @@
         border: 1px solid #ddd;
         border-radius: 10px;
         font-family: inherit;
-        box-sizing: border-box; /* Biar kotaknya nggak makin melar pas dikasih padding */
+        box-sizing: border-box;
         transition: all 0.3s ease;
         background-color: #f9f9f9;
         }
-
-        /* Efek menyala pas kotaknya diklik / sedang diisi */
         .input-estetik:focus {
         outline: none;
-        border-color: #ffb6c1; /* Garis berubah warna (bisa diganti sesuai tema) */
+        border-color: #ffb6c1;
         background-color: white;
         box-shadow: 0 0 8px rgba(255, 182, 193, 0.4);
         }
-
         .tombol-kirim {
         width: 100%;
         padding: 15px;
-        background-color: #2c3e50; /* Warna biru gelap */
+        background-color: #2c3e50;
         color: white;
         border: none;
         border-radius: 10px;
@@ -425,39 +361,31 @@
         cursor: pointer;
         transition: all 0.3s ease;
         }
-
         .tombol-kirim:hover {
-        background-color: #ffb6c1; /* Berubah warna pas disentuh mouse */
+        background-color: #ffb6c1;
         color: #333;
-        transform: translateY(-2px); /* Efek melayang sedikit */
+        transform: translateY(-2px);
         }
-
-        /* --- ANIMASI KARTU MELAYANG --- */
     .kartu-review {
         transition: transform 0.3s ease, box-shadow 0.3s ease; 
     }
 
     .kartu-review:hover {
-        transform: translateY(-10px); /* Bikin kartunya naik 10px */
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Bayangannya jadi tebal */
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
-/* --- ATURAN BAJU MODE GELAP --- */
 .tema-gelap {
     background-color: #1a1a1a !important;
     color: #f1f1f1 !important;
 }
-/* --- PERBAIKAN WARNA JUDUL BIAR KELIHATAN --- */
 .kartu-review h2, 
 .kartu-review h3 {
-    color: #333; /* Memaksa judul berwarna abu-abu gelap (hampir hitam) */
+    color: #333;
 }
-/* --- PAKSA JUDUL JADI PUTIH SAAT DARK MODE --- */
 .tema-gelap .kartu-review h2,
 .tema-gelap .kartu-review h3 {
     color: #f1f1f1 !important;
 }
-
-/* Biar kartu bukunya nggak ikutan hitam pekat, tapi abu-abu elegan */
 .tema-gelap .kartu-review, .tema-gelap .isi-modal {
     background-color: #2d2d2d !important;
     color: #f1f1f1 !important;
@@ -466,22 +394,18 @@
 html {
     scroll-behavior: smooth;
 }
-/* --- GEMBOK ANTI COPY-PASTE --- */
 .karya-orisinal {
-    user-select: none; /* Mencegah teks diblok */
-    -webkit-user-select: none; /* Khusus untuk browser Chrome/Safari */
-    -moz-user-select: none; /* Khusus untuk Mozilla Firefox */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
-/* --- SIHIR TOMBOL SILANG --- */
 .close {
-    transition: all 0.3s ease; /* Bikin pergerakannya mulus banget */
+    transition: all 0.3s ease;
 }
-
 .close:hover {
-    color: #ff4757 !important; /* Berubah jadi merah estetik pas disentuh */
-    transform: scale(1.3) rotate(90deg); /* Sihir membesar dan berputar! */
+    color: #ff4757 !important;
+    transform: scale(1.3) rotate(90deg);
 }
-/* --- SIHIR TOMBOL FILTER GENRE --- */
 .rak-tombol {
     text-align: center;
     margin-bottom: 30px;
@@ -492,7 +416,7 @@ html {
     margin: 5px;
     background-color: white;
     color: #333;
-    border: 2px solid #add8e6; /* Warna biru pastel */
+    border: 2px solid #add8e6;
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
@@ -503,16 +427,14 @@ html {
     background-color: #add8e6;
     transform: scale(1.05);
 }
-/* --- SIHIR ANIMASI SCROLL --- */
 .sembunyi {
     opacity: 0;
-    transform: translateY(50px); /* Posisinya turun 50px ke bawah */
-    transition: all 0.8s ease-out; /* Durasi kemunculannya 0.8 detik secara mulus */
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
 }
-
 .muncul {
     opacity: 1;
-    transform: translateY(0); /* Kembali ke posisi semula */
+    transform: translateY(0);
 }
 
     </style>
@@ -521,11 +443,9 @@ html {
 
 <body>
 
-    <!-- TOMBOL SAKLAR DARK MODE -->
 <button onclick="ubahTema()" style="position: fixed; top: 20px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #333; color: white; font-weight: bold;">
     🌙 Dark Mode
 </button>
-    <!-- INI ADALAH KODE MENU NAVIGASI (Tepat di bawah body) -->
     <nav class="navbar">
         <a href="#about-me">About Me</a>
         <a href="#review-buku">Review Buku</a>
@@ -539,116 +459,90 @@ html {
     <p>Review Buku Bagus Dari Banyak Penulis Terkenal,</p>
     <p>Hasil Rajutan, Hingga Karya Tulisan </p>
 
-    <!-- ================= AREA ABOUT ME ================= -->
     <div id="about-me" class="container-about">
-        <!-- Bagian Foto -->
         <div class="foto-profil">
             <img src="gambar/anic.jpg" alt="Foto Anis">
         </div>
-        
-        <!-- Bagian Teks -->
         <div class="teks-about">
             <h2>Tentang Penulis 🌸</h2>
             <p>Halo! Aku Anis, seorang penikmat buku yang suka merangkai kata. Membaca adalah caraku menjelajahi dunia tanpa harus beranjak dari tempat duduk. Selain membaca, aku juga suka belajar hal-hal baru setiap harinya. Di halaman ini, aku membagikan pemikiran, perasaan, dan ulasan dari buku-buku yang sudah menemaniku. Di halaman ini juga aku ingin membagikan berbagai kerajinan tangan yang aku buat sendiri dan beberapa proyek tulisan pribadiku.</p>
             <p>Aku harap halaman ini bisa memberikan motivasi kecil bagi siapa saja, bahwa segala sesuatu tidak ada yang mustahil, apabila kita mau belajar dan berusaha.</p>
         </div>
     </div>
-    <br> <!-- Ini kode untuk 'Enter' atau membuat baris baru -->
+    <br>
     <br>
 
     <h2>Buku Yang Sudah Selesai Kubaca 📖</h2>
 
-<!-- 1. TOMBOLNYA HARUS DI SINI (Di atas rak buku) -->
 <div class="rak-tombol" style="text-align: center; margin-bottom: 30px;">
     <button class="tombol-genre" onclick="filterBuku('semua')">Semua Buku</button>
     <button class="tombol-genre" onclick="filterBuku('fiksi')">Fiksi</button>
     <button class="tombol-genre" onclick="filterBuku('non-fiksi')">Non-Fiksi</button>
     <button class="tombol-genre" onclick="filterBuku('self-improvement')">Self-Improvement</button>
 </div>
-<!-- KOTAK PENCARIAN AJAIB -->
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
     <input type="text" id="kolomCari" placeholder="🔍 Cari judul atau penulis buku..." 
     style="padding: 12px 20px; width: 80%; max-width: 400px; border-radius: 25px; border: 2px solid #f0a8d0; font-size: 16px; outline: none; font-family: inherit;">
 </div>
 
-<!-- 2. BARU WADAH BUKUNYA DI BAWAHNYA -->
 <div id="review-buku" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <!-- Biarkan tengahnya kosong -->
+
 </div>
 
-<!-- RAK GALERI RAJUTAN -->
+
 <div id="galeri-rajutan" style="padding: 50px 20px; text-align: center;">
     <h2 style="margin-bottom: 30px;">Galeri Rajutanku 🧶✨</h2>
     
-    <!-- Wadah Flexbox biar kartunya berjejer -->
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
         
-        <!-- KARTU ALBUM 1: TULIP PASTEL -->
         <div class="kartu-review" style="width: 250px; padding: 20px;">
-            <!-- Gambar Cover Depan -->
             <img src="gambar/rajutan/pink.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Pastel">
             
             <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Pastel 🌸</h3>
             <p>Koleksi rajutan bunga dengan warna-warna pastel yang ceria.</p>
             
-            <!-- Tombol untuk membuka Pop-up -->
             <button onclick="document.getElementById('modal-tulip-pastel').style.display='block'" style="background-color: #ffb6c1; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
 
-        <!-- KARTU ALBUM 2: TULIP BIRU -->
         <div class="kartu-review" style="width: 250px; padding: 20px;">
-            <!-- Gambar Cover Depan -->
             <img src="gambar/rajutan/biru3.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
             <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Biru 💙</h3>
             <p>Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.</p>
             
-            <!-- Tombol untuk membuka Pop-up -->
             <button onclick="document.getElementById('modal-tulip-biru').style.display='block'" style="background-color: #add8e6; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
-        <!-- KARTU ALBUM 3: TULIP UNGU -->
         <div class="kartu-review" style="width: 250px; padding: 20px;">
-            <!-- Gambar Cover Depan -->
             <img src="gambar/rajutan/purple.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
             <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Ungu🪻</h3>
             <p>Koleksi rajutan bunga tulip bernuansa ungu yang lembut</p>
             
-            <!-- Tombol untuk membuka Pop-up -->
             <button onclick="document.getElementById('modal-tulip-ungu').style.display='block'" style="background-color: #cb75de; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
-        <!-- KARTU ALBUM 3: SUNFLOWERS -->
         <div class="kartu-review" style="width: 250px; padding: 20px;">
-            <!-- Gambar Cover Depan -->
             <img src="gambar/rajutan/sun.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
             <h3 style="margin-top: 15px; margin-bottom: 10px;">Bunga Matahari🌻</h3>
             <p>Koleksi rajutan bunga matahari yang indah</p>
             
-            <!-- Tombol untuk membuka Pop-up -->
             <button onclick="document.getElementById('modal-matahari').style.display='block'" style="background-color: #8c9f43; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
-        <!-- KARTU ALBUM 3: SMALL FLOWERS -->
         <div class="kartu-review" style="width: 250px; padding: 20px;">
-            <!-- Gambar Cover Depan -->
             <img src="gambar/rajutan/small.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
             <h3 style="margin-top: 15px; margin-bottom: 10px;">Keychain Rajut🌹</h3>
             <p>Koleksi aksesoris gantungan kunci dan mini crochet</p>
             
-            <!-- Tombol untuk membuka Pop-up -->
             <button onclick="document.getElementById('modal-small').style.display='block'" style="background-color: #e896d4; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
 
     </div>
 </div>
-<!-- POP-UP 1: TULIP PASTEL -->
 <div id="modal-tulip-pastel" class="modal">
-    <!-- Isi Pop-up -->
     <div class="modal-content" style="max-width: 600px; text-align: center; background-color: white; padding: 30px; border-radius: 15px; margin: auto; margin-top: 50px;max-height: 80vh; overflow-y: auto; position: relative;">
         <span class="close" onclick="document.getElementById('modal-tulip-pastel').style.display='none'" style="position: absolute; top: 15px; right: 25px; font-size: 35px; font-weight: bold; color: #888; cursor: pointer;">&times;</span>
         
-<!-- Deretan Foto di Dalam Pop-up (Disusun numpuk ke bawah) -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
             <img src="gambar/rajutan/pink1.jpg" style="width: 100%; border-radius: 10px;">
             <img src="gambar/rajutan/pink2.jpg" style="width: 100%; border-radius: 10px;">
@@ -666,9 +560,7 @@ html {
     </div>
 </div>
 
-<!-- POP-UP 2: TULIP BIRU -->
 <div id="modal-tulip-biru" class="modal">
-    <!-- Isi Pop-up -->
     <div class="modal-content" style="max-width: 600px; text-align: center; background-color: white; padding: 30px; border-radius: 15px; margin: auto; margin-top: 50px; max-height: 80vh; overflow-y: auto;position: relative;">
         <span class="close" onclick="document.getElementById('modal-tulip-biru').style.display='none'" style="position: absolute; top: 15px; right: 25px; font-size: 35px; font-weight: bold; color: #888; cursor: pointer;">&times;</span>
         
@@ -683,9 +575,7 @@ html {
         </div>
     </div>
 </div>
-<!-- POP-UP 2: TULIP UNGU -->
 <div id="modal-tulip-ungu" class="modal">
-    <!-- Isi Pop-up -->
     <div class="modal-content" style="max-width: 600px; text-align: center; background-color: white; padding: 30px; border-radius: 15px; margin: auto; margin-top: 50px; max-height: 80vh; overflow-y: auto;position: relative;">
         <span class="close" onclick="document.getElementById('modal-tulip-ungu').style.display='none'" style="position: absolute; top: 15px; right: 25px; font-size: 35px; font-weight: bold; color: #888; cursor: pointer;">&times;</span>
 
@@ -704,12 +594,10 @@ html {
         </div>
     </div>
 </div>
-<!-- POP-UP 4: SUNFLOWERS  -->
 <div id="modal-matahari" class="modal">
-    <!-- Isi Pop-up -->
     <div class="modal-content" style="max-width: 600px; text-align: center; background-color: white; padding: 30px; border-radius: 15px; margin: auto; margin-top: 50px; max-height: 80vh; overflow-y: auto;position: relative;">
         <span class="close" onclick="document.getElementById('modal-matahari').style.display='none'" style="position: absolute; top: 15px; right: 25px; font-size: 35px; font-weight: bold; color: #888; cursor: pointer;">&times;</span>
-        <!-- Deretan Foto di Dalam Pop-up -->
+
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
             <img src="gambar/rajutan/sun1.jpg" style="width: 100%; border-radius: 10px;">
             <img src="gambar/rajutan/sun3.jpg" style="width: 100%; border-radius: 10px;">
@@ -726,13 +614,11 @@ html {
         </div>
     </div>
 </div>
-<!-- POP-UP 5: SMALL FLOWERS  -->
 <div id="modal-small" class="modal">
-    <!-- Isi Pop-up -->
+
     <div class="modal-content" style="max-width: 600px; text-align: center; background-color: white; padding: 30px; border-radius: 15px; margin: auto; margin-top: 50px; max-height: 80vh; overflow-y: auto;position: relative;">
         <span class="close" onclick="document.getElementById('modal-small').style.display='none'" style="position: absolute; top: 15px; right: 25px; font-size: 35px; font-weight: bold; color: #888; cursor: pointer;">&times;</span>
         
-        <!-- Deretan Foto di Dalam Pop-up -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
             <img src="gambar/rajutan/small2.jpg" style="width: 100%; border-radius: 10px;">
             <img src="gambar/rajutan/small3.jpg" style="width: 100%; border-radius: 10px;">
@@ -752,35 +638,25 @@ html {
         </div>
     </div>
 </div>
-
-<!-- ================= AREA PROYEK TULISAN ================= -->
     
 <div id="proyek-tulisan" style="padding: 50px 20px; text-align: center;">
     <h2 style="margin-bottom: 30px;">Proyek Tulisanku ✒️</h2>
 
-    <!-- INI RAK KOSONG UNTUK PUISI -->
     <div id="rak-puisi" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-        <!-- Mesin JS akan mencetak kotak puisi di sini -->
+
     </div>
 </div>
 
-    <!-- Ini adalah garis pembatas estetik -->
-
     <br>
     
-    <!-- AREA KONTAK -->
 <div id="kontak" style="padding: 50px 20px; text-align: center;">
     <h2 style="margin-bottom: 30px;">Kirim Pesan untuk Anis 💐</h2>
 
-    <!-- Ini dia bungkusan Kartu Estetik-nya -->
     <div class="kartu-form">
-        <!-- KODINGAN MESIN PENGIRIM WEB3FORMS -->
         <form action="https://api.web3forms.com/submit" method="POST">
     
-        <!-- 🛑 Ganti tulisan KODE_DARI_EMAIL dengan Access Key milikmu -->
         <input type="hidden" name="access_key" value="f208c626-ccfb-4175-a520-9fc155ba0a27">
     
-        <!-- Tambahan atribut name="" di setiap kotak -->
         <input type="text" name="Nama_Pengirim" placeholder="Your Name" class="input-estetik" required>
         <input type="email" name="Email_Pengirim" placeholder="Your Email" class="input-estetik" required>
         <textarea name="Isi_Pesan" placeholder="Tulis pesan kamu di sini 👇" class="input-estetik" rows="5" required></textarea>
@@ -791,11 +667,9 @@ html {
 </div>
     <br><br>
 
-    <!-- INI ADALAH AREA CATATAN KAKI (FOOTER) -->
 <footer class="catatan-kaki" style="text-align: center; padding: 20px;">
     <p>Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar.</p>
     
-    <!-- Bagian Sosmed yang Sudah Dirapikan -->
     <div class="kumpulan-sosmed" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
         <a href="https://www.instagram.com/zunesha_crochet" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #9b59b6; font-weight: bold;">
             <i class="fa-brands fa-instagram"></i> zunesha_crochet
@@ -806,27 +680,21 @@ html {
     </div>
 </footer>
 
-    <!-- MANTRA JAVASCRIPT UNTUK JENDELA MELAYANG -->
     <script>
-        // Perintah untuk membuka jendela
         function bukaModal(idModal) {
             document.getElementById(idModal).style.display = "block";
         }
-
-        // Perintah untuk menutup jendela
         function tutupModal(idModal) {
             document.getElementById(idModal).style.display = "none";
         }
     </script>
 
 
-<!-- Menyambungkan file JavaScript eksternal -->
     
     <script src="script.js?v=2.0"></script>
 
 <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_8463f3c42ed3d7d3ee6a9b2f687462"></script>
 
-<!-- CCTV RAHASIA GOATCOUNTER -->
 <script data-goatcounter="https://anis-review.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 

@@ -1,6 +1,3 @@
-// ================= LEMARI DATA BUKU =================
-// Di sini kita menyimpan semua informasi bukumu dengan rapi
-
 const daftarBuku = [
     {
         id: "buku-1",
@@ -264,22 +261,14 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         gambar: "gambar/buku/human.jpg", 
         teksReview: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam. Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`
 
-},
+}
 
 ];
 
 console.log("Kabel JS berhasil tersambung! Data buku siap diproses:", daftarBuku);
 
-
-// ================= MESIN PENCETAK OTOMATIS =================
-
-// 1. Cari rak buku kosong di HTML tadi
 const rakBuku = document.getElementById("review-buku");
-
-// 2. Kita suruh mesinnya membaca setiap buku satu per satu
 daftarBuku.forEach(function(buku) {
-    
-    // 3. Mesin membuatkan kotak HTML baru untuk setiap buku
     const kotakBuku = `
         <div class="kartu-review kartu-khusus-buku ${buku.genre.toLowerCase()}">
             <img src="${buku.gambar}" alt="Cover ${buku.judul}" style="width: 100%; height:250px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
@@ -302,26 +291,20 @@ daftarBuku.forEach(function(buku) {
             </div>
         </div>
     `;
-    
 
-    // 4. Masukkan kotak yang sudah jadi ke dalam rak buku
 
     rakBuku.innerHTML += kotakBuku;
 });
 
-// ================= SAKLAR MODE GELAP =================
+
 function ubahTema() {
-    // Perintah ini akan menyuruh body pakai/lepas "baju" tema-gelap
     document.body.classList.toggle("tema-gelap");
 }
 
-// ================= LEMARI DATA PUISI =================
 const daftarPuisi = [
     {
         id: "puisi-1",
         judul: "Garuda di Atas Khatulistiwa",
-
-        // Pakai backtick (`) biar bisa di-enter sesuka hati!
         teksPuisi: `Mentari pagi, mulai tersenyum kembali
 Menyingkap penguasa kegelapan di malam hari
 Suara jantung kehidupan baru turut menghiasi
@@ -391,7 +374,6 @@ Impian ibu pertiwi, Indonesia Merdeka.
     } ,
 ];
 
-// ================= MESIN PENCETAK PUISI =================
 const rakPuisi = document.getElementById('rak-puisi');
 
 if (rakPuisi) {
@@ -425,7 +407,6 @@ if (rakPuisi) {
         rakPuisi.innerHTML += kotakPuisi;
     });
 }
-// --- SIHIR FILTER GENRE BUKU ---
 function filterBuku(genreYangDipilih) {
     let semuaKartu = document.querySelectorAll('.kartu-khusus-buku');
     
@@ -441,50 +422,40 @@ function filterBuku(genreYangDipilih) {
         }
     });
 }
-// --- SIHIR PENCARIAN BUKU ---
 const kotakCari = document.getElementById('kolomCari');
 
 kotakCari.addEventListener('input', function(e) {
-    // 1. Ambil teks yang diketik pengunjung lalu jadikan huruf kecil semua
     const teksKetik = e.target.value.toLowerCase();
-    
-    // 2. Kumpulkan semua kartu buku
+
     let semuaKartuBuku = document.querySelectorAll('.kartu-khusus-buku');
 
-    // 3. Cek satu per satu
     semuaKartuBuku.forEach(kartu => {
-        // Ambil judul dan nama penulis dari dalam kartu
+
         const judul = kartu.querySelector('h3').innerText.toLowerCase();
         const penulis = kartu.querySelector('.penulis').innerText.toLowerCase();
 
-        // Kalau teks yang diketik ada di dalam judul ATAU penulis, tampilkan!
         if (judul.includes(teksKetik) || penulis.includes(teksKetik)) {
             kartu.style.display = ''; 
         } else {
-            kartu.style.display = 'none'; // Kalau nggak cocok, sembunyikan!
+            kartu.style.display = 'none';
         }
     });
 });
-// --- SIHIR ANIMASI SCROLL (SENSOR GERAK) ---
-// 1. Kita buat mesin sensornya
 const sensorGerak = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        // Kalau elemennya masuk ke dalam layar pengunjung...
         if (entry.isIntersecting) {
-            entry.target.classList.add('muncul'); // Munculkan!
+            entry.target.classList.add('muncul');
         }
     });
 });
 
-// 2. Kita pasang sensornya ke SEMUA kartu (buku, rajutan, dan puisi)
-// Karena dari awal semua karyamu pakai class "kartu-review", kita sasar class ini!
 setTimeout(() => {
     const semuaKartuAnimasi = document.querySelectorAll('.kartu-review');
     
     semuaKartuAnimasi.forEach(kartu => {
-        kartu.classList.add('sembunyi'); // Pakaikan jubah gaib dari awal
-        sensorGerak.observe(kartu); // Nyalakan sensor untuk kartu ini
+        kartu.classList.add('sembunyi');
+        sensorGerak.observe(kartu);
     });
-}, 500); // Kita kasih jeda setengah detik biar mesinnya nggak kaget
+}, 500);
 
 

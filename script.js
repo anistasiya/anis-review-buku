@@ -5,7 +5,7 @@ const daftarBuku = [
         penulis: "Karya: Han Kang",
         penerbit: "Penerbit: Penerbit Baca",
         genre: ["Fiksi"],
-        rating: "⭐ 4,7/5",
+        rating: "⭐ 4.7/5",
         gambar: "gambar/buku/veget.jpg", 
         teksReview: `Gara-gara sebuah mimpi, Kim Young-hye mendadak berhenti makan daging. Keputusan ekstrem ini ternyata menjadi awal dari runtuhnya kehidupan rumah tangga dan keluarganya.
 
@@ -18,7 +18,7 @@ The Vegetarian bukan sekadar buku tentang pola makan, tapi juga tentang romansa 
         penulis: "Karya: Sania Rasyid", 
         penerbit: "Penerbit: Penerbit Baca",
         genre: ["Fiksi"],
-        rating: "⭐ 5/5",
+        rating: "⭐ 5.0/5",
         gambar: "gambar/buku/renjana.jpg", 
         teksReview: `Iskander adalah sosok pemuda yang pintar, pekerja keras, dan penuh mimpi. Dari usaha kerasnya, dia berhasil mendapatkan kesempatan besar: lanjut S2 ke Azerbaijan. ✈️
 Tapi ternyata, hidup di sana nggak sesederhana yang dibayangin. Semuanya mulai berubah sejak dia mendengar tentang seorang eksil—seseorang yang terpaksa hidup jauh dari negaranya sendiri karena alasan tertentu.
@@ -39,10 +39,7 @@ Menurut aku, buku ini menarik banget karena nggak cuma cerita soal pendidikan da
         teksReview: `Buku ini mengisahkan seorang pemuda bernama Ale yang harus menghadapi trauma masa kecil serta pengalaman pahit berupa perundungan di lingkungan kerja dan sekitarnya. Semua luka dan perasaan yang ia rasakan dipendam sendirian, hingga akhirnya menumpuk dan berkembang menjadi depresi yang mendalam.
 Upaya untuk mencari bantuan pun tidak selalu berjalan mulus. Psikiater yang ia datangi belum mampu memberikan perubahan yang berarti dalam hidupnya. Kondisi ini membuat Ale semakin merasa putus asa, hingga pada satu titik ia memutuskan untuk mengakhiri hidupnya.
 Namun, sebelum benar-benar melangkah sejauh itu, serangkaian kejadian aneh dan tak terduga mulai terjadi. Ia bertemu dengan orang-orang baru yang secara perlahan mengubah cara pandangnya terhadap kehidupan. Pertemuan-pertemuan tersebut menjadi titik balik bagi Ale untuk melihat harapan yang sebelumnya tidak ia sadari.
-Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pulih, tetapi juga berkembang menjadi pribadi yang “berbeda”—lebih kuat, lebih memahami dirinya, dan memiliki arah hidup yang baru.
-
-Pesan & kesan pribadi :
-Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan mental dan tidak memendam perasaan sendirian. Ceritanya cukup menyentuh dan realistis, sehingga pembaca dapat ikut merasakan perjalanan emosi tokohnya. Buku ini cocok untuk pembaca yang menyukai kisah reflektif dan penuh makna tentang kehidupan.`
+Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pulih, tetapi juga berkembang menjadi pribadi yang “berbeda”—lebih kuat, lebih memahami dirinya, dan memiliki arah hidup yang baru. Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan mental dan tidak memendam perasaan sendirian. Ceritanya cukup menyentuh dan realistis, sehingga pembaca dapat ikut merasakan perjalanan emosi tokohnya. Buku ini cocok untuk pembaca yang menyukai kisah reflektif dan penuh makna tentang kehidupan.`
 
     },
 {
@@ -156,7 +153,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
 
 {id: "buku-15",    
         judul: "Psychology of Emotion",
-        penulis: "Karya: Morgan Housel", 
+        penulis: "Karya: David J. Lieberman", 
         penerbit: "Penerbit: Penerbit Baca",
         genre: ["Self-Improvement"],
         rating: "⭐ 4,5/5",
@@ -164,7 +161,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Mempertahankan ketenangan pikiran dan mengendalikan emosi yang berpotensi merugikan diri sendiri bukanlah perkara yang mudah. Bahkan, mereka yang terbiasa melatih kontrol diri pun adakalanya masih bisa meledak-ledak saat dihadapkan pada situasi tertentu. Untuk menjawab tantangan tersebut, psikolog ternama, David J. Lieberman, merangkum sejumlah metode efektif untuk mengelola emosi dengan lebih baik. Buku ini memandu pembaca agar tidak mudah terpancing oleh emosi sesaat yang kerap berujung pada penyesalan. Lebih dari itu, Lieberman juga membedah berbagai jenis emosi yang umum ditunjukkan oleh manusia melalui sudut pandang psikologis yang kaya dan menyegarkan.`
 
 },
-{ id: "buku-15",    
+{ id: "buku-16",    
         judul: "The Art of Going Slow",
         penulis: "Karya: Damon Zahariades", 
         penerbit: "Penerbit: Penerbit Baca",
@@ -173,7 +170,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         gambar: "gambar/buku/slow.jpg", 
         teksReview:`Apakah Anda merasa terjebak dalam budaya kerja yang masif, terbelenggu rutinitas monoton, dan selalu dituntut untuk menyelesaikan segala sesuatu dalam waktu singkat? Ditambah lagi, isi kepala Anda terus-menerus dijejali informasi, baik dari lingkungan kerja maupun linimasa? Jika demikian, buku ini adalah oase yang tepat bagi Anda untuk sejenak menepi dari hiruk-pikuk kehidupan yang melelahkan dan mulai menikmati masa kini dengan lebih tenang. Sebuah pengingat yang menyadarkan bahwa tidak semua hal harus kita pikirkan; adakalanya suatu informasi cukup diketahui sesaat untuk kemudian dilupakan. The Art of Going Slow adalah bacaan luar biasa yang wajib Anda tamatkan setidaknya sekali seumur hidup.`
 },
-{   id: "buku-16",    
+{   id: "buku-17",    
         judul: "Gaya Hidup",
         penulis: "Karya: Fahrudin Faiz", 
         penerbit: "Penerbit: MJS Press",
@@ -182,7 +179,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         gambar: "gambar/buku/hidup.jpg", 
         teksReview:`Buku ini mengajak kita untuk kembali memaknai hakikat sebenarnya dari hidup kita. Gaya hidup seperti apakah yang sedang kita jalani saat ini? Apakah hedonisme yang berfokus pada kesenangan berlebih, heroisme yang terkadang membuat kita lupa diri karena terlalu fokus membantu orang lain, atau minimalisme yang memaksimalkan apa yang kita miliki? Atau, mungkinkah kita condong pada asketisme? Bagiku, asketisme adalah yang paling ideal karena mampu menyaring nilai-nilai yang sesuai dengan kebutuhan diri kita dan membuang hal-hal yang cenderung merugikan. Semua pembahasan komprehensif ini dirangkum secara luar biasa dalam buku seri Ngaji Filsafat karya Fahruddin Faiz.`
 },
-{   id: "buku-17",    
+{   id: "buku-18",    
         judul: "Filsafat Moral",
         penulis: "Karya: Fahrudin Faiz", 
         penerbit: "Penerbit: Mizan",
@@ -192,7 +189,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Ironisnya, semakin maju sebuah peradaban dan semakin canggih teknologi yang memudahkan kehidupan, tingkat moralitas manusia justru kian menurun, baik terhadap sesama manusia maupun makhluk ciptaan Tuhan lainnya. Buku ini menjabarkan secara komprehensif bahwa moralitas manusia memiliki pengaruh yang sangat vital bagi kelangsungan hidup di bumi. Kita diajak menyadari bahwa perkara moral jauh lebih kompleks daripada sekadar anjuran berbuat baik. Faktor lingkungan sekitar, dinamika isu sosial, hingga intervensi dari sebuah negara memegang peranan penting dalam membentuk moralitas individu. Dengan mengambil perspektif luas dari pemikiran Al-Ghazali hingga Hans Jonas, Fahruddin Faiz sukses menguraikan proses kompleks di balik terbentuknya moral seseorang.`
 
 },
-{    id: "buku-18",    
+{    id: "buku-19",    
         judul: "Seni Merayu Tuhan",
         penulis: "Karya: Husein Ja'far Al Hadar", 
         penerbit: "Penerbit: Mizan",
@@ -202,7 +199,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Habib Jafar, atau yang belakangan akrab disapa "Habib Industri", dikenal luas berkat metode dakwahnya yang out of the box, santai, dan sangat dekat dengan anak muda. Dalam buku ini, beliau menyentuh sebuah keresahan yang pasti pernah kita rasakan: kenapa doa kita seolah belum dikabulkan? Kita merasa sudah berdoa setiap hari, namun Tuhan seolah tidak mendengarkan. Pertanyaan seperti "Apakah Tuhan benar-benar ada?" atau "Kenapa Tuhan seolah menahan permintaan kita?" dijawab dengan sangat menyejukkan di sini. Habib Jafar menjelaskan bahwa Tuhan selalu dekat dan mendengar doa kita. Hanya saja, kita tidak berhak "mendikte" Tuhan. Alih-alih menuntut, kita seharusnya merayu-Nya—ibarat seorang karyawan yang sedang merayu atasannya untuk meminta kenaikan gaji atau jabatan. Semua pesan ini dibungkus apik dengan suntikan unsur filsafat yang ringan, menjadikannya bacaan yang asyik dan sangat pas bagi orang awam. Bener-bener recommended buat kamu yang pengen bacaan berbobot yang santai`
 
 },
-{   id: "buku-19",    
+{   id: "buku-20",    
         judul: "Filsafat Kebahagiaan",
         penulis: "Karya: Fahrudin Faiz", 
         penerbit: "Penerbit: Mizan",
@@ -212,7 +209,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Apa yang terlintas di benak Anda ketika mendengar kata "bahagia"? Seperti apakah wujud kebahagiaan itu sebenarnya? Faktanya, sebagian besar orang tidak mampu mendeskripsikannya dengan rumusan yang pasti. Kebahagiaan adalah hal yang subjektif; bisa jadi sesuatu yang membahagiakan bagi kita, justru terasa kurang menyenangkan bagi orang lain, dan begitu pula sebaliknya. Melalui karya Filsafat Kebahagiaan, Fahruddin Faiz kembali memukau pembaca dengan merangkum secara halus pemikiran para filsuf besar, mulai dari Plato, Al-Farabi, Al-Ghazali, hingga tokoh kebanggaan Indonesia, Ki Ageng Suryomentaram. Hebatnya, masing-masing dari mereka menawarkan teori bahagia yang masih sangat relevan untuk diaplikasikan di era modern ini.`
 
 },
-{    id: "buku-20",    
+{    id: "buku-21",    
         judul: "Menjadi Manusia Menjadi Hamba",
         penulis: "Karya: Fahrudin Faiz", 
         penerbit: "Penerbit: Noura Book",
@@ -222,7 +219,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Seri Ngaji Filsafat kali ini menyoroti fenomena krisis spiritual manusia modern yang perlahan kehilangan sisi kemanusiaannya akibat arus dehumanisasi. Perkembangan teknologi yang kian mutakhir tanpa disadari menjadi celah bagi manusia untuk menjauh dari Tuhan, bahkan hingga taraf "menuhankan" AI (Kecerdasan Buatan)—entitas yang dianggap mahatahu dan mampu memecahkan segala hal. Fahruddin Faiz membedah keresahan ini dengan sangat bernas. Beliau mengajak pembaca untuk merenung dan kembali pulang pada fitrah sejati kita: menjalani kodrat sebagai manusia seutuhnya, serta menjadi hamba yang hanya berserah dan menyembah kepada Tuhan.`
 
 },
-{    id: "buku-21",    
+{    id: "buku-22",    
         judul: "Filsafat Seni Islam",
         penulis: "Karya: Fahrudin Faiz", 
         penerbit: "Penerbit: Mizan",
@@ -232,7 +229,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Kerap kali muncul anggapan di masyarakat bahwa Islam adalah agama yang kaku dan penuh dengan aturan mutlak. Memang ada benarnya, namun kita sering lupa bahwa esensi Islam adalah rahmatan lil 'alamin, pembawa rahmat bagi semesta alam. Aturan-aturan yang tersemat di dalamnya selalu memiliki landasan atau hikmah di baliknya, bukan sekadar perintah dogmatis tanpa alasan. Tata hukum dan nilai-nilai Islam ini telah dikaji oleh banyak pihak, yang pada akhirnya mengamini keindahan agama ini—salah satunya terwujud lewat seni. Meskipun perdebatan mengenai seni di kalangan ulama masih ada, tidak sedikit tokoh besar dan filsuf yang justru menyoroti betapa kayanya nilai seni dalam Islam. Melalui karya ini, Fahruddin Faiz sukses merangkum gagasan-gagasan mendalam dari tokoh sekaliber Seyyed Hossein Nasr hingga Hazrat Inayat Khan, serta mengubah materi yang terkesan berat menjadi sebuah penjelajahan intelektual yang sangat mengasyikkan.`
 
 },
-{   id: "buku-22",    
+{   id: "buku-23",    
         judul: "Filsafat Kebohongan",
         penulis: "Karya: Lars Svendsen", 
         penerbit: "Penerbit: Penerbit Baca",
@@ -242,17 +239,17 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview:`Pernahkah Anda berbohong kepada seseorang dengan dalih demi kebaikan bersama, atau yang lumrah dikenal sebagai white lies? Pertanyaannya, bagaimana jika justifikasi tersebut justru membuat kita menormalisasi kebohongan itu sendiri? Apakah kebohongan semacam itu masih bisa ditoleransi? Lebih jauh lagi, pernahkah terlintas keraguan: apakah orang-orang di sekitar kita benar-benar tulus, atau mereka pun sedang menyembunyikan kebohongan yang sama? Lewat buku ini, Lars Svendsen, seorang filsuf terkemuka asal Norwegia, membedah secara mendalam filosofi di balik tindakan berbohong. Sebagai pelengkap yang sangat aplikatif, Svendsen juga memaparkan sejumlah tanda psikologis untuk mendeteksi apabila seseorang sedang berbohong kepada kita.`
 
 },
-{   id: "buku-23",    
+{   id: "buku-24",    
         judul: "Tuhan Ada Di Hatimu",
         penulis: "Karya: Husein Ja'far Al Hadar", 
         penerbit: "Penerbit: Mizan",
-        genre: ["Islam-Populer"],
+        genre: ["Islam-Populer", "Filsafat"],
         rating: "⭐ 4,4/5",
         gambar: "gambar/buku/habib1.jpg", 
         teksReview:`Hadir untuk merespons berbagai fenomena modern seputar eksistensi Sang Pencipta, Habib Jafar—yang juga dikenal sangat menjunjung tinggi nilai toleransi—menyajikan sebuah bacaan ringan yang pesannya sangat membekas di hati. Buku ini menuntun kita untuk menjawab keresahan tentang "keberadaan Tuhan" melalui pemahaman yang indah: bagi seorang yang beriman, Tuhan sejatinya bersemayam di dalam hatinya. Kita tidak perlu lelah mencari ke sana kemari atau menuntut bukti-bukti konkret, karena kehadiran-Nya selalu nyata. Terselip campur tangan Tuhan di setiap kebaikan yang kita temui, dan selalu ada kehendak Tuhan di balik setiap ujian yang kita hadapi. Pesan pembawaannya yang damai inilah yang membuat karyanya sukses menjadi buku bestseller.`
 
 },
-{    id: "buku-24",    
+{    id: "buku-25",    
         judul: "Human Act",
         penulis: "Karya: Han Kang", 
         penerbit: "Penerbit: Penerbit Baca",
@@ -262,7 +259,7 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         teksReview: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam. Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`
 
 },
-{   id: "buku-25",    
+{   id: "buku-26",    
         judul: "Hujan",
         penulis: "Karya: Tere Liye", 
         penerbit: "Penerbit: SABAKGRIP",
@@ -270,6 +267,17 @@ Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan ment
         rating: "⭐ 4,2/5",
         gambar: "gambar/buku/hujan.jpg", 
         teksReview:'Mengambil latar jauh di peradaban modern masa depan, novel ini menceritakan kisah Esok dan Lail, dua remaja penyintas bencana alam dahsyat yang menyapu bersih hampir seperempat populasi dunia. Mereka berhasil lolos dari stasiun kereta bawah tanah yang runtuh dan menimbun semua orang, termasuk ibunda Lail. Sempat kehilangan semangat akibat tragedi tersebut, Lail perlahan mencoba bertahan hidup bersama Esok yang setia mendampinginya di pengungsian. Namun, takdir memaksa mereka berpisah ketika Esok yang jenius mendapat kesempatan untuk bersekolah di luar kota. Ditinggal sosok terdekatnya, Lail berusaha tegar dengan menyibukkan diri dalam berbagai kegiatan. Waktu pun berlalu, dan drama mulai terbangun saat takdir kembali mempertemukan mereka. Akankah Esok dan Lail akhirnya bersatu? Ditulis oleh Tere Liye, novel remaja ini menjadi bukti nyata kepiawaiannya dalam merajut cerita yang siap menguras air mata.'
+
+} ,
+{   id: "buku-27",    
+        judul: "Kota Romantika",
+        penulis: "Karya: Ilham Mazalan", 
+        penerbit: "Penerbit: Penerbit Baca",
+        genre: ["Fiksi"],
+        rating: "⭐ 4,7/5",
+        gambar: "gambar/buku/roman.jpg", 
+        teksReview:'Pernahkah terlintas di benakmu sebuah kota utopia yang indah, di mana setiap harinya hanya dipenuhi oleh keriangan dan tawa bahagia? Inilah Kota Romantika, sebuah tempat yang menjunjung tinggi keindahan, keselamatan, dan kegembiraan sebagai pedoman hidup penghuninya. Tak ada hari tanpa perayaan yang meriah. Namun, bagaimana jika segala utopia itu hanyalah ilusi semu yang menipu? Seperti hukum alam yang abadi, bahwa di mana ada sukacita, di sanalah dukacita akan membayangi. Melalui buku ini, penulis secara jenius melukiskan kontrasnya sebuah realita; menguliti duka yang tersembunyi di balik gemerlap kemewahan Kota Romantika. Semua bermula dari kecurigaan Nur Balqis, seorang gadis yang baru saja kehilangan kedua orang tuanya dan memercayai bahwa mereka telah berubah menjadi bintang di langit malam. Lewat kacamata Balqis, pembaca diajak perlahan-lahan menyusuri sisi gelap dari kehidupan kota yang selama ini memabukkan warganya.'
+
 
 }
 

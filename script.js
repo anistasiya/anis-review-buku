@@ -294,7 +294,7 @@ Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pul
         judul: "Love for Imperfect Things",
         penulis: "Karya: Haemin Sunim", 
         penerbit: "Penerbit: POP (Imprint KPG)",
-        genre: ["Self-Improvement"],
+        genre: ["Self-Improvement", "Non-Fiksi"],
         rating: "⭐ 4.5/5",
         gambar: "gambar/buku/love.jpg", 
         teksReview:'Dikenal sebagai seorang biksu dan penulis kenamaan asal Korea Selatan, Haemin Sunim telah melakukan perjalanan ke berbagai penjuru dunia untuk membagikan khotbah yang menggugah jiwa. Banyak orang yang datang kepadanya untuk membagikan keluh kesah dan berkonsultasi tentang lika-liku kehidupan. Seluruh kebijaksanaan dari interaksi tersebut kemudian beliau abadikan dalam goresan pena yang begitu indah dan menenangkan. Membaca setiap lembar buku ini terasa seolah kita sedang dibawa menyusuri hutan yang hening dan damai, memberikan jeda bagi pikiran yang lelah. Ini adalah sebuah mahakarya yang sangat direkomendasikan untuk dibaca setidaknya sekali seumur hidup.'

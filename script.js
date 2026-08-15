@@ -366,7 +366,7 @@ daftarBuku.forEach(function(buku) {
             <p class="penerbit" style="color: #888; font-size: 14px; margin-top: -10px;">${buku.penerbit}</p> 
             <p class= "genre">${buku.genre.join(", ") }</p>
             <p class="rating">${buku.rating}</p>
-            <div data-lyket-type="like" data-lyket-id="${buku.id}" data-lyket-namespace="review-buku-anis" data-lyket-template="twitter"></div>
+            <div data-lyket-type="like" data-lyket-id="${buku.id}" data-lyket-namespace="review-buku-anis" data-lyket-template="twitter" data-lyket-color-primary="#ff3b5c"></div>
             
             <button class="tombol-baca" onclick="bukaModal('${buku.id}')">Baca Review 📖</button>
         </div>

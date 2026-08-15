@@ -299,7 +299,38 @@ Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pul
         gambar: "gambar/buku/love.jpg", 
         teksReview:'Dikenal sebagai seorang biksu dan penulis kenamaan asal Korea Selatan, Haemin Sunim telah melakukan perjalanan ke berbagai penjuru dunia untuk membagikan khotbah yang menggugah jiwa. Banyak orang yang datang kepadanya untuk membagikan keluh kesah dan berkonsultasi tentang lika-liku kehidupan. Seluruh kebijaksanaan dari interaksi tersebut kemudian beliau abadikan dalam goresan pena yang begitu indah dan menenangkan. Membaca setiap lembar buku ini terasa seolah kita sedang dibawa menyusuri hutan yang hening dan damai, memberikan jeda bagi pikiran yang lelah. Ini adalah sebuah mahakarya yang sangat direkomendasikan untuk dibaca setidaknya sekali seumur hidup.'
 
+},  
+{  id: "buku-30",
+        judul: "Good Vibes, Good Life",
+        penulis: "Karya: Vex King", 
+        penerbit: "Penerbit: Penerbit Baca",
+        genre: ["Non-Fiksi", "Self-Improvement"],
+        rating: "⭐ 4.4/5",
+        gambar: "gambar/buku/good.jpg", 
+        teksReview:'Hidup berdampingan di tengah masyarakat yang beragam acap kali membuat kita tanpa sadar sekadar bergerak mengikuti arus. Kita sering kali dihadapkan pada tuntutan untuk melakukan hal-hal yang tidak sejalan dengan keinginan hati, terdesak oleh keadaan, hingga akhirnya mengabaikan perasaan diri sendiri. Lewat karyanya ini, Vex King hadir untuk mengingatkan pentingnya self-love atau mencintai diri sendiri. Dengan merawat diri secara utuh, kita mampu memancarkan energi positif yang secara perlahan akan menyingkirkan energi negatif di sekeliling kita. Buku ini memandu pembaca untuk mulai merangkai kebiasaan-kebiasaan produktif yang selaras dengan tujuan hidup sejati, tanpa goyah oleh lingkungan sekitar yang kerap menjadi distraksi.'
+
+},
+{   id: "buku-31",
+        judul: "Mindset",
+        penulis: "Karya: Carol S. Dweck", 
+        penerbit: "Penerbit: Penerbit Baca",
+        genre: ["Non-Fiksi", "Self-Improvement"],
+        rating: "⭐ 4.5/5",
+        gambar: "gambar/buku/mindset.jpg", 
+        teksReview:'Pernahkah Anda bertanya-tanya mengapa hidup seolah terasa jalan di tempat? Anda mungkin merasa sudah melakukan berbagai upaya maksimal, namun perubahan yang signifikan tak kunjung datang. Melalui buku ini, Carol Dweck, seorang psikolog kenamaan dengan rekam jejak penelitian selama hampir dua dekade, mengupas tuntas pertanyaan seputar kepribadian manusia yang berpusat pada pola pikir (mindset). Dweck menjabarkan secara komprehensif bahwa manusia pada dasarnya terbagi ke dalam dua kutub pola pikir: fixed mindset (pola pikir tetap) dan growth mindset (pola pikir tumbuh). Buku ini juga diperkaya dengan studi kasus dari berbagai tokoh ternama, memperlihatkan secara nyata bagaimana jenis pola pikir yang mereka adopsi memberikan dampak krusial terhadap kesuksesan bisnis maupun lintasan hidup mereka.'
+
+},
+{   id: "buku-31",
+        judul: "The Art oF Spending Money",
+        penulis: "Karya: Morgan Housel", 
+        penerbit: "Penerbit: Penerbit Baca",
+        genre: ["Self-Improvement","keuangan"],
+        rating: "⭐ 4.4/5",
+        gambar: "gambar/buku/money.jpg", 
+        teksReview:'Setelah sukses dengan The Psychology of Money, Morgan Housel kembali menghadirkan buku keuangan yang lebih berfokus pada bagaimana cara kita mengelola uang itu sendiri. Buku ini tidak serta-merta mengajarkan cara instan untuk menjadi kaya, tetapi mengupas sisi lain di balik uang yang selama ini kerap membelenggu hidup kita. Kita diajak menyadari bahwa uang bukanlah segalanya, melainkan sebuah entitas yang jauh lebih kompleks daripada itu. Lebih lanjut, Housel juga mengangkat berbagai isu sosial yang sangat lekat dengan seni mengelola keuangan.'
+
 }
+
 
 
 ];

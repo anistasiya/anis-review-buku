@@ -42,17 +42,16 @@ Namun, sebelum benar-benar melangkah sejauh itu, serangkaian kejadian aneh dan t
 Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pulih, tetapi juga berkembang menjadi pribadi yang “berbeda”—lebih kuat, lebih memahami dirinya, dan memiliki arah hidup yang baru. Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan mental dan tidak memendam perasaan sendirian. Ceritanya cukup menyentuh dan realistis, sehingga pembaca dapat ikut merasakan perjalanan emosi tokohnya. Buku ini cocok untuk pembaca yang menyukai kisah reflektif dan penuh makna tentang kehidupan.`
 
     },
-{
-    id: "buku-4",
-        judul: "50 Tahun Meniti Jalan Kembali",
-        penulis: "Karya: Fahrudin Faiz", 
-        penerbit: "Penerbit: MJS Press",
-        genre: ["Non-Fiksi" , "Filsafat"],
-        rating: "⭐ 4.5/5",
-        gambar: "gambar/buku/faiz1.jpg", 
-        teksReview:`Buku terbaru karya filsuf terkemuka Indonesia, Fahruddin Faiz, ini menceritakan perjalanan hidup beliau hingga berada di titik sekarang. Di usianya yang telah banyak menelan suka duka, beliau merefleksikan bahwa hidup kini hanya memiliki satu tujuan utama: Tuhan. Kisah hidup yang tak selalu mulus ini dikemas dengan apik melalui gaya bahasa yang santai. Sangat direkomendasikan bagi kalian yang baru ingin berkenalan dengan dunia filsafat lewat bacaan yang ringan.`
+{   id: "buku-4",
+        judul: "Aura Queen Indonesia",
+        penulis: "Karya: Siti Mujiati, S,S.",
+        penerbit: "Penerbit: Jigung Scientia Publisher",
+        genre: ["Self-Improvement","Non-Fiksi"],
+        rating: "⭐ 4.3/5",
+        gambar: "gambar/buku/siti.jpg", 
+        teksReview:'Hadir dengan konsep self-guided yang interaktif, buku ini memberikan ruang bagi pembacanya untuk turut menuliskan kisah mereka sendiri melalui format yang unik dan personal. Ditulis oleh Siti Mujiati, sosok influencer sekaligus penulis, Aura Queen Indonesia dipersembahkan sebagai bentuk dukungan dan pelukan moral bagi para pembacanya, terkhusus kaum perempuan dan pahlawan devisa, Pekerja Migran Indonesia. Dengan gaya bahasa yang santai dan mudah dicerna, buku ini adalah pilihan menarik bagi siapa saja yang sedang mencari media refleksi diri untuk self-discovery maupun journaling.'
 
-    },
+},
 {   id: "buku-5",
         judul: "Temple Alley Summer",
         penulis: "Karya: Sachiko Kashiwaba",
@@ -329,8 +328,27 @@ Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pul
         gambar: "gambar/buku/money.jpg", 
         teksReview:'Setelah sukses dengan The Psychology of Money, Morgan Housel kembali menghadirkan buku keuangan yang lebih berfokus pada bagaimana cara kita mengelola uang itu sendiri. Buku ini tidak serta-merta mengajarkan cara instan untuk menjadi kaya, tetapi mengupas sisi lain di balik uang yang selama ini kerap membelenggu hidup kita. Kita diajak menyadari bahwa uang bukanlah segalanya, melainkan sebuah entitas yang jauh lebih kompleks daripada itu. Lebih lanjut, Housel juga mengangkat berbagai isu sosial yang sangat lekat dengan seni mengelola keuangan.'
 
-}
+},
+{    id: "buku-32",
+        judul: "50 Tahun Meniti Jalan Kembali",
+        penulis: "Karya: Fahrudin Faiz", 
+        penerbit: "Penerbit: MJS Press",
+        genre: ["Non-Fiksi" , "Filsafat"],
+        rating: "⭐ 4.5/5",
+        gambar: "gambar/buku/faiz1.jpg", 
+        teksReview:`Buku terbaru karya filsuf terkemuka Indonesia, Fahruddin Faiz, ini menceritakan perjalanan hidup beliau hingga berada di titik sekarang. Di usianya yang telah banyak menelan suka duka, beliau merefleksikan bahwa hidup kini hanya memiliki satu tujuan utama: Tuhan. Kisah hidup yang tak selalu mulus ini dikemas dengan apik melalui gaya bahasa yang santai. Sangat direkomendasikan bagi kalian yang baru ingin berkenalan dengan dunia filsafat lewat bacaan yang ringan.`
 
+},
+{    id: "buku-33",
+        judul: "Psychology of Money",
+        penulis: "Karya: Morgan Housel", 
+        penerbit: "Penerbit: Penerbit Baca",
+        genre: ["Non-Fiksi" , "Keuangan"],
+        rating: "⭐ 4.6/5",
+        gambar: "gambar/buku/money1.jpg", 
+        teksReview:'Apakah Anda kerap berasumsi bahwa kekayaan hanya berpihak pada mereka yang terlahir dengan privilege? Faktanya, meski mungkin sulit dipercaya, tidak sedikit individu dari latar belakang sederhana yang justru jauh lebih mahir mengendalikan uang dibandingkan mereka yang terlahir bergelimang harta. Lewat karya ini, Morgan Housel mengajak kita menyelami berbagai kisah nyata tentang orang-orang yang salah memaknai hakikat uang, yang pada akhirnya justru membawa mereka pada kejatuhan finansial. Sebuah pengingat yang sangat berharga tentang perilaku manusia terhadap uang, menjadikannya sebuah buku psikologi keuangan yang wajib dibaca.'
+
+}
 
 
 ];

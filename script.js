@@ -348,6 +348,26 @@ Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pul
         gambar: "gambar/buku/money1.jpg", 
         teksReview:'Apakah Anda kerap berasumsi bahwa kekayaan hanya berpihak pada mereka yang terlahir dengan privilege? Faktanya, meski mungkin sulit dipercaya, tidak sedikit individu dari latar belakang sederhana yang justru jauh lebih mahir mengendalikan uang dibandingkan mereka yang terlahir bergelimang harta. Lewat karya ini, Morgan Housel mengajak kita menyelami berbagai kisah nyata tentang orang-orang yang salah memaknai hakikat uang, yang pada akhirnya justru membawa mereka pada kejatuhan finansial. Sebuah pengingat yang sangat berharga tentang perilaku manusia terhadap uang, menjadikannya sebuah buku psikologi keuangan yang wajib dibaca.'
 
+} ,
+{   id: "buku-34",
+        judul: "Filosofi Teras",
+        penulis: "Karya: Henry Manampiring", 
+        penerbit: "Penerbit: Penerbit Buku Kompas",
+        genre: ["Non-Fiksi" , "Filsafat"],
+        rating: "⭐ 4.5/5",
+        gambar: "gambar/buku/teras.jpg", 
+        teksReview:'Buku ini dijamin akan mengubah total persepsi Anda tentang ilmu filsafat. Sering kali, masyarakat menganggap filsafat sebagai sesuatu yang kaku dan penuh dengan istilah rumit. Namun, Henry Manampiring berhasil mematahkan stigma tersebut. Dengan latar belakang yang sama sekali bukan dari bidang filsafat, ia mampu mengemas filosofi zaman Yunani Kuno menjadi bacaan yang sangat relevan untuk konteks masa kini. Ia juga memperkenalkan kerangka berpikir S-T-A-R yang terbukti transformatif dalam mempelajari dan menerapkan filosofi Stoa (Filosofi Teras). Sebuah mahakarya yang sangat direkomendasikan bagi siapa pun yang ingin mendalami filsafat melalui gaya penulisan yang kekinian dan mudah dicerna.'
+
+} ,
+{   id: "buku-35",
+        judul: "Sisi Tergelap Surga",
+        penulis: "Karya: Brian Khrisna", 
+        penerbit: "Penerbit: ",
+        genre: ["Fiksi"],
+        rating: "⭐ 4.6/5",
+        gambar: "gambar/buku/surga.jpg", 
+        teksReview:'Bukan rahasia lagi bahwa di balik gemerlap dan megahnya sebuah kota metropolitan, selalu tersimpan realita gelap yang jarang tersorot. Di tempat itulah banyak orang terpaksa mempertaruhkan segalanya, bahkan harga diri, sekadar untuk bertahan hidup satu hari lagi. Buku ini merekam berbagai fragmen kehidupan yang memilukan sekaligus menghangatkan hati: mulai dari perjuangan ayah yang bertaruh nyawa demi putrinya, ketangguhan seorang wanita demi sang anak, paradoks preman berwajah garang namun berhati lembut, hingga potret keluarga yang bertahan hidup hanya dengan berserah pada belas kasih Tuhan. Secara epik, Brian Khrisna merajut semua kepingan nostalgia tentang tempat tinggalnya di masa lalu menjadi sebuah karya yang sukses menggugah empati.'
+
 }
 
 

@@ -443,45 +443,49 @@ html {
 
 <body>
 
-<button onclick="ubahTema()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
+<button onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
     🌛
 </button>
+
+<button id="tombol-bahasa" onclick="ubahBahasa()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">
+    EN
+</button>
     <nav class="navbar">
-        <a href="#about-me">About Me</a>
-        <a href="#review-buku">Review Buku</a>
-        <a href="#galeri-rajutan">Galeri Rajutanku</a>
-        <a href="#proyek-tulisan">Proyek Tulisanku</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#about-me" id="nav-about">About Me</a>
+        <a href="#review-buku" id="nav-review">Review Buku</a>
+        <a href="#galeri-rajutan" id="nav-rajutan">Galeri Rajutanku</a>
+        <a href="#proyek-tulisan" id="nav-tulisan">Proyek Tulisanku</a>
+        <a href="#kontak" id="nav-kontak">Kontak</a>
         
         </nav>
 
-    <h1>Selamat Datang di Halaman Pribadi Anis</h1>
-    <p>Review Buku Bagus Dari Banyak Penulis Terkenal,</p>
-    <p>Hasil Rajutan, Hingga Karya Tulisan </p>
+    <h1 id="judul-utama"> Selamat Datang di Halaman Pribadi Anis</h1>
+    <p id = "judul-utama1">Review Buku Bagus Dari Banyak Penulis Terkenal,</p>
+    <p id = judul-utama2>Hasil Rajutan, Hingga Karya Tulisan </p>
 
     <div id="about-me" class="container-about">
         <div class="foto-profil">
             <img src="gambar/anic.jpg" alt="Foto Anis">
         </div>
         <div class="teks-about">
-            <h2>Tentang Penulis 🌸</h2>
-            <p>Halo! Aku Anis, seorang penikmat buku yang suka merangkai kata. Membaca adalah caraku menjelajahi dunia tanpa harus beranjak dari tempat duduk. Selain membaca, aku juga suka belajar hal-hal baru setiap harinya. Di halaman ini, aku membagikan pemikiran, perasaan, dan ulasan dari buku-buku yang sudah menemaniku. Di halaman ini juga aku ingin membagikan berbagai kerajinan tangan yang aku buat sendiri dan beberapa proyek tulisan pribadiku.</p>
-            <p>Aku harap halaman ini bisa memberikan motivasi kecil bagi siapa saja, bahwa segala sesuatu tidak ada yang mustahil, apabila kita mau belajar dan berusaha.</p>
+            <h2 id="about1">Tentang Penulis 🌸</h2>
+            <p id = "about2">Halo! Aku Anis, seorang penikmat buku yang suka merangkai kata. Membaca adalah caraku menjelajahi dunia tanpa harus beranjak dari tempat duduk. Selain membaca, aku juga suka belajar hal-hal baru setiap harinya. Di halaman ini, aku membagikan pemikiran, perasaan, dan ulasan dari buku-buku yang sudah menemaniku. Di halaman ini juga aku ingin membagikan berbagai kerajinan tangan yang aku buat sendiri dan beberapa proyek tulisan pribadiku.</p>
+            <p id = "about3">Aku harap halaman ini bisa memberikan motivasi kecil bagi siapa saja, bahwa segala sesuatu tidak ada yang mustahil, apabila kita mau belajar dan berusaha.</p>
         </div>
     </div>
     <br>
     <br>
 
-    <h2>Buku Yang Sudah Selesai Kubaca 📖</h2>
+    <h2 id="buku-baca">Buku Yang Sudah Selesai Kubaca 📖</h2>
 
 <div class="rak-tombol" style="text-align: center; margin-bottom: 30px;">
-    <button class="tombol-genre" onclick="filterBuku('semua')">Semua Buku</button>
-    <button class="tombol-genre" onclick="filterBuku('fiksi')">Fiksi</button>
-    <button class="tombol-genre" onclick="filterBuku('filsafat')">Filsafat</button>
-    <button class="tombol-genre" onclick="filterBuku('islam-populer')">Islam Populer</button>
-    <button class="tombol-genre" onclick="filterBuku('keuangan')">Keuangan</button>
-    <button class="tombol-genre" onclick="filterBuku('non-fiksi')">Non-Fiksi</button>
-    <button class="tombol-genre" onclick="filterBuku('self-improvement')">Self-Improvement</button>
+    <button class="tombol-genre" onclick="filterBuku('semua')" id="book1">Semua Buku</button>
+    <button class="tombol-genre" onclick="filterBuku('fiksi')" id="book2">Fiksi</button>
+    <button class="tombol-genre" onclick="filterBuku('filsafat')" id="book3">Filsafat</button>
+    <button class="tombol-genre" onclick="filterBuku('islam-populer')" id="book4">Islam Populer</button>
+    <button class="tombol-genre" onclick="filterBuku('keuangan')" id="book5">Keuangan</button>
+    <button class="tombol-genre" onclick="filterBuku('non-fiksi')" id="book6">Non-Fiksi</button>
+    <button class="tombol-genre" onclick="filterBuku('self-improvement')" id="book7">Self-Improvement</button>
 </div>
 <div style="text-align: center; margin-top: 20px; margin-bottom: 30px;">
     <input type="text" id="kolomCari" placeholder="🔍 Cari judul atau penulis buku..." 
@@ -492,17 +496,23 @@ html {
 
 </div>
 
+<div id="wadah-tombol-tampil" style="text-align: center; margin-top: 10px; margin-bottom: 40px;">
+    <button id="tombol-tampil" onclick="tampilkanSemuaBuku()" class="tombol-genre" style="padding: 10px 30px; font-weight: bold; background-color: #ff99cc; color: white; border: none; cursor: pointer;">
+        <span id="teks-tampil">Lihat Selengkapnya 📚</span>
+    </button>
+</div>
+
 
 <div id="galeri-rajutan" style="padding: 50px 20px; text-align: center;">
-    <h2 style="margin-bottom: 30px;">Galeri Rajutanku 🧶✨</h2>
+    <h2 style="margin-bottom: 30px;" id="rajutanku">Galeri Rajutanku 🧶✨</h2>
     
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
         
         <div class="kartu-review" style="width: 250px; padding: 20px;">
             <img src="gambar/rajutan/pink.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Pastel">
             
-            <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Pastel 🌸</h3>
-            <p>Koleksi rajutan bunga dengan warna-warna pastel yang ceria.</p>
+            <h3 style="margin-top: 15px; margin-bottom: 10px;" id="rajut1">Tulip Pastel 🌸</h3>
+            <p id="rajut2">Koleksi rajutan bunga dengan warna-warna pastel yang ceria.</p>
             
             <button onclick="document.getElementById('modal-tulip-pastel').style.display='block'" style="background-color: #ffb6c1; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
@@ -510,32 +520,32 @@ html {
         <div class="kartu-review" style="width: 250px; padding: 20px;">
             <img src="gambar/rajutan/biru3.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
-            <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Biru 💙</h3>
-            <p>Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.</p>
+            <h3 style="margin-top: 15px; margin-bottom: 10px;" id="rajut3">Tulip Biru 💙</h3>
+            <p id="rajut4">Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.</p>
             
             <button onclick="document.getElementById('modal-tulip-biru').style.display='block'" style="background-color: #add8e6; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
         <div class="kartu-review" style="width: 250px; padding: 20px;">
             <img src="gambar/rajutan/purple.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
-            <h3 style="margin-top: 15px; margin-bottom: 10px;">Tulip Ungu🪻</h3>
-            <p>Koleksi rajutan bunga tulip bernuansa ungu yang lembut</p>
+            <h3 style="margin-top: 15px; margin-bottom: 10px;" id="rajut5">Tulip Ungu🪻</h3>
+            <p id="rajut6">Koleksi rajutan bunga tulip bernuansa ungu yang lembut</p>
             
             <button onclick="document.getElementById('modal-tulip-ungu').style.display='block'" style="background-color: #cb75de; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
         <div class="kartu-review" style="width: 250px; padding: 20px;">
             <img src="gambar/rajutan/sun.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
-            <h3 style="margin-top: 15px; margin-bottom: 10px;">Bunga Matahari🌻</h3>
-            <p>Koleksi rajutan bunga matahari yang indah</p>
+            <h3 style="margin-top: 15px; margin-bottom: 10px;" id="rajut7">Bunga Matahari🌻</h3>
+            <p id="rajut8">Koleksi rajutan bunga matahari yang indah</p>
             
             <button onclick="document.getElementById('modal-matahari').style.display='block'" style="background-color: #8c9f43; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
         <div class="kartu-review" style="width: 250px; padding: 20px;">
             <img src="gambar/rajutan/small.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;" alt="Tulip Biru">
             
-            <h3 style="margin-top: 15px; margin-bottom: 10px;">Keychain Rajut🌹</h3>
-            <p>Koleksi aksesoris gantungan kunci dan mini crochet</p>
+            <h3 style="margin-top: 15px; margin-bottom: 10px;" id="rajut9">Keychain Rajut🌹</h3>
+            <p id="rajut10">Koleksi aksesoris gantungan kunci dan mini crochet</p>
             
             <button onclick="document.getElementById('modal-small').style.display='block'" style="background-color: #e896d4; color: #333; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; width: 100%; font-weight: bold;">Lihat Detail 👀</button>
         </div>
@@ -643,7 +653,7 @@ html {
 </div>
     
 <div id="proyek-tulisan" style="padding: 50px 20px; text-align: center;">
-    <h2 style="margin-bottom: 30px;">Proyek Tulisanku ✒️</h2>
+    <h2 style="margin-bottom: 30px;" id="judul-proyek">Proyek Tulisanku ✒️</h2>
 
     <div id="rak-puisi" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
@@ -653,25 +663,25 @@ html {
     <br>
     
 <div id="kontak" style="padding: 50px 20px; text-align: center;">
-    <h2 style="margin-bottom: 30px;">Kirim Pesan untuk Anis 💐</h2>
+    <h2 style="margin-bottom: 30px;" id="kirim-pesan">Kirim Pesan untuk Anis 💐</h2>
 
     <div class="kartu-form">
         <form action="https://api.web3forms.com/submit" method="POST">
     
         <input type="hidden" name="access_key" value="f208c626-ccfb-4175-a520-9fc155ba0a27">
     
-        <input type="text" name="Nama_Pengirim" placeholder="Your Name" class="input-estetik" required>
-        <input type="email" name="Email_Pengirim" placeholder="Your Email" class="input-estetik" required>
-        <textarea name="Isi_Pesan" placeholder="Tulis pesan kamu di sini 👇" class="input-estetik" rows="5" required></textarea>
+        <input id="input-nama" type="text" name="Nama_Pengirim" placeholder="Your Name" class="input-estetik" required>
+        <input id="input-email" type="email" name="Email_Pengirim" placeholder="Your Email" class="input-estetik" required>
+        <textarea id="input-pesan" name="Isi_Pesan" placeholder="Tulis pesan kamu di sini 👇" class="input-estetik" rows="5" required></textarea>
     
-        <button type="submit" class="tombol-kirim">Kirim Pesan 🚀</button>
+        <button id="tombol-send" type="submit" class="tombol-kirim">Kirim Pesan 🚀</button>
         </form>
     </div>
 </div>
     <br><br>
 
 <footer class="catatan-kaki" style="text-align: center; padding: 20px;">
-    <p>Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar.</p>
+    <p id="teks-footer" >Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar.</p>
     
     <div class="kumpulan-sosmed" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
         <a href="https://www.instagram.com/zunesha_crochet" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #9b59b6; font-weight: bold;">
@@ -696,7 +706,7 @@ html {
     
     <script src="script.js?v=2.0"></script>
 
-<script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_8463f3c42ed3d7d3ee6a9b2f687462"></script>
+<script id="mesin-lyket" src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_8463f3c42ed3d7d3ee6a9b2f687462"></script>
 
 <script data-goatcounter="https://anis-review.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

@@ -581,7 +581,7 @@ const kamus = {
         aboutMe: "Tentang Penulis 🌸",
         aboutMe1:"Halo! Aku Anis, seorang penikmat buku yang suka merangkai kata. Membaca adalah caraku menjelajahi dunia tanpa harus beranjak dari tempat duduk. Selain membaca, aku juga suka belajar hal-hal baru setiap harinya. Di halaman ini, aku membagikan pemikiran, perasaan, dan ulasan dari buku-buku yang sudah menemaniku. Di halaman ini juga aku ingin membagikan berbagai kerajinan tangan yang aku buat sendiri dan beberapa proyek tulisan pribadiku.",
         aboutMe2: "Aku harap halaman ini bisa memberikan motivasi kecil bagi siapa saja, bahwa segala sesuatu tidak ada yang mustahil, apabila kita mau belajar dan berusaha.",
-        book1:"Semua Buku", book2:"Fiksi", book3:"Fisafat" , book4 : "Islam-Populer", book5:"Keuangan", book6:"Non-Fiksi", book7:"Self-Improvement",
+        book1:"Semua Buku", book2:"Fiksi", book3:"Filsafat" , book4 : "Islam-Populer", book5:"Keuangan", book6:"Non-Fiksi", book7:"Self-Improvement",
         teksCari:"🔍 Cari judul atau penulis buku...",
         teksTampil: "Lihat Selengkapnya 📚",
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",

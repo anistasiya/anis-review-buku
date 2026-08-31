@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-</head>
+    
+    </head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta charset="UTF-8">
@@ -455,20 +455,32 @@ html {
         transform: scale(0.8) !important;
     }
 }
-@media screen and (max-width: 768px) {
-        button#tombol-bahasa {
-            top: 85px !important; 
-            right: 10px !important;
-            transform: scale(0.8) !important;
+    @media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
         }
-        button#tombol-tema {
-            top: 130px !important; 
-            right: 10px !important;
-            transform: scale(0.8) !important;
+    .navbar {
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        width: 100% !important;
+        }
+    button#tombol-bahasa {
+        top: 85px !important; 
+        right: 15px !important;
+        transform: scale(0.8) !important;
+        transform-origin: right center !important;
+        z-index: 9999 !important;
+        }
+    
+    button#tombol-tema {
+        top: 130px !important; 
+        right: 15px !important;
+        transform: scale(0.8) !important;
+        transform-origin: right center !important;
+        z-index: 9999 !important;
         }
     }
-
-
 </style>
 
 </head>

@@ -586,7 +586,8 @@ const kamus = {
         teksTampil: "Lihat Selengkapnya 📚",
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",
         rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet", KirimAnis:"Send Your Love to Anis 💐",
-        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Tulis Pesan Kamu di Sini 👇🏻" , KirimPesan:"Kirim Pesan 🚀", TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar."
+        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Tulis Pesan Kamu di Sini 👇🏻" , KirimPesan:"Kirim Pesan 🚀", TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." ,
+        Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀"
 
     },
     en: {
@@ -604,7 +605,8 @@ const kamus = {
         teksCari:"🔍 Search book title or author..",
         teksTampil: "Show More 📚",
         rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories", KirimAnis:"Send Your Love to Anis 💐",
-        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Your Massages 👇🏻" , KirimPesan:"Send Your Massages 🚀", TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning."
+        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Your Massages 👇🏻" , KirimPesan:"Send Your Massages 🚀", TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
+        Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀"
     } 
 };
 
@@ -658,7 +660,11 @@ function ubahBahasa() {
     document.getElementById("input-pesan").innerText = kamus[bahasaSekarang].InputTeks;
     document.getElementById("tombol-send").innerText = kamus[bahasaSekarang].KirimPesan;
     document.getElementById("teks-footer").innerText = kamus[bahasaSekarang].TeksFooter;
-    
+    document.getElementById("lihat1").innerText = kamus[bahasaSekarang].Lihat1;
+    document.getElementById("lihat2").innerText = kamus[bahasaSekarang].Lihat2;
+    document.getElementById("lihat3").innerText = kamus[bahasaSekarang].Lihat3;
+    document.getElementById("lihat4").innerText = kamus[bahasaSekarang].Lihat4;
+    document.getElementById("lihat5").innerText = kamus[bahasaSekarang].Lihat5;
 
 
     const teksTampil = document.getElementById("teks-tampil");

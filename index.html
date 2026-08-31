@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anis Review</title>
+</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <meta charset="UTF-8">
+        <title>Anis Review</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style> 
         body {
@@ -252,11 +252,11 @@
         gap: 15px;
         padding-bottom: 15px;
         }
+        }
 
         .kartu-review {
         min-width: 260px;
         scroll-snap-align: start;
-        }
         }
 
         .container-about {
@@ -287,23 +287,24 @@
             color: #555;
             margin-bottom: 15px;
         }
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
         #review-buku, #galeri-rajutan > div , #proyek-tulisan > div {
         display: flex !important;
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-        overflow-x: auto !important; 
+        overflow-x: auto !important;
+        white-space: nowrap !important;
         scroll-snap-type: x mandatory;
         gap: 15px !important;
         padding-bottom: 20px;
         justify-content: flex-start !important;
+            }
         }
 
         .kartu-khusus-buku, .kartu-review {
         min-width: 260px !important;
         flex-shrink: 0 !important;
         scroll-snap-align: start;
-        }
         }
 
     .kartu-khusus-buku .kartu-review {
@@ -436,21 +437,52 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+    }
+    
+    #tombol-bahasa {
+        top: 70px !important; 
+        right: 10px !important;
+        transform: scale(0.8) !important; 
+    }
+    
+    #tombol-tema {
+        top: 110px !important; 
+        right: 10px !important;
+        transform: scale(0.8) !important;
+    }
+}
+@media screen and (max-width: 768px) {
+        button#tombol-bahasa {
+            top: 85px !important; 
+            right: 10px !important;
+            transform: scale(0.8) !important;
+        }
+        button#tombol-tema {
+            top: 130px !important; 
+            right: 10px !important;
+            transform: scale(0.8) !important;
+        }
+    }
 
-    </style>
+
+</style>
 
 </head>
 
 <body>
 
-<button onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
+<button id="tombol-tema" onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
     🌛
 </button>
 
 <button id="tombol-bahasa" onclick="ubahBahasa()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">
     EN
 </button>
-    <nav class="navbar" style="position: sticky; top: 0; z-index: 999; overflow: hidden;">
+    <nav class="navbar" style="position: sticky; top: 0; z-index: 999; overflow: hidden;white-space: nowrap; background-color: #fffaf0;">
         <a href="#about-me" id="nav-about">About Me</a>
         <a href="#review-buku" id="nav-review">Review Buku</a>
         <a href="#galeri-rajutan" id="nav-rajutan">Galeri Rajutanku</a>

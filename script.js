@@ -1,6 +1,37 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
+    { id: "buku-25",    
+        judul: "Human Act",
+        penulis: "Han Kang", 
+        penerbit: "Penerbit Baca",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.8/5",
+        gambar: "gambar/buku/human.jpg", 
+        teksReviewID: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam.<br><br>Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`,
+        teksReviewEN:`Set against the backdrop of the 1980 Gwangju tragedy in South Korea, this novel delivers a heartbreakingly touching story about someone desperately searching for their best friend.<br><br>The raging political conflict between the government and the citizens makes the whole atmosphere feel incredibly tense and gripping. Han Kang brilliantly captures one of the darkest chapters in Korean history through a totally unique and emotionally charged storytelling style.<br><br>Through this stunning piece of work, Han Kang once again proves her absolute mastery, always managing to make literature lovers fall head over heels for everything she writes.`
+    },
+    { id: "one-hudred-flowers",    
+        judul: "One Hundred Flowers",
+        penulis: "Genki Kawamura", 
+        penerbit: "Penerbit Baca",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.7/5",
+        gambar: "gambar/buku/onehundred.jpg", 
+        teksReviewID: `Kisah ini berpusat pada Izumi Kazai, seorang pekerja seni dan hiburan di kota yang tengah menyambut kabar kehamilan istrinya. Di balik kebahagiaan itu, tersimpan kecemasan mendalam di hati Izumi mengenai kemampuannya menjadi seorang ayah. Belum usai pergolakan batinnya, Izumi dihadapkan pada kenyataan pahit: ibunya, Yuriko Kazai yang tinggal di kampung halaman, dikabarkan menghilang dan didiagnosis menderita demensia. Realita ini memaksanya untuk terus bolak-balik antara kota dan desa. Namun, dari kepikunan yang menggerogoti ingatan sang ibu, serpihan kenangan masa lalu mereka justru perlahan terkuak dan merajut kembali ikatan ibu-anak yang sempat renggang. Bagaimana kelanjutan nasib sang ibu? Akankah Izumi menemukan jawaban atas keraguannya sebagai calon ayah? Lewat karya ini, Genki Kawamura sekali lagi membuktikan kepiawaiannya dalam meramu narasi emosional yang siap menguras air mata pembaca. Sebuah mahakarya yang wajib dibaca.`,
+        teksReviewEN:`This story follows Izumi Kazai, who works in the city's entertainment industry and just got the happy news of his wife’s pregnancy. But behind the smiles, he's actually terrified and doubting if he has what it takes to be a good dad. While dealing with his own fears, he gets hit with some heartbreaking news: his mom, Yuriko Kazai, goes missing back in his hometown and is diagnosed with dementia. This forces Izumi to juggle his life between the city and the countryside. Surprisingly, as his mom's memory fades, pieces of their past slowly come back to the surface, mending their once-distant relationship. What will happen to his mom in the end? Will Izumi finally find the courage to be a father? Genki Kawamura proves once again that he is a master at writing emotional stories that will completely wreck your heart. Grab your tissues, because this masterpiece is a definite must-read!`
+    },
+    { id: "heart-the-lover",    
+        judul: "Heart The Lover",
+        penulis: "Lily King", 
+        penerbit: "Penerbit Baca",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.6/5",
+        gambar: "gambar/buku/heart.jpg", 
+        teksReviewID: `Berpusat pada kehidupan mahasiswa tingkat akhir, kisah ini mengikuti dinamika Jordan dan kekasihnya, Sam, yang terjebak dalam hubungan penuh keraguan hingga akhirnya merenggang. Ironisnya, di tengah kerenggangan itu, Yash yang notabene adalah sahabat Sam justru hadir meluluhkan hati Jordan. Keduanya lantas mencoba merajut komitmen bersama. Namun, apa yang terjadi ketika komitmen tersebut terancam hancur oleh sebuah kesalahpahaman? Novel ini dengan indah memotret masa muda yang sarat akan kenangan manis; sebuah masa di mana batas antara persahabatan dan percintaan kerap kali memudar. Lewat narasi yang memukau, Lily King menghadirkan kisah cinta segitiga di bangku kuliah yang dijamin akan membuat para pembacanya kesulitan untuk move on.`,
+        teksReviewEN:`Set in their senior year of college, this story follows Jordan and her boyfriend, Sam, who are stuck in a relationship full of doubts until they finally drift apart. Ironically, while they're taking a step back, Yash—Sam’s own best friend—comes into the picture and totally steals Jordan's heart! The two start building a commitment together. But what happens when a single misunderstanding threatens to ruin everything? This book beautifully captures what it's like to be young and making sweet memories, especially when the line between friendship and romance gets super blurry. Lily King's writing is incredibly captivating, and this college love triangle will definitely leave you struggling to move on!`
+
+    },
     {
         id: "buku-1",
         judul: "The Vegetarian",
@@ -252,16 +283,7 @@ const daftarBuku = [
         teksReview:`Hadir untuk merespons berbagai fenomena modern seputar eksistensi Sang Pencipta, Habib Jafar—yang juga dikenal sangat menjunjung tinggi nilai toleransi—menyajikan sebuah bacaan ringan yang pesannya sangat membekas di hati.<br><br>Buku ini menuntun kita untuk menjawab keresahan tentang "keberadaan Tuhan" melalui pemahaman yang indah: bagi seorang yang beriman, Tuhan sejatinya bersemayam di dalam hatinya. Kita tidak perlu lelah mencari ke sana kemari atau menuntut bukti-bukti konkret, karena kehadiran-Nya selalu nyata. Terselip campur tangan Tuhan di setiap kebaikan yang kita temui, dan selalu ada kehendak Tuhan di balik setiap ujian yang kita hadapi. Pesan pembawaannya yang damai inilah yang membuat karyanya sukses menjadi buku bestseller.`,
         teksReviewEN:`Stepping in to respond to the various modern phenomena surrounding the existence of the Creator, Habib Jafar—who is also highly respected for his strong values of tolerance—serves up a light read with a message that truly sticks with you.<br><br>This book guides us in answering our doubts about "God's existence" through such a beautiful realization: for a believer, God truly resides right in their own heart.<br><br>We don't need to wear ourselves out looking high and low or demanding concrete proof, because His presence is always real. God's hand is subtly at work in every good thing we stumble upon, and His will is always behind every single challenge we face.This peaceful and soothing delivery is exactly what propelled his work to become a massive bestseller.`
 },
-{    id: "buku-25",    
-        judul: "Human Act",
-        penulis: "Han Kang", 
-        penerbit: "Penerbit Baca",
-        genreID: ["Fiksi"], genreEN:["Fiction"],
-        rating: "⭐ 4.8/5",
-        gambar: "gambar/buku/human.jpg", 
-        teksReviewID: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam.<br><br>Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`,
-        teksReviewEN:`Set against the backdrop of the 1980 Gwangju tragedy in South Korea, this novel delivers a heartbreakingly touching story about someone desperately searching for their best friend.<br><br>The raging political conflict between the government and the citizens makes the whole atmosphere feel incredibly tense and gripping. Han Kang brilliantly captures one of the darkest chapters in Korean history through a totally unique and emotionally charged storytelling style.<br><br>Through this stunning piece of work, Han Kang once again proves her absolute mastery, always managing to make literature lovers fall head over heels for everything she writes.`
-},
+
 {   id: "buku-26",    
         judul: "Hujan",
         penulis: "Tere Liye", 
@@ -383,7 +405,6 @@ const daftarBuku = [
         teksReviewID:`Buku ini mengikuti kisah Emma, seorang pencinta kucing yang bekerja di industri penerbitan, saat ia menerima proyek krusial yang mempertaruhkan nasib perusahaannya. Tuntutan profesional memaksanya berkolaborasi dengan Kip, rekan kerja yang sebelumnya ia anggap kaku dan membosankan. Interaksi intens perlahan menumbuhkan kedekatan di antara mereka. Sayangnya, kenaifan Emma dalam memaknai cinta berujung pada miskomunikasi, membuat hubungan mereka merenggang tepat sebelum tenggat waktu penyelesaian tugas. Konflik pun memuncak dengan intervensi dari mantan kekasih Emma yang obsesif serta kembalinya mantan kekasih Kip yang memesona.<br><br>Ditulis oleh penulis asal Filipina, novel romansa ringan ini menyuguhkan warna segar melalui eksplorasi di balik layar dunia penerbitan buku. Sebuah latar yang dijamin akan membuat para penikmat literasi merasa sangat terhubung dengan alur ceritanya.`, 
         teksReviewEN:`This book follows the story of Emma, a cat lover working in the publishing industry, as she takes on a crucial project that puts the fate of her company on the line. Professional demands force her to collaborate with Kip, a coworker she previously brushed off as stiff and boring. However, their intense interactions slowly spark a close bond between them. Unfortunately, Emma's naivety when it comes to love leads to a major miscommunication, driving a wedge between them right before their project deadline. The conflict peaks with the intervention of Emma's obsessive ex-boyfriend and the sudden return of Kip's dazzling ex-girlfriend.<br><br>Written by a Filipino author, this light romance novel offers a refreshing vibe through its behind-the-scenes exploration of the book publishing world. It is a setting that is absolutely guaranteed to make literature lovers feel deeply connected to the storyline.`
 }
-
 
 ];
 

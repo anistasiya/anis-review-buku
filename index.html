@@ -508,6 +508,28 @@ html {
     .isi-modal p, .isi-modal h2, .isi-modal h3 {
     white-space: normal !important;
     }
+    /* --- EFEK BUNGA SAKURA GUGUR --- */
+    .falling-flower {
+    position: fixed;
+    top: -10vh;
+    z-index: 9999;
+    pointer-events: none;
+    user-select: none;
+    animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+    0% {
+    top: -10vh;
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+    }
+    100% {
+    top: 110vh;
+    transform: translateX(30px) rotate(360deg);
+    opacity: 0;
+    }
+    }
 
 </style>
 

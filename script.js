@@ -695,3 +695,33 @@ function ubahBahasa() {
 cetakPuisi(); cetakBuku();
     
 } cetakPuisi() ; cetakBuku();
+
+// === SAKURA GUGUR (Otomatis berhenti dalam 10 detik) ===
+function buatBunga() {
+    const bunga = document.createElement('div');
+
+    bunga.innerHTML = '🌸';
+    bunga.classList.add('falling-flower');
+
+  // Posisi jatuhnya acak dari ujung kiri sampai kanan layar
+  bunga.style.left = Math.random() * 100 + 'vw';
+  bunga.style.fontSize = (Math.random() * 15 + 10) + 'px';
+  const durasi = Math.random() * 3 + 3;
+    bunga.style.animationDuration = durasi + 's';
+
+  // Masukkan bunga ke dalam website
+    document.body.appendChild(bunga);
+
+  // Sapu bunganya setelah jatuh biar website tidak berat
+    setTimeout(() => {
+    bunga.remove();
+  }, durasi * 1000);
+}
+
+// Munculkan bunga setiap 300 milidetik
+const hujanBunga = setInterval(buatBunga, 300);
+
+// HENTIKAN hujan bunga setelah 10 detik (10000 milidetik) biar nggak "too much"
+setTimeout(() => {
+    clearInterval(hujanBunga);
+}, 10000);

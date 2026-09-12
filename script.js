@@ -11,7 +11,7 @@ const daftarBuku = [
         teksReviewID:`Novel ini berpusat pada Nieza, seorang mahasiswi kedokteran di Liverpool yang bersahabat erat dengan dua rekan senegaranya asal Malaysia. Meski Nieza memiliki keistimewaan sejak kecil—yakni mampu melihat hal-hal tak kasatmata—kedua sahabatnya menerima ia apa adanya.<br><br>Ikatan kuat tersebut terus terjalin hingga mereka kembali ke tanah air dan mendirikan sebuah klinik bersama. Sayangnya, awan hitam menyelimuti hidup Nieza ketika sebuah tragedi memilukan memporak-porandakan rencananya untuk menikah dengan Harris, kawan lamanya di Inggris. Trauma dan depresi hebat pun tak terelakkan.<br><br>Tak hanya itu, narasi semakin diperkaya dengan kerumitan konflik keluarga yang mendera Amy, sahabat terbaik Nieza. Harapan mulai kembali bersinar saat interaksinya dengan seorang pasien di klinik perlahan membuka pintu hati Nieza untuk kembali mengenal cinta.<br><br>Mampukah ia menyembuhkan luka batinnya? Bagaimana pula Amy menyelesaikan prahara keluarganya? Melalui pena emasnya, Norhafsah Hamid berhasil menjahit berbagai lapisan konflik ini menjadi sebuah karya psikologis dan romansa yang pantang untuk dilewatkan.`,
         teksReviewEN:`This novel centers around Nieza, a medical student in Liverpool who forms a tight-knit friendship with two fellow Malaysians. Even though Nieza has possessed a unique "gift" since childhood—the ability to see the unseen—her best friends embrace her for exactly who she is. Their strong bond lasts long after they return to their home country and open a clinic together.<br><br> Sadly, Nieza's world is turned upside down when a heartbreaking tragedy shatters her plans to marry Harris, an old friend from the UK. She falls into a deep depression and battles severe trauma. To make the plot even richer, the story also dives into the complex family drama faced by Amy, Nieza's best friend.<br><br> But a glimmer of hope finally appears. Her interactions with a patient at the clinic slowly encourage Nieza to open her heart to love once again. Will she be able to heal her inner wounds? And how will Amy navigate her own family storm? Norhafsah Hamid does a brilliant job weaving these complex layers of conflict into a psychological romance novel that is an absolute must-read.`
     },
-    { id: "one-hudred-flowers",    
+    { id: "one-hundred-flowers",    
         judul: "One Hundred Flowers",
         penulis: "Genki Kawamura", 
         penerbit: "Penerbit Baca",
@@ -75,7 +75,7 @@ const daftarBuku = [
         rating: "⭐ 4.5/5",
         gambar: "gambar/buku/ayam.jpg", 
         teksReviewID: `Buku ini mengisahkan seorang pemuda bernama Ale yang harus menghadapi trauma masa kecil serta pengalaman pahit berupa perundungan di lingkungan kerja dan sekitarnya. Semua luka dan perasaan yang ia rasakan dipendam sendirian, hingga akhirnya menumpuk dan berkembang menjadi depresi yang mendalam.<br><br>Upaya untuk mencari bantuan pun tidak selalu berjalan mulus. Psikiater yang ia datangi belum mampu memberikan perubahan yang berarti dalam hidupnya. Kondisi ini membuat Ale semakin merasa putus asa, hingga pada satu titik ia memutuskan untuk mengakhiri hidupnya.<br><br>Namun, sebelum benar-benar melangkah sejauh itu, serangkaian kejadian aneh dan tak terduga mulai terjadi. Ia bertemu dengan orang-orang baru yang secara perlahan mengubah cara pandangnya terhadap kehidupan. Pertemuan-pertemuan tersebut menjadi titik balik bagi Ale untuk melihat harapan yang sebelumnya tidak ia sadari.<br><br>Seiring berjalannya waktu, Ale mulai bangkit kembali. Ia tidak hanya sekadar pulih, tetapi juga berkembang menjadi pribadi yang “berbeda”—lebih kuat, lebih memahami dirinya, dan memiliki arah hidup yang baru.<br><br>Buku ini menyampaikan pesan yang kuat tentang pentingnya memahami kesehatan mental dan tidak memendam perasaan sendirian.<br><br>Ceritanya cukup menyentuh dan realistis, sehingga pembaca dapat ikut merasakan perjalanan emosi tokohnya. Buku ini cocok untuk pembaca yang menyukai kisah reflektif dan penuh makna tentang kehidupan.`,
-        teksReviewEn:`This book tells the story of a young guy named Ale, who has to deal with childhood trauma and the painful experience of being bullied at work and in his everyday surroundings. He bottles up all his pain and emotions completely on his own, until everything piles up and spirals into deep depression.<br><br>His efforts to seek help don't really go smoothly either. The psychiatrist he visits hasn't been able to make any meaningful difference in his life. This whole situation leaves Ale feeling increasingly hopeless, to the point where he decides to end his own life.<br><br>Yet, before he actually takes that final step, a series of strange and unexpected events start to unfold. He meets new people who gradually change the way he looks at life. These encounters become a true turning point for Ale, helping him see a glimmer of hope he had never realized was there.<br><br>As time goes by, Ale starts to pick himself back up. He doesn't just recover; he grows into a "different" person—stronger, more self-aware, and guided by a brand-new sense of direction.<br><br>This book delivers a powerful message about how crucial it is to understand mental health and not bottle up our feelings alone. The story is both touching and realistic, making readers genuinely feel the character's emotional journey. It’s definitely a great read for anyone who loves reflective and meaningful stories about life.`
+        teksReviewEN:`This book tells the story of a young guy named Ale, who has to deal with childhood trauma and the painful experience of being bullied at work and in his everyday surroundings. He bottles up all his pain and emotions completely on his own, until everything piles up and spirals into deep depression.<br><br>His efforts to seek help don't really go smoothly either. The psychiatrist he visits hasn't been able to make any meaningful difference in his life. This whole situation leaves Ale feeling increasingly hopeless, to the point where he decides to end his own life.<br><br>Yet, before he actually takes that final step, a series of strange and unexpected events start to unfold. He meets new people who gradually change the way he looks at life. These encounters become a true turning point for Ale, helping him see a glimmer of hope he had never realized was there.<br><br>As time goes by, Ale starts to pick himself back up. He doesn't just recover; he grows into a "different" person—stronger, more self-aware, and guided by a brand-new sense of direction.<br><br>This book delivers a powerful message about how crucial it is to understand mental health and not bottle up our feelings alone. The story is both touching and realistic, making readers genuinely feel the character's emotional journey. It’s definitely a great read for anyone who loves reflective and meaningful stories about life.`
 
     },
 {   id: "buku-4",
@@ -106,7 +106,7 @@ const daftarBuku = [
         rating: "⭐ 4.6/5",
         gambar: "gambar/buku/faiz3.jpg", 
         teksReviewID: `Banyak orang bilang bahwa filsafat adalah sesuatu yang harus dihindari, bahkan tak jarang ada yang menganggapnya sesat. Memang, beberapa filsuf memiliki gagasan yang sangat bertolak belakang dengan pemikiran masyarakat pada umumnya. Namun, tak sedikit juga filsuf yang justru berhasil mengubah berbagai persepsi ke arah yang jauh lebih baik.<br><br>Untuk itu, buku Sebelum Filsafat karya Fahruddin Faiz hadir sebagai bekal yang sangat mantap bagi siapa saja yang baru ingin mulai belajar filsafat. Buku ini ditulis dengan bahasa yang ringan dan mudah dipahami, serta dilengkapi dengan langkah-langkah persiapan sebelum kita benar-benar terjun ke dunia filsafat.`,
-        teksReviewEn:`A lot of people say that philosophy is something you should steer clear of, and some even consider it misguided. It's true that some philosophers have ideas that totally clash with how society generally thinks. But on the flip side, there are plenty of philosophers who have actually managed to shift our perspectives for the much better.<br><br>That’s exactly why the book Sebelum Filsafat by Fahruddin Faiz serves as such a perfect starter guide for anyone just starting to look into philosophy. This book is written in a light, easy-to-digest way, and it comes complete with the prep steps you need before you actually dive headfirst into the world of philosophy.`
+        teksReviewEN:`A lot of people say that philosophy is something you should steer clear of, and some even consider it misguided. It's true that some philosophers have ideas that totally clash with how society generally thinks. But on the flip side, there are plenty of philosophers who have actually managed to shift our perspectives for the much better.<br><br>That’s exactly why the book Sebelum Filsafat by Fahruddin Faiz serves as such a perfect starter guide for anyone just starting to look into philosophy. This book is written in a light, easy-to-digest way, and it comes complete with the prep steps you need before you actually dive headfirst into the world of philosophy.`
 },
 {   id: "buku-7",
         judul: "Menghilang Menemukan Jati Diri",
@@ -135,7 +135,7 @@ const daftarBuku = [
         genreID: ["Fiksi"], genreEN: ["Fiction"],
         rating: "⭐ 4.7/5",
         gambar: "gambar/buku/penny1.jpg", 
-        teksReview:`Penny merupakan pegawai magang di toko penjual mimpi milik Tuan Dallergut. Ini adalah pekerjaan yang diimpikan banyak orang, mengingat Dallergut: Toko Penjual Mimpi merupakan toko yang sangat terkenal di dunia mimpi. Setiap harinya, banyak pelanggan datang untuk membeli berbagai genre mimpi yang mereka sukai.<br><br>Penny sangat menikmati pekerjaan barunya karena selalu mendapatkan wawasan baru yang menarik. Namun suatu hari, ia tertimpa masalah serius karena tak sengaja menghilangkan salah satu barang yang merupakan aset penting toko. Apakah Penny berhasil mendapatkan kembali barang tersebut?<br><br>Melalui buku ini, Lee Mi-ye berhasil menghadirkan kisah imajinatif yang berbeda dari novel kebanyakan. Cerita yang mendetail dengan penggambaran visual yang memukau sukses menyihir siapa saja yang membacanya untuk terus membalik halaman sampai akhir.`,
+        teksReviewID:`Penny merupakan pegawai magang di toko penjual mimpi milik Tuan Dallergut. Ini adalah pekerjaan yang diimpikan banyak orang, mengingat Dallergut: Toko Penjual Mimpi merupakan toko yang sangat terkenal di dunia mimpi. Setiap harinya, banyak pelanggan datang untuk membeli berbagai genre mimpi yang mereka sukai.<br><br>Penny sangat menikmati pekerjaan barunya karena selalu mendapatkan wawasan baru yang menarik. Namun suatu hari, ia tertimpa masalah serius karena tak sengaja menghilangkan salah satu barang yang merupakan aset penting toko. Apakah Penny berhasil mendapatkan kembali barang tersebut?<br><br>Melalui buku ini, Lee Mi-ye berhasil menghadirkan kisah imajinatif yang berbeda dari novel kebanyakan. Cerita yang mendetail dengan penggambaran visual yang memukau sukses menyihir siapa saja yang membacanya untuk terus membalik halaman sampai akhir.`,
         teksReviewEN: `Penny is an intern at Mr. Dallergut's dream shop. It’s a job many people can only dream of, considering Dallergut Dream Department Store is a super famous spot in the dream world. Every single day, tons of customers drop by to buy whatever dream genres they are into.<br><br>Penny is really enjoying her new job because she constantly picks up fascinating new insights. But one day, she lands in some serious trouble after accidentally losing an item that is a crucial asset to the shop. Will Penny manage to get it back?<br><br>Through this book, Lee Mi-ye truly succeeds in delivering an imaginative story that hits differently compared to most novels out there. The detailed storytelling and stunning visual descriptions will totally enchant anyone reading it, making you want to keep turning the pages right up to the very end.`
 } ,
 
@@ -157,7 +157,7 @@ const daftarBuku = [
         genreID: ["Non-Fiksi"], genreEN:["Non-Fiction"],
         rating: "⭐ 4.5/5",
         gambar: "gambar/buku/lucia.jpg",
-        teksReview:'Ada buku yang tidak hanya dibaca, tapi juga dirasakan. Buku ini salah satunya. Di dalamnya, ada banyak perasaan yang mungkin pernah kita alami seperti sedih, lelah, bahagia, rasa bersalah, hingga luka yang diam-diam kita simpan. Semua dirangkai dengan sederhana, tapi tetap menyentuh.<br><br>Lucia Song seperti memeluk pembacanya lewat kata-kata. Kutipannya terasa dekat, seolah memahami apa yang tidak bisa kita ungkapkan. Gaya bahasanya ringan, namun penuh makna.<br><br>Cocok untuk siapa saja yang sedang merasa lelah, atau hanya ingin berhenti sejenak dari hiruk-pikuk kehidupan. Terkadang, yang kita butuhkan hanyalah kata-kata yang membuat kita merasa tidak sendirian. 🤍' ,
+        teksReviewID:'Ada buku yang tidak hanya dibaca, tapi juga dirasakan. Buku ini salah satunya. Di dalamnya, ada banyak perasaan yang mungkin pernah kita alami seperti sedih, lelah, bahagia, rasa bersalah, hingga luka yang diam-diam kita simpan. Semua dirangkai dengan sederhana, tapi tetap menyentuh.<br><br>Lucia Song seperti memeluk pembacanya lewat kata-kata. Kutipannya terasa dekat, seolah memahami apa yang tidak bisa kita ungkapkan. Gaya bahasanya ringan, namun penuh makna.<br><br>Cocok untuk siapa saja yang sedang merasa lelah, atau hanya ingin berhenti sejenak dari hiruk-pikuk kehidupan. Terkadang, yang kita butuhkan hanyalah kata-kata yang membuat kita merasa tidak sendirian. 🤍' ,
         teksReviewEN:`Some books aren't just meant to be read; they're meant to be felt. And this book is definitely one of them. Inside, you'll find so many feelings we've probably all experienced—sadness, exhaustion, happiness, guilt, and even the hidden wounds we quietly keep to ourselves. Everything is written so simply, yet it remains incredibly touching. It genuinely feels like Lucia Song is giving her readers a warm hug through her words.<br><br>The quotes feel so close to home, almost as if they completely understand the things we can't quite put into words. The writing style is super light, but deeply meaningful.<br><br>It’s the perfect pick for anyone feeling drained, or who just wants to hit pause for a moment from the hustle and bustle of life. Sometimes, all we really need are words that make us feel like we aren't alone. 🤍`
     },
 { id: "buku-12",
@@ -290,7 +290,7 @@ const daftarBuku = [
         genreID: ["Islam-Populer", "Filsafat"], genreEN:["Popular-Islam","Phylosophy"],
         rating: "⭐ 4.4/5",
         gambar: "gambar/buku/habib1.jpg", 
-        teksReview:`Hadir untuk merespons berbagai fenomena modern seputar eksistensi Sang Pencipta, Habib Jafar—yang juga dikenal sangat menjunjung tinggi nilai toleransi—menyajikan sebuah bacaan ringan yang pesannya sangat membekas di hati.<br><br>Buku ini menuntun kita untuk menjawab keresahan tentang "keberadaan Tuhan" melalui pemahaman yang indah: bagi seorang yang beriman, Tuhan sejatinya bersemayam di dalam hatinya. Kita tidak perlu lelah mencari ke sana kemari atau menuntut bukti-bukti konkret, karena kehadiran-Nya selalu nyata. Terselip campur tangan Tuhan di setiap kebaikan yang kita temui, dan selalu ada kehendak Tuhan di balik setiap ujian yang kita hadapi. Pesan pembawaannya yang damai inilah yang membuat karyanya sukses menjadi buku bestseller.`,
+        teksReviewID:`Hadir untuk merespons berbagai fenomena modern seputar eksistensi Sang Pencipta, Habib Jafar—yang juga dikenal sangat menjunjung tinggi nilai toleransi—menyajikan sebuah bacaan ringan yang pesannya sangat membekas di hati.<br><br>Buku ini menuntun kita untuk menjawab keresahan tentang "keberadaan Tuhan" melalui pemahaman yang indah: bagi seorang yang beriman, Tuhan sejatinya bersemayam di dalam hatinya. Kita tidak perlu lelah mencari ke sana kemari atau menuntut bukti-bukti konkret, karena kehadiran-Nya selalu nyata. Terselip campur tangan Tuhan di setiap kebaikan yang kita temui, dan selalu ada kehendak Tuhan di balik setiap ujian yang kita hadapi. Pesan pembawaannya yang damai inilah yang membuat karyanya sukses menjadi buku bestseller.`,
         teksReviewEN:`Stepping in to respond to the various modern phenomena surrounding the existence of the Creator, Habib Jafar—who is also highly respected for his strong values of tolerance—serves up a light read with a message that truly sticks with you.<br><br>This book guides us in answering our doubts about "God's existence" through such a beautiful realization: for a believer, God truly resides right in their own heart.<br><br>We don't need to wear ourselves out looking high and low or demanding concrete proof, because His presence is always real. God's hand is subtly at work in every good thing we stumble upon, and His will is always behind every single challenge we face.This peaceful and soothing delivery is exactly what propelled his work to become a massive bestseller.`
 },
 
@@ -354,7 +354,7 @@ const daftarBuku = [
         teksReviewID:'Pernahkah Anda bertanya-tanya mengapa hidup seolah terasa jalan di tempat? Anda mungkin merasa sudah melakukan berbagai upaya maksimal, namun perubahan yang signifikan tak kunjung datang. Melalui buku ini, Carol Dweck, seorang psikolog kenamaan dengan rekam jejak penelitian selama hampir dua dekade, mengupas tuntas pertanyaan seputar kepribadian manusia yang berpusat pada pola pikir (mindset). <br><br>Dweck menjabarkan secara komprehensif bahwa manusia pada dasarnya terbagi ke dalam dua kutub pola pikir: fixed mindset (pola pikir tetap) dan growth mindset (pola pikir tumbuh). Buku ini juga diperkaya dengan studi kasus dari berbagai tokoh ternama, memperlihatkan secara nyata bagaimana jenis pola pikir yang mereka adopsi memberikan dampak krusial terhadap kesuksesan bisnis maupun lintasan hidup mereka.',
         teksReviewEN:`Have you ever wondered why life sometimes feels like it's stuck in a rut? You might feel like you've tried your absolute hardest, yet that major breakthrough just never seems to arrive.<br><br>Through this book, Carol Dweck—a renowned psychologist with nearly two decades of research under her belt—takes a deep dive into questions about human personality, all centered around the concept of "mindset." <br><br>Dweck comprehensively lays out how people basically fall into two main mindset camps: the fixed mindset and the growth mindset.Packed with case studies from various famous figures, this book clearly shows how the specific mindset they adopt plays a massive role in their business success and their overall life trajectory.`
 },
-{   id: "buku-31",
+{   id: "buku-37",
         judul: "The Art oF Spending Money",
         penulis: "Karya: Morgan Housel", 
         penerbit: "Penerbit: Penerbit Baca",
@@ -437,7 +437,10 @@ function cetakBuku() {
                 <p class="penerbit" style="color: #888; font-size: 14px; margin-top: -10px;">${bahasaSekarang === 'id' ? 'Penerbit:' : 'Publisher:'} ${buku.penerbit}</p>
                 <p class="genre">${(bahasaSekarang === 'id' ? buku.genreID : buku.genreEN).join(', ')}</p>
                 <p class="rating">${buku.rating}</p>
-                <div data-lyket-type="like" data-lyket-id="${buku.id}" data-lyket-namespace="review-buku-anis" data-lyket-template="twitter" data-lyket-color-primary="#ff3b5c"></div>
+                <div class="wadah-like" style="margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+                    <button class="tombol-like" onclick="klikLike('${buku.id}')" style="background: none; border: none; font-size: 24px; cursor: pointer; transition: transform 0.2s;">❤️</button>
+                <span id="angka-like-${buku.id}" style="font-size: 16px; font-weight: bold; color: #555;">...</span>
+                </div>
                 <button class="tombol-baca" onclick="bukaModal('${buku.id}')">${bahasaSekarang === 'id' ? 'Baca Review 📖' : 'Read Review 📖'}</button>
             </div>
             
@@ -703,6 +706,7 @@ function ubahBahasa() {
     }
 
 cetakPuisi(); cetakBuku();
+setTimeout(ambilDataLike, 500);
     
 } cetakPuisi() ; cetakBuku();
 
@@ -735,3 +739,107 @@ const hujanBunga = setInterval(buatBunga, 300);
 setTimeout(() => {
     clearInterval(hujanBunga);
 }, 15000); // 15 detik
+
+// PENYAMBUNG FIREBASE (SISTEM LIKE)
+
+const URL_BRANKAS = "https://anis-books-review-default-rtdb.asia-southeast1.firebasedatabase.app";
+
+let catatanLikesLocal = JSON.parse(localStorage.getItem('buku_terlike_anis')) || [];
+
+// 1. Mengambil data dari brankas saat web dibuka
+async function ambilDataLike() {
+    try {
+    const respon = await fetch(`${URL_BRANKAS}/likes.json`);
+    const data = await respon.json();
+    
+    if (data) {
+        for (const idBuku in data) {
+        const tempatAngka = document.getElementById(`angka-like-${idBuku}`);
+        if (tempatAngka) {
+            tempatAngka.innerText = data[idBuku];
+            const tombolHati = tempatAngka.previousElementSibling;
+        
+          // Cek, apakah ID buku ini ada di catatan local si user?
+            if (catatanLikesLocal.includes(idBuku)) {
+            // jika iya, kasih warna merah dan icon full
+            tombolHati.style.color = "#ff4d4d"; // Warna merah
+            tombolHati.innerText = "❤️"; // Hati full
+            } else {
+            // jika belum, kasih warna abu-abu dan icon kosong
+            tombolHati.style.color = "#aaaaaa"; // Warna abu-abu
+            tombolHati.innerText = "🤍"; // Hati kosong
+            }
+        }
+        }
+    }
+    } catch (error) {
+    console.log("Yah, gagal mengambil data:", error);
+    }
+}
+// 2. Mengirim data baru ke brankas saat tombol ❤️ diklik
+async function klikLike(idBuku) {
+    const tempatAngka = document.getElementById(`angka-like-${idBuku}`);
+    if (!tempatAngka) return;
+    const tombolHati = tempatAngka.previousElementSibling;
+
+  // Cek, apakah buku ini udah pernah dilike sama user?
+    if (catatanLikesLocal.includes(idBuku)) {
+    // Kalo udah, bikin jadi un-like!
+    tombolHati.style.color = "#aaaaaa"; // Jadi abu-abu
+    tombolHati.innerText = "🤍"; // Jadi kosong
+
+    // Hapus dari catatan local
+    catatanLikesLocal = catatanLikesLocal.filter(id => id !== idBuku);
+    
+    // Kurangi 1 dari angka sekarang
+    let angkaSekarang = parseInt(tempatAngka.innerText) || 0;
+    let angkaBaru = Math.max(0, angkaSekarang - 1); // tidak boleh di bawah 0
+    tempatAngka.innerText = angkaBaru;
+    
+    // Simpan angka baru ke localStorage
+    localStorage.setItem('buku_terlike_anis', JSON.stringify(catatanLikesLocal));
+
+    // Kirim data baru ke Firebase
+    try {
+        await fetch(`${URL_BRANKAS}/likes/${idBuku}.json`, {
+        method: 'PUT',
+        body: JSON.stringify(angkaBaru)
+        });
+    } catch (error) {
+        console.log("Gagal mengirim data:", error);
+    }
+
+    } else {
+    
+    // Efek estetik: tombol membesar sedikit pas diklik
+    tombolHati.style.transform = "scale(1.4)";
+    setTimeout(() => tombolHati.style.transform = "scale(1)", 200);
+
+    tombolHati.style.color = "#ff4d4d"; // Warna merah
+    tombolHati.innerText = "❤️";
+
+    // Tambah ke catatan local
+    catatanLikesLocal.push(idBuku);
+
+    // Ambil angka yang sekarang, lalu tambah 1
+    let angkaSekarang = parseInt(tempatAngka.innerText) || 0;
+    let angkaBaru = angkaSekarang + 1;
+    
+    // Tampilkan langsung di layar
+    tempatAngka.innerText = angkaBaru;
+
+    // Simpan catatan local baru
+    localStorage.setItem('buku_terlike_anis', JSON.stringify(catatanLikesLocal));
+
+    // Kirim angka barunya ke Firebase di latar belakang
+    try {
+        await fetch(`${URL_BRANKAS}/likes/${idBuku}.json`, {
+        method: 'PUT',
+        body: JSON.stringify(angkaBaru)
+        });
+    } catch (error) {
+        console.log("Gagal mengirim data:", error);
+    }
+    }
+}
+setTimeout(ambilDataLike, 500);

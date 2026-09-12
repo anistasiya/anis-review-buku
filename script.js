@@ -1,15 +1,15 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
-    { id: "buku-25",    
-        judul: "Human Act",
-        penulis: "Han Kang", 
-        penerbit: "Penerbit Baca",
+    { id: "will-you-love-me",    
+        judul: "Will You Love Me?",
+        penulis: "Norhafsah Hamid", 
+        penerbit: "Iman Publication",
         genreID: ["Fiksi"], genreEN:["Fiction"],
-        rating: "⭐ 4.8/5",
-        gambar: "gambar/buku/human.jpg", 
-        teksReviewID: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam.<br><br>Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`,
-        teksReviewEN:`Set against the backdrop of the 1980 Gwangju tragedy in South Korea, this novel delivers a heartbreakingly touching story about someone desperately searching for their best friend.<br><br>The raging political conflict between the government and the citizens makes the whole atmosphere feel incredibly tense and gripping. Han Kang brilliantly captures one of the darkest chapters in Korean history through a totally unique and emotionally charged storytelling style.<br><br>Through this stunning piece of work, Han Kang once again proves her absolute mastery, always managing to make literature lovers fall head over heels for everything she writes.`
+        rating: "⭐ 4.6/5",
+        gambar: "gambar/buku/will.jpg", 
+        teksReviewID:`Novel ini berpusat pada Nieza, seorang mahasiswi kedokteran di Liverpool yang bersahabat erat dengan dua rekan senegaranya asal Malaysia. Meski Nieza memiliki keistimewaan sejak kecil—yakni mampu melihat hal-hal tak kasatmata—kedua sahabatnya menerima ia apa adanya.<br><br>Ikatan kuat tersebut terus terjalin hingga mereka kembali ke tanah air dan mendirikan sebuah klinik bersama. Sayangnya, awan hitam menyelimuti hidup Nieza ketika sebuah tragedi memilukan memporak-porandakan rencananya untuk menikah dengan Harris, kawan lamanya di Inggris. Trauma dan depresi hebat pun tak terelakkan.<br><br>Tak hanya itu, narasi semakin diperkaya dengan kerumitan konflik keluarga yang mendera Amy, sahabat terbaik Nieza. Harapan mulai kembali bersinar saat interaksinya dengan seorang pasien di klinik perlahan membuka pintu hati Nieza untuk kembali mengenal cinta.<br><br>Mampukah ia menyembuhkan luka batinnya? Bagaimana pula Amy menyelesaikan prahara keluarganya? Melalui pena emasnya, Norhafsah Hamid berhasil menjahit berbagai lapisan konflik ini menjadi sebuah karya psikologis dan romansa yang pantang untuk dilewatkan.`,
+        teksReviewEN:`This novel centers around Nieza, a medical student in Liverpool who forms a tight-knit friendship with two fellow Malaysians. Even though Nieza has possessed a unique "gift" since childhood—the ability to see the unseen—her best friends embrace her for exactly who she is. Their strong bond lasts long after they return to their home country and open a clinic together.<br><br> Sadly, Nieza's world is turned upside down when a heartbreaking tragedy shatters her plans to marry Harris, an old friend from the UK. She falls into a deep depression and battles severe trauma. To make the plot even richer, the story also dives into the complex family drama faced by Amy, Nieza's best friend.<br><br> But a glimmer of hope finally appears. Her interactions with a patient at the clinic slowly encourage Nieza to open her heart to love once again. Will she be able to heal her inner wounds? And how will Amy navigate her own family storm? Norhafsah Hamid does a brilliant job weaving these complex layers of conflict into a psychological romance novel that is an absolute must-read.`
     },
     { id: "one-hudred-flowers",    
         judul: "One Hundred Flowers",
@@ -31,6 +31,16 @@ const daftarBuku = [
         teksReviewID: `Berpusat pada kehidupan mahasiswa tingkat akhir, kisah ini mengikuti dinamika Jordan dan kekasihnya, Sam, yang terjebak dalam hubungan penuh keraguan hingga akhirnya merenggang. Ironisnya, di tengah kerenggangan itu, Yash yang notabene adalah sahabat Sam justru hadir meluluhkan hati Jordan. Keduanya lantas mencoba merajut komitmen bersama. Namun, apa yang terjadi ketika komitmen tersebut terancam hancur oleh sebuah kesalahpahaman? Novel ini dengan indah memotret masa muda yang sarat akan kenangan manis; sebuah masa di mana batas antara persahabatan dan percintaan kerap kali memudar. Lewat narasi yang memukau, Lily King menghadirkan kisah cinta segitiga di bangku kuliah yang dijamin akan membuat para pembacanya kesulitan untuk move on.`,
         teksReviewEN:`Set in their senior year of college, this story follows Jordan and her boyfriend, Sam, who are stuck in a relationship full of doubts until they finally drift apart. Ironically, while they're taking a step back, Yash—Sam’s own best friend—comes into the picture and totally steals Jordan's heart! The two start building a commitment together. But what happens when a single misunderstanding threatens to ruin everything? This book beautifully captures what it's like to be young and making sweet memories, especially when the line between friendship and romance gets super blurry. Lily King's writing is incredibly captivating, and this college love triangle will definitely leave you struggling to move on!`
 
+    },
+    { id: "buku-25",    
+        judul: "Human Act",
+        penulis: "Han Kang", 
+        penerbit: "Penerbit Baca",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.8/5",
+        gambar: "gambar/buku/human.jpg", 
+        teksReviewID: `Mengambil latar belakang tragedi Gwangju di Korea Selatan pada tahun 1980, novel ini menyajikan kisah pilu yang sangat menyentuh tentang seseorang yang putus asa mencari keberadaan sahabatnya. Isu politik antara pemerintah dengan masyarakat yang berkecamuk membuat suasana semakin mencekam.<br><br>Han Kang dengan brilian membungkus salah satu kepingan sejarah paling kelam di Korea ini melalui nuansa penceritaan yang berbeda dan sarat akan emosi. Lewat karya memukau ini, Han Kang kembali membuktikan kepiawaiannya yang selalu sukses membuat para pencinta sastra jatuh cinta pada setiap tulisannya.`,
+        teksReviewEN:`Set against the backdrop of the 1980 Gwangju tragedy in South Korea, this novel delivers a heartbreakingly touching story about someone desperately searching for their best friend.<br><br>The raging political conflict between the government and the citizens makes the whole atmosphere feel incredibly tense and gripping. Han Kang brilliantly captures one of the darkest chapters in Korean history through a totally unique and emotionally charged storytelling style.<br><br>Through this stunning piece of work, Han Kang once again proves her absolute mastery, always managing to make literature lovers fall head over heels for everything she writes.`
     },
     {
         id: "buku-1",
@@ -724,4 +734,4 @@ const hujanBunga = setInterval(buatBunga, 300);
 // HENTIKAN hujan bunga setelah 10 detik (10000 milidetik) biar nggak "too much"
 setTimeout(() => {
     clearInterval(hujanBunga);
-}, 10000);
+}, 15000); // 15 detik

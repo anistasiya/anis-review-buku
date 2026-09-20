@@ -1,6 +1,17 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
+    { id: "cantik-itu-luka",    
+        judul: "Cantik Itu Luka",
+        penulis: "Eka Kurniawan", 
+        penerbit: "Gramedia Pustaka Utama",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.9/5",
+        gambar: "gambar/buku/cantik.jpg", 
+        teksReviewID:`Mengambil latar sejarah yang merentang dari zaman kolonial Belanda hingga masa pendudukan Jepang di Halimunda, novel ini dibuka dengan sebuah peristiwa magis: Dewi Ayu tiba-tiba bangkit dari kuburnya dan menggemparkan seisi kota. Ia merupakan representasi tragis dari seorang wanita yang seumur hidupnya dirundung kemalangan.<br><br>Kutukan dan imbas dosa masa lalu tampaknya tidak pernah luput membayangi dirinya maupun seluruh keturunannya.<br><br>Eka Kurniawan dengan brilian merajut mitos lokal dan kisah hantu gentayangan ke dalam epos sejarah era peperangan dan pembantaian berdarah. Batas antara realita dan fiksi menjadi begitu kabur, membuat pembaca seolah percaya bahwa kejadian tak masuk akal tersebut bisa saja terjadi di dunia nyata.<br><br>Didukung oleh penokohan yang kaya dan mendetail, narasi ini akan membius Anda hingga halaman terakhir. Tak heran jika mahakarya ini sukses mengantarkan penulisnya meraih deretan penghargaan bergengsi.`,
+        teksReviewEN:`Set against a sweeping historical backdrop that stretches from the Dutch colonial era to the Japanese occupation in the fictional city of Halimunda, this novel opens with a truly magical event: Dewi Ayu suddenly rises from her grave, sending the entire town into an uproar. She stands as a tragic figure—a woman whose whole life has been shadowed by misfortune. The curses and the heavy repercussions of past sins seem to relentlessly haunt not only her, but her entire lineage.<br><br>Eka Kurniawan brilliantly weaves local myths and ghostly tales into a brutal historical epic of war and bloody massacres. The line between reality and fiction becomes so beautifully blurred that it makes you believe these surreal, absurd events could actually happen in the real world.<br><br>Backed by rich and incredibly detailed characterizations, this narrative will keep you spellbound until the very last page. It is no wonder that this masterpiece has earned its author a string of prestigious awards.`
+    },
+    
     { id: "will-you-love-me",    
         judul: "Will You Love Me?",
         penulis: "Norhafsah Hamid", 

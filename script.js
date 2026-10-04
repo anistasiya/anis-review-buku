@@ -503,6 +503,7 @@ const daftarPuisi = [
     {
         id: "puisi-1",
         judulId: "Garuda di Atas Khatulistiwa",
+        gambar: "gambar/buku/garuda.jpg",
         teksPuisiId: `Mentari pagi, mulai tersenyum kembali \n Menyingkap penguasa kegelapan di malam hari \n Suara jantung kehidupan baru turut menghiasi \n Suasana syahdu, di bumi pertiwi \n \n Puluhan tahun sudah nusantara melangkah \n Membangun jembatan persatuan dengan keringat dan darah \n Perjuangan menuju harapan baru yang mulai merekah \n Perlahan menghapus batas merah yang ditancapkan penjajah \n \n Garuda… \n Ratusan tahun sudah engkau hanya bertengger di puncak menara \n Menutup mata dengan semua ketidakpastian yang ada \n Kini, saatnya engkau bentangkan sayap pusaka \n Terbang, melintasi cakrawala dunia \n Walaupun terik dan badai membasahi pelupuk mata \n \n Garuda… \n Tunjukkanlah pada mereka kegagahanmu yang masih tersisa \n Semangat lajumu yang kian membara \n Demi mewujudkan cita-cita bangsa yang mulia \n Impian ibu pertiwi, Indonesia Merdeka.`,
         
         judulEn : "Garuda Above the Equator" ,
@@ -511,6 +512,7 @@ const daftarPuisi = [
     {
         id: "puisi-2",
         judulId : "Serpihan Dunia Fana",
+        gambar: "gambar/buku/serpihan.jpg",
         teksPuisiId: `Terdampar di jantung sebuah kota \n Tempat hingar bingar kehidupan dunia yang fana \n Keramaian yang tak pernah kujumpai sebelumnya \n Tempat dimana aku harus mengejar cahaya \n Agar tidak tertinggal dengan mereka \n Entah akupun tidak tahu siapa mereka \n \n Banyak hal yang dianggap tabu olehku, \n perlahan tapi pasti bisa aku pahami \n Semangat untuk terus berkembang dan berdaya guna, \n akan terus aku kobarkan hingga nanti \n \n Memang tidak semua hal bisa aku kuasai, \n tapi aku akan terus berusaha setiap hari \n dan berkembang menjadi lebih baik lagi \n Semua kegagalan akan aku rangkul dengan sepenuh hati \n Tidak mengenal jatuh, karena aku akan selalu bangkit lagi.`,
 
         judulEn : "Fragments of an Ephemeral World",
@@ -520,6 +522,7 @@ const daftarPuisi = [
 
     { id: "puisi-3",
         judulId: "Negeri Merdeka",
+        gambar: "gambar/buku/negeri.jpg",
         teksPuisiId:`Bagi orang kampung sepertiku yang masih lugu, \n bentuk kemerdekaan adalah bebas dari penjajah \n Dan mampu berdiri di kaki sendiri \n Ada pula yang bilang bahwa sejatinya kita belum merdeka, \n jika tikus berdasi masih menguasai bumi pertiwi \n \n Keadilan hukum yang terkesan samar, \n menjadi celah banyak orang untuk mengakali demokrasi \n Berbagai pandangan kritis dari para pengamat dalam negeri, \n turut mewarnai serba-serbi kejelasan tentang kemerdekaan yang hakiki \n Dampak globalisasi dari seluruh penjuru bumi, \n memaksa setiap penghuni tiap jengkal tanah air Indonesia \n untuk terus maju dan meningkatkan literasi \n Agar tidak terjerumus ke dalam lembah kebodohan \n dan rentan terprovokasi \n Tumbuh menjadi generasi baru yang mampu membangun negeri \n Generasi yang memanfaatkan teknologi, \n Bukan hanya sekedar mengusap layar tanpa arti`,
 
         judulEn : "An Independent Nation",
@@ -535,6 +538,7 @@ function cetakPuisi() {
         daftarPuisi.forEach(function(puisi) {
             const kotakPuisi = `
             <div class="kartu-review" style="width: 250px;"> 
+            <img src="${puisi.gambar}" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
                 <h3 style="margin-top: 20px;">${bahasaSekarang === 'id' ? puisi.judulId : puisi.judulEn}</h3>
 
                 <button class="tombol-baca" onclick="bukaModal('${puisi.id}')">${bahasaSekarang === 'id' ? 'Baca Puisi 📜' : 'Read Poem 📜'}</button>

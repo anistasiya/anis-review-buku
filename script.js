@@ -1,6 +1,19 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
+{id: "iblis-menggugat-tuhan",    
+        judul: "Iblis Menggugat Tuhan",
+        penulis: "Shawni", 
+        penerbit: "Rumi Press",
+        genreID: ["Fiksi","Filsafat"], genreEN:["Fiction","Philosophy"],
+        rating: "⭐ 4.7/5",
+        gambar: "gambar/buku/gugat.jpg", 
+        teksReviewID:`Iblis Menggugat Tuhan: Manipulasi Logika dan Kesombongan Makhluk
+        <br><br>Buku ini menyajikan premis teologis yang memancing pemikiran melalui pertemuan antara Rahib Buhaira dan seorang pria yang ternyata adalah perwujudan Iblis. Dialog mereka menyoroti gugatan Iblis yang merasa dikutuk karena menolak perintah untuk bersujud kepada Adam. Iblis menggunakan dalih determinisme—merasa bahwa tidak ada satu pun hal yang terjadi di luar kehendak Tuhan, termasuk ketidakpatuhannya sendiri.<br><br>Ia berusaha memanipulasi logika sang rahib dengan membandingkan nasibnya dengan Adam. Adam pernah melakukan kesalahan tetapi langsung mendapat ampunan, sementara Iblis yang merasa memiliki rekam jejak ibadah terbaik justru langsung diusir. Secara sekilas, argumen Iblis ini terdengar masuk akal. Namun, di sinilah letak pelajaran utamanya: perbedaan nyata antara manusia dan Iblis ada pada penerimaan akan kesalahan. Ketika berbuat salah, Adam langsung mengakuinya dan bertaubat. Sebaliknya, Iblis menyangkal, mencari pembenaran, playing victim, dan menolak disalahkan.<br><br>Tema manipulasi kebenaran ini ditarik lebih jauh di bab kedua melalui sudut pandang Raja Abrahah. Abrahah dikisahkan salah menafsirkan kalimat dalam teks suci untuk melegitimasi ambisi dan kebenciannya, yang berujung pada rencananya untuk menghancurkan Ka'bah. Pada akhirnya, buku ini adalah tamparan keras bagi ego kita yang sering kali memelintir logika hanya demi membenarkan kesalahan sendiri.`,
+        teksReviewEN:`When Satan Sues God: Logic Manipulation and the Arrogance of Creation
+        <br><br>This book presents a thought-provoking theological premise through an encounter between Monk Buhaira and a man who is revealed to be the embodiment of Satan. Their dialogue highlights Satan’s grievance of being cursed for refusing the command to bow down to Adam. Satan uses the argument of determinism—claiming that nothing happens outside of God’s will, including his own disobedience.<br><br>He attempts to manipulate the monk's logic by comparing his fate to Adam's. Adam committed a sin but was immediately forgiven, whereas Satan, who believed he was the most devoted worshipper, was instantly expelled. At first glance, Satan's argument sounds logical. However, this is where the core lesson lies: the true difference between humanity and Satan is accountability. When Adam made a mistake, he immediately admitted it and repented. Satan, on the other hand, denied his fault, played the victim, and refused to take the blame.<br><br>This theme of manipulating the truth is further explored in the second chapter through the perspective of King Abrahah. The story depicts how Abrahah misinterpreted a holy text to legitimize his ambition and hatred, ultimately leading to his plan to destroy the Kaaba. In the end, this book serves as a harsh reality check for our own egos, reminding us how easily we twist logic just to justify our own mistakes.`
+        },
+
     { id: "cantik-itu-luka",    
         judul: "Cantik Itu Luka",
         penulis: "Eka Kurniawan", 

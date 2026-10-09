@@ -747,6 +747,11 @@ setTimeout(ambilDataLike, 500);
     
 } cetakPuisi() ; cetakBuku();
 
+// tema dark-mode untuk cerpen
+        function ubahTema() {
+            document.body.classList.toggle("dark-mode");
+        }
+
 // === SAKURA GUGUR (Otomatis berhenti dalam 10 detik) ===
 function buatBunga() {
     const bunga = document.createElement('div');

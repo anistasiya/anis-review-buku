@@ -11,14 +11,29 @@ body { background-color: #fffaf0; font-family: 'Georgia', serif; line-height: 1.
 .penulis { text-align: center; color: #888; font-style: italic; margin-bottom: 40px; }
 .teks-cerpen p { margin-bottom: 20px; text-align: justify; font-size: 1.1em; }
 .tombol-kembali { display: inline-block; margin-top: 40px; padding: 10px 20px; background-color: #ff6b6b; color: white; text-decoration: none; border-radius: 20px; font-family: 'Arial', sans-serif; font-weight: bold; }
+
+body.dark-mode { background-color: #121212; color: #e0e0e0; }
+body.dark-mode .container { background-color: #1e1e1e; box-shadow: 0 4px 15px rgba(255,255,255,0.05); }
+body.dark-mode .judul-cerpen { color: #ff91a4; }
+body.dark-mode .penulis { color: #aaa; }
+body.dark-mode .tombol-kembali { background-color: #444; color: #fff; }
+
 </style>
 </head>
 <body>
-<div class="container">
-<h1 class="judul-cerpen">Tata Si Tapir 🌸</h1>
-<p class="penulis">Ditulis oleh Anis</p>
 
-<div class="teks-cerpen">
+<button id="tombol-tema" onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
+    🌛
+</button>
+
+<button id="tombol-bahasa" onclick="ubahBahasa()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">
+    EN
+</button>
+<div class="container">
+
+<div id="cerpen-indo" class="teks-cerpen">
+    <h1 class="judul-cerpen">Tata Si Tapir 🌸</h1>
+    <p class="penulis" style="text-align: center;">Ditulis oleh Anis</p>
 <p>Saat aku membuka mata, kulihat ada makhluk besar di depanku. Aku tidak tahu itu apa. Lalu kemudian dia berbisik lirih disampingku dan berkata, "Selamat datang di dunia, Anakku Sayang." Ternyata dia adalah Ibuku. Aku tidak tahu kenapa aku bisa mengerti apa yang dia katakan. Aku seolah baru bangun dari tidur yang sangat panjang. Tak lama setelah itu, dia dengan lembut membantuku untuk berdiri. Aku merasa sangat lemah dan bisa jatuh kapan saja. Tapi Ibuku dengan pelan mulai menuntunku untuk berjalan.</p>
 
 <p>Perlahan tapi pasti, akhirnya aku sudah bisa berjalan. Rasanya sudah lebih baik dari saat pertama kali aku berdiri tadi. Ibuku selalu di sampingku dan terus mengajakku berbicara. Katanya, anak-anak lain biasanya butuh waktu lebih lama untuk berjalan setelah dilahirkan. "Kamu memang anak Ibu yang hebat. Setiap hari, selama lebih dari satu tahun kamu dalam perut Ibu, Ibu berdo'a agar kamu jadi anak yang sehat dan kuat."</p>
@@ -74,9 +89,90 @@ body { background-color: #fffaf0; font-family: 'Georgia', serif; line-height: 1.
 <p>Aku hanya tersenyum mengangguk pada mereka. Entah kenapa aku sangat senang dan langkahku terasa ringan menuju cahaya yang terang.</p>
 </div>
 
+<div id="cerpen-inggris" class="teks-cerpen" style="display: none;">
+    <h1 class="judul-cerpen">Tata the Tapir 🌸</h1>
+    <p class="penulis" style="text-align: center;">Written by Anis</p>
+<p>When I opened my eyes, I saw a large creature in front of me. I didn't know what it was. Then she whispered softly beside me and said, "Welcome to the world, my dear child." It turned out she was my mother. I didn't know how I could understand what she was saying. It felt as if I had just woken up from a very long sleep. Shortly after, she gently helped me stand. I felt very weak and could fall at any moment. But my mother slowly began guiding me to walk.</p> 
+
+<p>Slowly but surely, I was finally able to walk. It felt much better than when I first stood up. My mother was always by my side and kept talking to me. She said that other children usually take longer to walk after being born.</p> 
+
+<p>"You are indeed my amazing child. Every day, for over a year while you were in my womb, I prayed for you to be a healthy and strong child."</p> 
+
+<p>Not long after, Mother told me to drink and nurse from her. It’s hard to describe, but I liked it and wanted to keep nursing because I felt hungry and thirsty.</p> 
+
+<p>"Mother, am I really your child?" I asked in between my walking lessons.</p> 
+
+<p>"Of course, why would you ask that?" my mother replied.</p> 
+
+<p>"Why does my skin color look so different from yours?" I asked, having been curious for a while because my massive mother had dark skin on her front half and a lighter color on her back half. Meanwhile, I also had dark and light skin, but my pattern was filled with tight stripes and spots.</p> 
+
+<p>"As you grow older, your skin will go through many changes. And later, when you're an adult, you will have the same pattern as I do," Mother answered with a smile.</p> 
+
+<p>"Is that true, Mother?" I asked, my curiosity piqued again.</p> 
+
+<p>"I could never lie to my sweet child." She smiled, then suddenly looked at me cheerfully. "I thought of a fitting name for you, my child. Tata. Very sweet, isn't it?"</p> 
+
+<p>"I love it, Mom," I said with a smile.</p> 
+
+<p>"From now on, we will always be together, okay? Don't wander too far from me, Tata. Understand?"</p> 
+
+<p>"Yes. I understand," I said, nodding.</p> 
+
+<p>Days turned into weeks. My mother tirelessly taught me all sorts of things. From choosing which leaves were edible to teaching me how to swim in shallow rivers. We explored the forest, and she showed me which areas I should avoid because they were dangerous. Besides the threat of wild beasts, Mother said there were two-legged creatures often seen in the forest. Mother told me that these two-legged creatures were not as ferocious as other predators, at least not to our kind. Therefore, she advised me that if I ever crossed paths with them, I should just walk slowly and ignore them. "We won't be bothered if we don't bother them." I just nodded every time Mother told me or taught me something. I didn't think much of it. After all, I would always be with my mother. *Surely Mother will be the one to face the two-legged creatures and stay by my side,* I thought.</p> 
+
+<p>Until the day came when Mother said it was time for me to find a mate and a new territory for my future family. At first, it felt incredibly hard to part with my mother. But for some reason, there was another urge inside me pushing me to discover and explore the forest deeper. I said my goodbyes to my mother, who looked increasingly frail with age. She didn't forget to pray for me and reminded me to always be careful and vigilant in every step I took.</p> 
+
+<p>For days, I roamed through parts of the forest I had never entered before. But I hadn't met another creature like me. Until, from a distance, I heard a strange noise I had never heard before. I approached the source of the sound, getting closer and closer, and suddenly I found myself at the edge of the forest. The dirt path I had been treading on softly suddenly turned into hard ground, like stone. "It seems I'm lost and took the wrong path. I should head back."</p> 
+
+<p>But as I was about to turn around, I saw a box-like object rolling closer and stopping not far from where I stood. Two two-legged creatures stepped out of it. I remembered my mother's advice to stay calm and just ignore them if we ever met. As I was about to head back into the forest, suddenly many other box-like objects appeared, followed by many more two-legged creatures. I, who was initially calm, now became quite frightened as they swarmed around me. Some of them held small box-like objects and pointed them at me, as if looking at me through them. I was confused. My legs went weak, just like when I was first learning to walk. Eventually, I sat down on the hard ground for a while. After that, I saw one two-legged creature driving the others away one by one until they were quite far from where I was resting.</p> 
+
+<p>Seeing this, I didn't waste the chance to escape. I stood up and started walking away from the crowd of two-legged creatures. No one followed me. It seemed Mother was right about them not being cruel, especially to creatures like us. I was relieved, thank goodness.</p> 
+
+<p>I walked quite a distance until I finally returned to a dense part of the forest, thick with trees. I tried exploring every corner of it. I felt I was now very far from where the two-legged creatures were. I satisfied my hunger with various forest leaves. Not long after, I heard footsteps slowly approaching me. Just as I was about to run, sensing a threatening presence, a long stick pierced through my stomach. I immediately collapsed, an excruciating pain spreading throughout my entire body. I saw several of the two-legged creatures I had seen earlier running towards me as I lay dying. I tried with all my might to get up and escape, but I fell again, and the ever-growing pain tortured me even more. I surrendered when I saw so much blood pouring from my stomach. *Is this the end of my life?* That thought grew stronger when I saw a two-legged creature holding some kind of long metal object that looked capable of slashing anything in its path. I closed my eyes amidst the agonizing pain. "Forgive me, for it turns out I wasn't strong enough to live independently without you, Mother."</p> 
+
+<h3>**Epilogue**</h3> 
+
+<p>I saw a creature just like me lying helplessly in the middle of the two-legged creatures. Wait a minute. *Isn't that me? Am I not already dead? Why am I still awake and able to stand again?* But my legs felt weak. *Can't they see me? Why are they ignoring "me"?* For a moment, I wrestled with my own thoughts. It seemed it was true that I was dead. And the "me" right now was probably some kind of spirit detached from "Tata's" body.</p> 
+
+<p>I could see how the two-legged creatures began to cut and slice parts of my body. They occasionally laughed very loudly, though I couldn't fathom what was so funny about chopping up another creature's body. They even did it with expressions completely devoid of guilt. I saw someone holding a strange small box-like object and start speaking into it. Then, they put small pieces of my body into a pot of boiling water. Only then did I realize that this place was very different from where I had last collapsed.</p> 
+
+<p>I could no longer bear to watch all of this. It turned out Mother was wrong. The two-legged creatures were incredibly cruel and greedy. They even tortured me before truly killing me. They felt immense joy in the cruelty they consciously committed. So greedy that they consumed my entire body, leaving nothing behind.</p> 
+
+<p>I walked slowly, not knowing where I was heading. A bright light at the end of the path was so dazzling. Without realizing it, I stepped towards where the light originated. From a distance, I saw faces that were similar yet seemed unfamiliar, as if I had never seen them before. They were all just like me. Some of them waved their short trunks at me, as if beckoning me closer. "Come with us, let's walk together," one of them said with a smile.</p> 
+
+<p>"Excuse me, who are all of you? Why do you look like me?" I asked, confused.</p> 
+
+<p>"We are your ancestors who were born and died long before you were even born. Let's go together to a brighter and more beautiful place. Where there is only our kind, with vast expanses of forest, clean rivers, and certainly, no two-legged creatures," they explained.</p> 
+
+<p>I just smiled and nodded at them. For some reason, I felt incredibly happy, and my steps felt light as I walked toward the bright light.</p> 
+</div>
+
 <div style="text-align: center;">
 <a href="index.html" class="tombol-kembali">⬅ Kembali ke Beranda</a>
 </div>
 </div>
+
+<script src="script.js"></script>
+
+<script>
+        function ubahBahasa() {
+            var wadahIndo = document.getElementById("cerpen-indo");
+            var wadahInggris = document.getElementById("cerpen-inggris");
+            var tombolBahasa = document.getElementById("tombol-bahasa");
+
+            if (wadahIndo.style.display === "none") {
+
+                // Munculkan Indo, sembunyikan Inggris
+                wadahIndo.style.display = "block";
+                wadahInggris.style.display = "none";
+                tombolBahasa.innerHTML = "EN"; // Tombol berubah tulisan jadi EN
+            } else {
+                // Sembunyikan Indo, munculkan Inggris
+                wadahIndo.style.display = "none";
+                wadahInggris.style.display = "block";
+                tombolBahasa.innerHTML = "ID"; // Tombol berubah tulisan jadi ID
+            }
+        }
+    </script>
 </body>
 </html>

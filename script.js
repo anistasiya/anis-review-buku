@@ -749,7 +749,7 @@ setTimeout(ambilDataLike, 500);
 
 // tema dark-mode untuk cerpen
         function ubahTema() {
-            document.body.classList.toggle("dark-mode");
+            document.body.classList.toggle("tema-gelap");
         }
 
 // === SAKURA GUGUR (Otomatis berhenti dalam 10 detik) ===

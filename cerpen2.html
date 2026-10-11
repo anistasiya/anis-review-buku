@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kain Perca Pembalut Luka - Anis</title>
 <style>
-body { background-color: #fffaf0; font-family: 'Georgia', serif; line-height: 1.8; margin: 0; padding: 0; }
+body { background-color: #fffaf0; background-image: url('gambar/bg2.jpg'); background-size: cover;
+    background-attachment: fixed; / font-family: 'Georgia', serif; line-height: 1.8; margin: 0; padding: 0; }
 .container { max-width: 700px; margin: 50px auto; padding: 40px; background-color: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
 .judul-cerpen { text-align: center; color: #ff6b6b; font-size: 2.2em; margin-bottom: 5px; font-family: 'Arial', sans-serif; }
 .penulis { text-align: center; color: #888; font-style: italic; margin-bottom: 40px; }
 .teks-cerpen p { margin-bottom: 20px; text-align: justify; font-size: 1.1em; }
 .tombol-kembali { display: inline-block; margin-top: 40px; padding: 10px 20px; background-color: #ff6b6b; color: white; text-decoration: none; border-radius: 20px; font-family: 'Arial', sans-serif; font-weight: bold; }
 
-body.tema-gelap { background-color: #121212; color: #e0e0e0; }
+body.tema-gelap { background-color: #121212; color: #e0e0e0; background-image: none; }
 body.tema-gelap .container { background-color: #1e1e1e; box-shadow: 0 4px 15px rgba(255,255,255,0.05); }
 body.tema-gelap .judul-cerpen { color: #ff91a4; }
 body.tema-gelap .penulis { color: #aaa; }
@@ -25,16 +26,15 @@ body.tema-gelap .tombol-kembali { background-color: #444; color: #fff; }
     🌛
 </button>
 
-<button id="tombol-bahasa" onclick="ubahBahasa()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">
-    EN
+<button id="tombol-bahasa-cerpen" onclick="ubahBahasaCerpen()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">EN
+
 </button>
 
 <div class="container">
 
-<div id="cerpen-indo" class="teks-cerpen">
-<h1 class="judul-cerpen">Kain Perca Pembalut Luka 🪷</h1>
-<p class="penulis" style="text-align: center;">Ditulis oleh Anis</p>
-
+<div id="teks-indo" class="teks-cerpen" style="display: block;">
+    <h1 class="judul-cerpen">Kain Perca Pembalut Luka🌸</h1>
+    <p class="penulis" style="text-align: center;">Ditulis oleh Anis</p>
 <p>Tepat pukul 10.45 pagi, aku tiba di tempat asing ini. Kulepaskan sabuk pengaman yang sejak beberapa jam lalu kupegang dengan erat. Aku berdiri untuk mengambil tas jinjing kecil yang kutaruh tepat beberapa meter di atas tempat dudukku. Perlahan kulangkahkan kaki keluar diiringi doa yang terus kuucapkan dalam hati. Sepasang muda mudi yang tampak seperti kekasih, berjalan di depanku sambil sesekali bercanda dan bermesraan. Tanpa sadar aku berjalan mengikuti mereka. Seperti ada medan magnet besar di sekeliling mereka dan menarik paksa kakiku untuk segera mendekat. Hatiku berdebar kencang, seolah bisa mengalahkan keriuhan suasana di sekitarku.</p>
 
 <p>Sepanjang jalan mereka terus berbicara bahasa asing yang tidak aku pahami. Tapi entah kenapa, aku merasa tahu semua yang mereka ucapkan. Aku terbangun dari lamunan saat mendengar suara seseorang menjatuhkan sesuatu. Ada wanita paruh baya yang memegangi koper besar yang tampaknya terjatuh ke lantai. Pria yang sejak tadi kuperhatikan dengan sigap membantu wanita paruh baya itu dan menaruh koper tadi ke atas trolinya. Pria yang sangat baik, gumamku dalam hati. Setelah selesai membantunya, wanita pasangannya itu kembali memeluk pria itu dengan erat. Aku langsung mengalihkan pandangan setelah tertangkap basah oleh mata pria itu. Seolah dia tahu aku sedang memperhatikan mereka berdua. Dengan tingkah yang kikuk, aku berpura-pura seperti sedang menunggu koperku di samping korsel bagasi.</p>
@@ -100,13 +100,14 @@ body.tema-gelap .tombol-kembali { background-color: #444; color: #fff; }
 <p>Aku tak henti-hentinya berdoa pada Tuhan untuk selalu bersamaku. Untuk selalu memudahkan segala urusanku. Untuk terus mempertemukanku dengan orang-orang baik, walau seringkali dikecewakan oleh keadaan. Tapi aku percaya bahwa Tuhan selalu ada untuk setiap hamba-Nya. Untuk setiap orang yang mau bangkit kembali dan tidak menyerah. Untuk jiwa-jiwa yang masih percaya dengan cinta kasih-Nya.</p>
 </div>
 
-<div id="cerpen-inggris" class="teks-cerpen" style="display: none;">
-    <h1 class="judul-cerpen">Patchwork of Healing 🪷</h1>
+<div id="teks-inggris" class="teks-cerpen" style="display: none;">
+    
+    <h1 class="judul-cerpen">Patchwork of Healing🌸</h1>
     <p class="penulis" style="text-align: center;">Written by Anis</p>
 
 <p>At exactly 10:45 AM, I arrived in this unfamiliar place. I unbuckled the seatbelt I had been gripping tightly for the past few hours. I stood up to retrieve my small carry-on bag stowed just a few feet above my seat. Slowly, I stepped outside, accompanied by a silent prayer I kept reciting in my heart. A young couple, looking very much in love, walked ahead of me, occasionally joking and sharing affectionate touches. Without realizing it, I followed their path. It was as if a massive magnetic field surrounded them, forcefully pulling my feet closer. My heart was pounding so loudly it felt like it could drown out the bustling noise around me.</p> 
 
-<p>Along the way, they kept speaking a foreign language I couldn’t understand. Yet, somehow, I felt like I knew exactly what they were saying. I was jolted from my daydream when I heard someone drop something. A middle-aged woman was struggling with a large suitcase that had seemingly tumbled to the floor. The man I had been watching quickly stepped in to help, lifting the suitcase onto her trolley. Such a kind man, I murmured to myself. After he finished helping her, his partner hugged him tightly once again. I immediately averted my gaze when the man’s eyes caught mine—as if he knew I had been watching them. Acting awkwardly, I pretended to wait for my luggage by the carousel.</p> 
+<p>Along the way, they kept speaking a foreign language I could not understand. Yet, somehow, I felt like I knew exactly what they were saying. I was jolted from my daydream when I heard someone drop something. A middle-aged woman was struggling with a large suitcase that had seemingly tumbled to the floor. The man I had been watching quickly stepped in to help, lifting the suitcase onto her trolley. Such a kind man, I murmured to myself. After he finished helping her, his partner hugged him tightly once again. I immediately averted my gaze when the man eyes caught mine—as if he knew I had been watching them. Acting awkwardly, I pretended to wait for my luggage by the carousel.</p> 
 
 <p>I wasn't waiting for anything. I only had the light carry-on bag I had been holding since I stepped off the plane. The couple left after retrieving their pitch-black suitcase. I stared blankly in their direction until their backs disappeared into the crowd. A muscular man wearing a hat walked past me. Only then did I realize that the area around the baggage carousel had grown crowded. The occasional sound of children laughing and running around added to the lively atmosphere of Changi Airport, one of the largest and busiest airports in the world. The soft squeak of the turning carousel machine seemed determined to compete with the lively chatter of the people. It was a stark contrast to the emptiness in my heart—a loneliness in the middle of a crowd that could pierce my soul at any moment.</p> 
 
@@ -114,23 +115,23 @@ body.tema-gelap .tombol-kembali { background-color: #444; color: #fff; }
 
 <p>I followed Ms. Yohanna toward the exit. A black Toyota was parked not too far away. A middle-aged man, who seemed familiar with Ms. Yohanna, greeted us and invited us into the car. I sat behind the driver, with Ms. Yohanna beside me. The awkwardness I had felt since our first meeting still lingered heavily in the air. I didn't know how to act, so I remained silent, trying to distract myself by staring out the car window. The streets were immaculately clean, lined with neatly arranged streetlights on both sides. Trees stood in perfect rows, almost evenly spaced. Occasionally, a park with beautifully blooming, colorful flowers would pass by—a stark contrast to my gloomy, colorless heart.</p> 
 
-<p>"Have you eaten?" Ms. Yohanna’s sudden question startled me from my reverie. I simply gave a slow shake of my head. I had completely forgotten that since dawn, I had only eaten a single piece of bread given to me by the driver who took me to the airport. Strangely, my stomach wasn't rumbling. Perhaps the noise in my head was louder than the emptiness in my stomach. I turned back to the window, occasionally swallowing my own saliva. Bitter. It tasted incredibly bitter.</p> 
+<p>"Have you eaten?" Ms. Yohanna question suddenly startled me from my reverie. I simply gave a slow shake of my head. I had completely forgotten that since dawn, I had only eaten a single piece of bread given to me by the driver who took me to the airport. Strangely, my stomach wasn't rumbling. Perhaps the noise in my head was louder than the emptiness in my stomach. I turned back to the window, occasionally swallowing my own saliva. Bitter. It tasted incredibly bitter.</p> 
 
-<p>Not long after, the car came to a halt. Ms. Yohanna told me to get out. Before me stood a towering building; my eyes couldn't even reach the top, blinded by the scorching sun. I saw a signboard clearly displayed at the front: Katong Shopping Centre. Once again, I followed Ms. Yohanna, trailing behind her as if my feet were tied to hers. I saw countless clothing stores, trinket shops, food stalls, and several branded shoe stores that looked highly elegant with their classy interiors.</p> 
+<p>Not long after, the car came to a halt. Ms. Yohanna told me to get out. Before me stood a towering building; my eyes could not even reach the top, blinded by the scorching sun. I saw a signboard clearly displayed at the front: Katong Shopping Centre. Once again, I followed Ms. Yohanna, trailing behind her as if my feet were tied to hers. I saw countless clothing stores, trinket shops, food stalls, and several branded shoe stores that looked highly elegant with their classy interiors.</p> 
 
-<p>Ms. Yohanna told me to sit on one of the waiting chairs in front of a health clinic. It wasn't very large, and I only saw two people sitting in the inner waiting area. Redwood Clinic and Surgery—a completely unfamiliar name. Ms. Yohanna asked me to wait in front of the clinic, and then she walked off, leaving me alone. For a moment, my chest tightened from a feeling that barged in without permission. I gripped the front of my shirt with trembling hands. I still remembered this piercing feeling of being alone. Would I be abandoned again? Did I not deserve to be here? A whirlwind of emotions raged in my head and heart. I wanted to run away again. I didn't want to be here. I didn't want to be alone. I had to run. But just as I was about to stand up, Ms. Yohanna suddenly appeared in front of me.</p> 
+<p>Ms. Yohanna told me to sit on one of the waiting chairs in front of a health clinic. It was not very large, and I only saw two people sitting in the inner waiting area. Redwood Clinic and Surgery—a completely unfamiliar name. Ms. Yohanna asked me to wait in front of the clinic, and then she walked off, leaving me alone. For a moment, my chest tightened from a feeling that barged in without permission. I gripped the front of my shirt with trembling hands. I still remembered this piercing feeling of being alone. Would I be abandoned again? Did I not deserve to be here? A whirlwind of emotions raged in my head and heart. I wanted to run away again. I didn't want to be here. I didn't want to be alone. I had to run. But just as I was about to stand up, Ms. Yohanna suddenly appeared in front of me.</p> 
 
-<p>"Anis, what's wrong?" she asked, her tone laced with worry as she saw me looking like I was about to faint.</p> 
+<p>"Anis, what is wrong?" she asked, her tone laced with worry as she saw me looking like I was about to faint.</p> 
 
-<p>"You definitely haven't eaten since morning, have you? That's why your face is so pale. Here, I bought some chicken rice. Eat this first. Your check-up is in half an hour. You eat and wait here; I have to go up to the office to get some documents. I'll be back. Don't go anywhere, just eat, understand?" Her stern face seemed to issue an undeniable command. I could only give another slow nod without daring to meet her eyes.</p> 
+<p>"You definitely haven't eaten since morning, have you? That's why your face is so pale. Here, I bought some chicken rice. Eat this first. Your check-up is in half an hour. You eat and wait here; I have to go up to the office to get some documents. I will be back. Don't go anywhere, just eat, understand?" Her stern face seemed to issue an undeniable command. I could only give another slow nod without daring to meet her eyes.</p> 
 
-<p>Holding the plastic bag with the box of delicious-looking chicken rice topped with celery leaves, I felt a little calmer. It turned out I wasn't in that place anymore. I was in another part of the world, far away from where I used to be. I had left all of that behind. I came here clutching tightly to a new purpose and hope. My trembling hands slowly steadied. I opened the chicken rice box, and a smile crept onto my face as I remembered my mother’s parting words.</p> 
+<p>Holding the plastic bag with the box of delicious-looking chicken rice topped with celery leaves, I felt a little calmer. It turned out I wasn't in that place anymore. I was in another part of the world, far away from where I used to be. I had left all of that behind. I came here clutching tightly to a new purpose and hope. My trembling hands slowly steadied. I opened the chicken rice box, and a smile crept onto my face as I remembered my mother parting words.</p> 
 
-<p>"I'm sure there will be many difficult things over there. But always make time to eat. Take care of your health and eat plenty. I don't want to see you thin when you come home."</p> 
+<p>"I am sure there will be many difficult things over there. But always make time to eat. Take care of your health and eat plenty. I do not want to see you thin when you come home."</p> 
 
 <p>.....</p> 
 
-<p>After the medical check-up, I was driven straight to my employer’s place with the same driver and car. Ms. Yohanna was still with me. She was originally from Surabaya but had lived in Singapore for a long time because of her job. She gave me all sorts of advice throughout the journey, explaining all the tasks I would have to do. Actually, I already knew all of this from the Special Training Center (LPK). I simply agreed to everything she said. She told me to smile a lot and be friendly. This time, Ms. Yohanna seemed very chatty, quite different from when I first met her at the airport. After about an hour’s drive, as the sun began to hide and left only a dim glow in the sky, I arrived at my new home. My heartbeat grew louder, as if begging to be released from its cage.</p> 
+<p>After the medical check-up, I was driven straight to my employer place with the same driver and car. Ms. Yohanna was still with me. She was originally from Surabaya but had lived in Singapore for a long time because of her job. She gave me all sorts of advice throughout the journey, explaining all the tasks I would have to do. Actually, I already knew all of this from the Special Training Center (LPK). I simply agreed to everything she said. She told me to smile a lot and be friendly. This time, Ms. Yohanna seemed very chatty, quite different from when I first met her at the airport. After about an hour drive, as the sun began to hide and left only a dim glow in the sky, I arrived at my new home. My heartbeat grew louder, as if begging to be released from its cage.</p> 
 
 <p>A soft click of the door opening was followed by the warm smile of a woman in her early forties. She invited us in and asked us to sit on the sofa. Shortly after, a man, who looked about the same age as the woman, emerged from one of the rooms and sat across from Ms. Yohanna. Pulling out the documents she had brought from the office, Ms. Yohanna and the couple discussed the employment contract and various other matters. I noticed two boys and one girl peeking shyly from behind a slightly opened door. They looked curious about my presence and Ms. Yohanna's. I smiled gently and waved at them.</p> 
 
@@ -160,7 +161,7 @@ body.tema-gelap .tombol-kembali { background-color: #444; color: #fff; }
 
 <p>Everything I went through here slowly helped me forget. Staying busy didn't entirely erase the wound, but it dulled its sharp edges. Even though it was a struggle, I finally found the courage to step forward. To hold my head high when meeting new people, to offer a genuine smile rather than a forced one.</p> 
 
-<p>God gave me pieces of patchwork, little by little. New colors in the form of affection from my employer’s family, new friendships that strengthened one another, the bitter and sweet experiences in a foreign land, and many other special things I was feeling for the first time. I tried to stitch them together, one by one. It wasn't easy, but I kept trying so that those colorful pieces of fabric would eventually form a beautiful, whole cloth. One that could bandage the massive wound that was still gaping wide.</p> 
+<p>God gave me pieces of patchwork, little by little. New colors in the form of affection from my employer family, new friendships that strengthened one another, the bitter and sweet experiences in a foreign land, and many other special things I was feeling for the first time. I tried to stitch them together, one by one. It wasn't easy, but I kept trying so that those colorful pieces of fabric would eventually form a beautiful, whole cloth. One that could bandage the massive wound that was still gaping wide.</p> 
 
 <p>I never stopped praying for God to always be with me. To always ease my affairs. To continue bringing good people into my life, even though I was often disappointed by circumstances. But I believe that God is always there for every one of His servants. For everyone who is willing to rise again and not give up. For the souls who still believe in His love and compassion.</p> 
 </div>
@@ -175,25 +176,6 @@ body.tema-gelap .tombol-kembali { background-color: #444; color: #fff; }
 
 <script src="script.js"></script>
 
-<script>
-        function ubahBahasa() {
-            var wadahIndo = document.getElementById("cerpen-indo");
-            var wadahInggris = document.getElementById("cerpen-inggris");
-            var tombolBahasa = document.getElementById("tombol-bahasa");
 
-            if (wadahIndo.style.display === "none") {
-
-                // Munculkan Indo, sembunyikan Inggris
-                wadahIndo.style.display = "block";
-                wadahInggris.style.display = "none";
-                tombolBahasa.innerHTML = "EN"; // Tombol berubah tulisan jadi EN
-            } else {
-                // Sembunyikan Indo, munculkan Inggris
-                wadahIndo.style.display = "none";
-                wadahInggris.style.display = "block";
-                tombolBahasa.innerHTML = "ID"; // Tombol berubah tulisan jadi ID
-            }
-        }
-    </script>
 </body>
 </html>

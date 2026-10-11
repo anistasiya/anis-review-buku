@@ -11,7 +11,7 @@
 
     <style> 
         body {
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; background-image: url('gambar/bg1.jpg');
             font-family: 'Segoe UI';
             text-align: center;
             margin-top :0;
@@ -376,7 +376,7 @@
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 .tema-gelap {
-    background-color: #1a1a1a !important;
+    background-color: #1a1a1a !important; background-image: none;
     color: #f1f1f1 !important;
 }
 .kartu-review h2, 
@@ -391,6 +391,13 @@
     background-color: #2d2d2d !important;
     color: #f1f1f1 !important;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+.tema-gelap .navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+}
+.tema-gelap .navbar a {
+    color: #f1f1f1 !important;
 }
 html {
     scroll-behavior: smooth;
@@ -750,22 +757,20 @@ html {
     <h2 style="margin-bottom: 30px;" id="judul-proyek">Proyek Tulisanku ✒️</h2>
 
     <div id="rak-puisi" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
- </div>
+</div>
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
 <div class="kartu-review" style="width: 250px;">
     <img src="gambar/buku/tapir.jpg" alt="Tata Si Tapir" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-    <h3>Tata Si Tapir 🌸</h3>
-    <p style="font-size: 0.9em; color: #666;">Cerpen - Ditulis oleh Anis</p>
-    
-    <a href="cerpen.html" class="tombol-baca" style="display: inline-block; width: fit-content; margin: 10px auto 0; padding: 8px 25px; text-decoration: none; border-radius: 20px;">Baca Cerpen</a>
+    <h3 id="judul-tata">Tata Si Tapir 🌸</h3>
+    <p id="sub-tata" style="font-size: 0.9em; color: #666;">Cerpen - Ditulis oleh Anis</p>
+    <a id="btn-tata" href="cerpen.html" class="tombol-baca">Baca Cerpen</a>
 </div>
 <div class="kartu-review" style="width: 250px;">
     <img src="gambar/buku/perca.jpg" alt="Kain Perca Pembalut Luka" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
     
-    <h3>Kain Perca Pembalut Luka 🪷</h3>
-    <p style="font-size: 0.9em; color: #666;">Cerpen - Ditulis oleh Anis</p>
-    
-    <a href="cerpen2.html" class="tombol-baca" style="display: inline-block; width: fit-content; margin: 10px auto 0; padding: 8px 25px; text-decoration: none; border-radius: 20px;">Baca Cerpen</a>
+    <h3 id="judul-perca">Kain Perca Pembalut Luka 🌸</h3>
+    <p id="sub-perca" style="font-size: 0.9em; color: #666;">Cerpen - Ditulis oleh Anis</p>
+    <a id="btn-perca" href="cerpen2.html" class="tombol-baca">Baca Cerpen</a>
 </div>
     </div>
 </div>`

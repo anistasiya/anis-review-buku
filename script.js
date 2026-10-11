@@ -488,23 +488,7 @@ function cetakBuku() {
 
     rakBuku.innerHTML += kotakBuku;
 }); 
-    //  Pemanggil Lyket
-    const mesinLyket = document.getElementById("mesin-lyket");
-        if (mesinLyket) {
-            let linkLyket = mesinLyket.src.split('&waktu=')[0]; 
-            mesinLyket.remove(); // mesin lama
 
-            const mesinBaru = document.createElement("script");
-            mesinBaru.id = "mesin-lyket";
-            mesinBaru.src = linkLyket + "&waktu=" + new Date().getTime(); 
-            
-            mesinBaru.onload = function() {
-            window.dispatchEvent(new Event("DOMContentLoaded"));
-            window.dispatchEvent(new Event("load"));
-            }
-
-            document.body.appendChild(mesinBaru);
-        }
     }
 }
 
@@ -658,8 +642,8 @@ const kamus = {
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",
         rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet", KirimAnis:"Send Your Love to Anis 💐",
         InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Tulis Pesan Kamu di Sini 👇🏻" , KirimPesan:"Kirim Pesan 🚀", TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." ,
-        Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀"
-
+        Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀", judulTata: "Tata Si Tapir 🌸", subTata: "Cerpen - Ditulis oleh Anis", judulPerca: "Kain Perca Pembalut Luka 🌸", subPerca: "Cerpen - Ditulis oleh Anis", btnCerpen: "Baca Cerpen",
+        
     },
     en: {
         navAbout:"About Me", navReview: "Book Reviews", navRajutan: "Crochet Gallery", navTulisan: "My Writings", navKontak : "Contact",
@@ -676,7 +660,7 @@ const kamus = {
         teksTampil: "Show More 📚",
         rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories", KirimAnis:"Send Your Love to Anis 💐",
         InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Your Massages 👇🏻" , KirimPesan:"Send Your Massages 🚀", TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
-        Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀"
+        Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀", judulTata: "Tata the Tapir 🌸", subTata: "Short Story - Written by Anis", judulPerca: "Patchwork of Healing 🌸", subPerca: "Short Story - Written by Anis", btnCerpen: "Read Story",
     } 
 };
 
@@ -735,22 +719,39 @@ function ubahBahasa() {
     document.getElementById("lihat3").innerText = kamus[bahasaSekarang].Lihat3;
     document.getElementById("lihat4").innerText = kamus[bahasaSekarang].Lihat4;
     document.getElementById("lihat5").innerText = kamus[bahasaSekarang].Lihat5;
-
+    document.getElementById("judul-tata").innerText = kamus[bahasaSekarang].judulTata;
+    document.getElementById("sub-tata").innerText = kamus[bahasaSekarang].subTata;
+    document.getElementById("btn-tata").innerText = kamus[bahasaSekarang].btnCerpen;
+    document.getElementById("judul-perca").innerText = kamus[bahasaSekarang].judulPerca;
+    document.getElementById("sub-perca").innerText = kamus[bahasaSekarang].subPerca;
+    document.getElementById("btn-perca").innerText = kamus[bahasaSekarang].btnCerpen;
 
     const teksTampil = document.getElementById("teks-tampil");
     if (teksTampil) {
     teksTampil.innerText = kamus[bahasaSekarang].teksTampil;
     }
+}
+
+function ubahBahasaCerpen() {
+    // Mesin pencari "cerpen-indo" dan "cerpen-inggris"
+    var wadahIndo = document.getElementById("teks-indo");
+    var wadahInggris = document.getElementById("teks-inggris");
+    var tombolBahasa = document.getElementById("tombol-bahasa-cerpen");
+
+    if (wadahIndo.style.display === "none") {
+        wadahIndo.style.display = "block";
+        wadahInggris.style.display = "none";
+        tombolBahasa.innerHTML = "EN";
+    } else {
+        wadahIndo.style.display = "none";
+        wadahInggris.style.display = "block";
+        tombolBahasa.innerHTML = "ID";
+    }
+}
 
 cetakPuisi(); cetakBuku();
-setTimeout(ambilDataLike, 500);
+setTimeout(ambilDataLike, 500); 
     
-} cetakPuisi() ; cetakBuku();
-
-// tema dark-mode untuk cerpen
-        function ubahTema() {
-            document.body.classList.toggle("tema-gelap");
-        }
 
 // === SAKURA GUGUR (Otomatis berhenti dalam 10 detik) ===
 function buatBunga() {

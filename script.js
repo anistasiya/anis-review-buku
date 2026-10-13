@@ -1,9 +1,20 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
-{id: "iblis-menggugat-tuhan",    
+    {id: "sang-penjaga",    
+        judul: "Sang Penjaga dan Misi yang Mustahil",
+        penulis: "Dave Eggers", 
+        penerbit: "Penerbit Baca",
+        genreID: ["Fiksi"], genreEN:["Fiction"],
+        rating: "⭐ 4.9/5",
+        gambar: "gambar/buku/johannes.jpg", 
+        teksReviewID:`Johannes adalah seekor anjing liar yang hidup bebas di sebuah taman kota dekat tepi laut. Ia mengemban tugas penting sebagai "Mata" bagi tiga ekor bison tua yang tinggal di penangkaran dekat taman tersebut. Tugas Johannes adalah mengamati segala hal yang terjadi di sekitar taman, lalu melaporkannya kepada para bison.<br><br>Dalam menjalankan kesehariannya, Johannes ditemani oleh sahabat-sahabat dekatnya: Bertrand si burung camar, Sonja si tupai, Yolanda si burung pelikan, Angus si rakun, serta beberapa hewan lainnya.<br><br>Ketegangan sudah terasa sejak awal cerita ketika Johannes tiba-tiba diculik oleh beberapa pengunjung taman yang usil. Beruntung, aksi penyelamatan heroik dari para sahabatnya berhasil membebaskannya. Namun, puncak ketegangan sesungguhnya baru terjadi ketika Johannes dan kawan-kawannya merencanakan misi besar: membebaskan para bison dari penangkaran. Mampukah mereka melakukan aksi nekat tersebut?<br><br>Fabel dengan narasi yang unik serta ilustrasi yang menarik ini menjadikannya buku yang wajib masuk dalam daftar bacaanmu!`,
+        teksReviewEN:`Johannes is a free-roaming stray dog who lives in an urban park by the sea. He serves as the "Eyes" for three elderly bison living in an enclosure near the park. Johannes's duty is to observe everything happening around the park and report back to the bison. He is accompanied by a close-knit group of friends: Bertrand the seagull, Sonja the squirrel, Yolanda the pelican, Angus the raccoon, and several other animals.<br><br>The tension kicks in right from the beginning when Johannes is kidnapped by some mischievous park visitors. Fortunately, a heroic rescue mission by his friends successfully sets him free. The ultimate climax arrives when Johannes and his friends devise a daring plan to liberate the bison from their captivity. Will they be able to pull it off?<br><br>With its unique narrative and captivating illustrations, this fable is an absolute must-have on your reading list!`
+    },
+
+    {id: "iblis-menggugat-tuhan",    
         judul: "Iblis Menggugat Tuhan",
-        penulis: "Shawni", 
+        penulis: "Shawqi", 
         penerbit: "Rumi Press",
         genreID: ["Fiksi","Filsafat"], genreEN:["Fiction","Philosophy"],
         rating: "⭐ 4.7/5",
@@ -730,6 +741,7 @@ function ubahBahasa() {
     if (teksTampil) {
     teksTampil.innerText = kamus[bahasaSekarang].teksTampil;
     }
+    cetakBuku();
 }
 
 function ubahBahasaCerpen() {

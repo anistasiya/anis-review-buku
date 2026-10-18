@@ -741,7 +741,7 @@ function ubahBahasa() {
     if (teksTampil) {
     teksTampil.innerText = kamus[bahasaSekarang].teksTampil;
     }
-    cetakBuku();
+    cetakBuku(); setTimeout(ambilDataLike, 500);
 }
 
 function ubahBahasaCerpen() {

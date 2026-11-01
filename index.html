@@ -103,8 +103,9 @@
 
         @media screen and (max-width: 600px) {
         .navbar {
-            padding-right: 140px; 
-        }
+            justify-content: center;
+            padding-right: 0px;
+            }
         }
         @media screen and (min-width: 601px) {
         .navbar {
@@ -786,19 +787,20 @@ html {
     <br>
     
 <div id="kontak" style="padding: 50px 20px; text-align: center;">
-    <h2 style="margin-bottom: 30px;" id="kirim-pesan">Kirim Pesan untuk Anis 💐</h2>
+    <h2 style="margin-bottom: 30px;" id="kirim-pesan"> Kirim Pesan untuk Anis 💐</h2>
 
     <div class="kartu-form">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <div id="wadah-pesan" style="max-width: 400px; margin: 0 auto; text-align: left;">
+        <p id="labelNama" style= "margin-bottom: 10px; font-weight: bold;" >Nama (Boleh dikosongkan / Anonim):</p>
+        <input type="text" id="namaPengirim" placeholder="Contoh: Penggemar Rahasia..." style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
     
-        <input type="hidden" name="access_key" value="f208c626-ccfb-4175-a520-9fc155ba0a27">
+        <p id="labelPesan" style= "margin-bottom: 10px; font-weight: bold;" >Pesan / Saran:</p>
+        <textarea id="isiPesan" placeholder="Tulis apresiasi atau ceritamu di sini..." rows="5" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; resize: vertical;"></textarea>
     
-        <input id="input-nama" type="text" name="Nama_Pengirim" placeholder="Your Name" class="input-estetik" required>
-        <input id="input-email" type="email" name="Email_Pengirim" placeholder="Your Email" class="input-estetik" required>
-        <textarea id="input-pesan" name="Isi_Pesan" placeholder="Tulis pesan kamu di sini 👇" class="input-estetik" rows="5" required></textarea>
-    
-        <button id="tombol-send" type="submit" class="tombol-kirim">Kirim Pesan 🚀</button>
-        </form>
+    <button id="tombolKirim" onclick="kirimPesanKeFirebase()" style="width: 100%; padding: 12px; background-color: #ff9fb2; color: white; border: none;  border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px; transition: 0.3s;">
+        Kirim Pesan 💌
+    </button>
+</div>
     </div>
 </div>
     <br><br>

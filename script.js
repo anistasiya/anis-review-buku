@@ -651,10 +651,8 @@ const kamus = {
         teksCari:"🔍 Cari judul atau penulis buku...",
         teksTampil: "Lihat Selengkapnya 📚",
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",
-        rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet", KirimAnis:"Send Your Love to Anis 💐",
-        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Tulis Pesan Kamu di Sini 👇🏻" , KirimPesan:"Kirim Pesan 🚀", TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." ,
-        Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀", judulTata: "Tata Si Tapir 🌸", subTata: "Cerpen - Ditulis oleh Anis", judulPerca: "Kain Perca Pembalut Luka 🌸", subPerca: "Cerpen - Ditulis oleh Anis", btnCerpen: "Baca Cerpen",
-        
+        rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet",TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." , labelNama: "Nama (Boleh dikosongkan / Anonim):",placeholderNama: "Contoh: Penggemar Rahasia...", labelPesan: "Pesan / Saran:", placeholderPesan: "Tulis apresiasi atau ceritamu di sini", tombolKirim: "Kirim Pesan 💌",
+        Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀", judulTata: "Tata Si Tapir 🌸", subTata: "Cerpen - Ditulis oleh Anis", judulPerca: "Kain Perca Pembalut Luka 🌸", subPerca: "Cerpen - Ditulis oleh Anis", btnCerpen: "Baca Cerpen", KirimAnis: "Kirim Pesan untuk Anis 💐",
     },
     en: {
         navAbout:"About Me", navReview: "Book Reviews", navRajutan: "Crochet Gallery", navTulisan: "My Writings", navKontak : "Contact",
@@ -669,10 +667,9 @@ const kamus = {
         book1:"All books", book2:"Fiction", book3:"Philosophy" , book4 : "Popular-Islam", book5:"Finance", book6:"Non-Fiction", book7:"Self-Improvement",
         teksCari:"🔍 Search book title or author..",
         teksTampil: "Show More 📚",
-        rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories", KirimAnis:"Send Your Love to Anis 💐",
-        InputNama:"Your Name" , InputEmail:"Your Email" , InputTeks:"Your Massages 👇🏻" , KirimPesan:"Send Your Massages 🚀", TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
-        Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀", judulTata: "Tata the Tapir 🌸", subTata: "Short Story - Written by Anis", judulPerca: "Patchwork of Healing 🌸", subPerca: "Short Story - Written by Anis", btnCerpen: "Read Story",
-    } 
+        rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories",TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
+        Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀", judulTata: "Tata the Tapir 🌸", subTata: "Short Story - Written by Anis", judulPerca: "Patchwork of Healing 🌸", subPerca: "Short Story - Written by Anis", btnCerpen: "Read Story", labelNama: "Name (Optional / Anonymous):", placeholderNama: "e.g., Secret Admirer...", labelPesan: "Message / Suggestion:", placeholderPesan: "Write your appreciation or story here...", tombolKirim: "Send Message 💌", KirimAnis: "Send a Message to Anis 💐",
+    }
 };
 
 function ubahBahasa() {
@@ -682,7 +679,7 @@ function ubahBahasa() {
         bahasaSekarang = "en";
         tombol.innerHTML = "ID";
 
-    } 
+    }
     else {
         bahasaSekarang = "id";
         tombol.innerHTML = "EN";
@@ -719,11 +716,6 @@ function ubahBahasa() {
     document.getElementById("rajut8").innerText = kamus[bahasaSekarang].rajut8;
     document.getElementById("rajut9").innerText = kamus[bahasaSekarang].rajut9;
     document.getElementById("rajut10").innerText = kamus[bahasaSekarang].rajut10;
-    document.getElementById("kirim-pesan").innerText = kamus[bahasaSekarang].KirimAnis;
-    document.getElementById("input-nama").innerText = kamus[bahasaSekarang].InputNama;
-    document.getElementById("input-email").innerText = kamus[bahasaSekarang].InputEmail;
-    document.getElementById("input-pesan").innerText = kamus[bahasaSekarang].InputTeks;
-    document.getElementById("tombol-send").innerText = kamus[bahasaSekarang].KirimPesan;
     document.getElementById("teks-footer").innerText = kamus[bahasaSekarang].TeksFooter;
     document.getElementById("lihat1").innerText = kamus[bahasaSekarang].Lihat1;
     document.getElementById("lihat2").innerText = kamus[bahasaSekarang].Lihat2;
@@ -736,6 +728,12 @@ function ubahBahasa() {
     document.getElementById("judul-perca").innerText = kamus[bahasaSekarang].judulPerca;
     document.getElementById("sub-perca").innerText = kamus[bahasaSekarang].subPerca;
     document.getElementById("btn-perca").innerText = kamus[bahasaSekarang].btnCerpen;
+    document.getElementById("kirim-pesan").innerText = kamus[bahasaSekarang].KirimAnis;
+    document.getElementById("labelNama").innerText = kamus[bahasaSekarang].labelNama;
+    document.getElementById("namaPengirim").placeholder = kamus[bahasaSekarang].placeholderNama;
+    document.getElementById("labelPesan").innerText = kamus[bahasaSekarang].labelPesan;
+    document.getElementById("isiPesan").placeholder = kamus[bahasaSekarang].placeholderPesan;
+    document.getElementById("tombolKirim").innerText = kamus[bahasaSekarang].tombolKirim;
 
     const teksTampil = document.getElementById("teks-tampil");
     if (teksTampil) {
@@ -898,3 +896,49 @@ async function klikLike(idBuku) {
     }
 }
 setTimeout(ambilDataLike, 500);
+
+async function kirimPesanKeFirebase() {
+    const kotakNama = document.getElementById("namaPengirim");
+    const kotakPesan = document.getElementById("isiPesan");
+    
+    const nama = kotakNama.value.trim();
+    const pesan = kotakPesan.value.trim();
+
+    // 1. Cek kalau pesannya kosong
+    if (pesan === "") {
+        alert("Hei, isi pesannya jangan dikosongkan dong! 😅");
+        return;
+    }
+
+    // 2. Kalau nama dikosongkan, beri nama samaran
+    const namaFinal = nama === "" ? "Pembaca Misterius" : nama;
+
+    // 3. Waktu pengiriman
+    const waktuKirim = new Date().toLocaleString('id-ID');
+
+    // 4. Siapkan data yang mau dimasukkan ke brankas
+    const dataPesan = {
+        nama: namaFinal,
+        pesan: pesan,
+        waktu: waktuKirim
+    };
+
+    // 5. Kirim ke Firebase (membuat folder baru bernama 'pesan_masuk')
+    try {
+        await fetch(`${URL_BRANKAS}/pesan_masuk.json`, {
+            method: 'POST', // Pakai POST agar pesan ditambahkan berjejer, bukan ditimpa
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataPesan)
+        });
+
+        alert("Yay! Pesanmu berhasil dikirim secara anonim ke Anis! 💖");
+        kotakNama.value = ""; // Mengosongkan kotak nama
+        kotakPesan.value = ""; // Mengosongkan kotak pesan
+        
+    } catch (error) {
+        console.log("Failed to send message:", error);
+        alert("Oh no, the message failed to send; please try again.");
+    }
+}

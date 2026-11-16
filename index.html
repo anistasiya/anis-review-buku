@@ -423,6 +423,23 @@
 .tema-gelap .kartu-review .teks-review {
     color: #f1f1f1 !important;
 }
+/* Teks pesan kosong juga harus terang di mode gelap */
+.tema-gelap #teks-pesan-kosong {
+    color: #f1f1f1 !important;
+}
+/* Teks kutipan dan sumbernya */
+#teks-kutipan {
+    color: #333;
+}
+#sumber-kutipan {
+    color: #888;
+}
+.tema-gelap #teks-kutipan {
+    color: #f1f1f1 !important;
+}
+.tema-gelap #sumber-kutipan {
+    color: #ccc !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -577,6 +594,7 @@ html {
 </button>
     <nav class="navbar" style="position: sticky; top: 0; z-index: 999; overflow: hidden;white-space: nowrap; background-color: #fffaf0;">
         <a href="#about-me" id="nav-about">About Me</a>
+        <a href="#kutipan" id="nav-kutipan">Kutipan</a>
         <a href="#review-buku" id="nav-review">Review Buku</a>
         <a href="#galeri-rajutan" id="nav-rajutan">Galeri Rajutanku</a>
         <a href="#proyek-tulisan" id="nav-tulisan">Proyek Tulisanku</a>
@@ -601,6 +619,15 @@ html {
     <br>
     <br>
 
+    <section id="kutipan" style="max-width: 800px; margin: 40px auto; padding: 0 20px; text-align: center;">
+        <h2 id="judul-kutipan">Kutipan Hari Ini 🌸</h2>
+        <div class="kartu-review" style="width: min(600px, 90%); margin: 20px auto; padding: 30px; text-align: center; box-sizing: border-box;">
+            <p id="teks-kutipan" style="font-size: 20px; font-style: italic; line-height: 1.6;">Memuat kutipan...</p>
+            <p id="sumber-kutipan" style="font-size: 15px; margin-top: 15px;"></p>
+            <button id="tombol-acak-kutipan" onclick="acakKutipan()" class="tombol-genre" style="margin-top: 10px;">Kutipan Lain 🎲</button>
+        </div>
+    </section>
+
     <h2 id="buku-baca">Buku Yang Sudah Selesai Kubaca 📖</h2>
 
 <div class="rak-tombol" style="text-align: center; margin-bottom: 30px;">
@@ -619,6 +646,11 @@ html {
 
 <div id="review-buku" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
+</div>
+
+<div id="pesan-kosong" style="display: none; text-align: center; padding: 40px 20px;">
+    <p id="teks-pesan-kosong" style="font-size: 18px; color: #555;">Maaf, buku yang kamu cari belum ada di rak Anis. Coba kata kunci lain ya.</p>
+    <button id="tombol-reset-cari" onclick="resetPencarian()" class="tombol-genre" style="margin-top: 10px;">Lihat Semua Buku 📚</button>
 </div>
 
 <div id="wadah-tombol-tampil" style="text-align: center; margin-top: 10px; margin-bottom: 40px;">
@@ -843,7 +875,8 @@ html {
 
 
     
-    <script src="script.js?v=2.0"></script>
+    <script src="script.js?v=2.1"></script>
+    <script src="kutipan.js?v=1.0"></script>
 
 <script data-goatcounter="https://anis-review.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

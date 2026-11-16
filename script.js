@@ -1,9 +1,9 @@
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
-    {id: "sang-penjaga",
+    {id: "sang-penjaga",    
         judul: "Sang Penjaga dan Misi yang Mustahil",
-        penulis: "Dave Eggers",
+        penulis: "Dave Eggers", 
         penerbit: "Penerbit Baca",
         genreID: ["Fiksi"], genreEN:["Fiction"],
         rating: "⭐ 4.9/5",
@@ -589,6 +589,7 @@ function filterBuku(genreYangDipilih) {
             }
         }
     });
+    perbaruiPesanKosong();
 }
 function tampilkanSemuaBuku() {
     bukuTampilSemua = true;
@@ -598,6 +599,37 @@ function tampilkanSemuaBuku() {
     });
     // Sembunyikan tombol 'Lihat Selengkapnya' karena sudah tidak dipakai
     document.getElementById('wadah-tombol-tampil').style.display = 'none';
+}
+
+// Pesan saat pencarian tidak ada hasilnya
+function perbaruiPesanKosong() {
+    const pesan = document.getElementById('pesan-kosong');
+    if (!pesan) return;
+    const kotak = document.getElementById('kolomCari');
+    const teks = kotak ? kotak.value.toLowerCase().trim() : '';
+    let cocok = 0;
+    document.querySelectorAll('.kartu-khusus-buku').forEach(function(kartu) {
+        if (kartu.style.display === 'none') return;
+        const judul = kartu.querySelector('h3') ? kartu.querySelector('h3').innerText.toLowerCase() : '';
+        const penulis = kartu.querySelector('.penulis') ? kartu.querySelector('.penulis').innerText.toLowerCase() : '';
+        if (teks === '' || judul.includes(teks) || penulis.includes(teks)) cocok++;
+    });
+    const teksPesan = document.getElementById('teks-pesan-kosong');
+    if (teksPesan) teksPesan.innerText = kamus[bahasaSekarang].pesanKosong;
+    const tombolReset = document.getElementById('tombol-reset-cari');
+    if (tombolReset) tombolReset.innerText = kamus[bahasaSekarang].tombolResetCari;
+    const adaHasil = cocok > 0;
+    pesan.style.display = adaHasil ? 'none' : 'block';
+    const wadahTombol = document.getElementById('wadah-tombol-tampil');
+    if (wadahTombol) wadahTombol.style.display = adaHasil ? (bukuTampilSemua ? 'none' : '') : 'none';
+}
+function resetPencarian() {
+    const kotak = document.getElementById('kolomCari');
+    if (kotak) kotak.value = '';
+    document.querySelectorAll('.kartu-khusus-buku').forEach(function(kartu) {
+        kartu.style.display = '';
+    });
+    perbaruiPesanKosong();
 }
 
 const kotakCari = document.getElementById("kolomCari");
@@ -618,6 +650,7 @@ kotakCari.addEventListener('input', function(e) {
             kartu.style.display = 'none';
         }
     });
+    perbaruiPesanKosong();
 });
 const sensorGerak = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -650,6 +683,8 @@ const kamus = {
         book1:"Semua Buku", book2:"Fiksi", book3:"Filsafat" , book4 : "Islam-Populer", book5:"Keuangan", book6:"Non-Fiksi", book7:"Self-Improvement",
         teksCari:"🔍 Cari judul atau penulis buku...",
         teksTampil: "Lihat Selengkapnya 📚",
+        pesanKosong: "Maaf, buku yang kamu cari belum ada di rak Anis. Coba kata kunci lain ya.",
+        tombolResetCari: "Lihat Semua Buku 📚",
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",
         rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet",TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." , labelNama: "Nama (Boleh dikosongkan / Anonim):",placeholderNama: "Contoh: Penggemar Rahasia...", labelPesan: "Pesan / Saran:", placeholderPesan: "Tulis apresiasi atau ceritamu di sini", tombolKirim: "Kirim Pesan 💌",
         Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀", judulTata: "Tata Si Tapir 🌸", subTata: "Cerpen - Ditulis oleh Anis", judulPerca: "Kain Perca Pembalut Luka 🌸", subPerca: "Cerpen - Ditulis oleh Anis", btnCerpen: "Baca Cerpen", KirimAnis: "Kirim Pesan untuk Anis 💐",
@@ -667,6 +702,8 @@ const kamus = {
         book1:"All books", book2:"Fiction", book3:"Philosophy" , book4 : "Popular-Islam", book5:"Finance", book6:"Non-Fiction", book7:"Self-Improvement",
         teksCari:"🔍 Search book title or author..",
         teksTampil: "Show More 📚",
+        pesanKosong: "Sorry, the book you're looking for isn't on Anis's shelf yet. Try another keyword.",
+        tombolResetCari: "Show All Books 📚",
         rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories",TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
         Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀", judulTata: "Tata the Tapir 🌸", subTata: "Short Story - Written by Anis", judulPerca: "Patchwork of Healing 🌸", subPerca: "Short Story - Written by Anis", btnCerpen: "Read Story", labelNama: "Name (Optional / Anonymous):", placeholderNama: "e.g., Secret Admirer...", labelPesan: "Message / Suggestion:", placeholderPesan: "Write your appreciation or story here...", tombolKirim: "Send Message 💌", KirimAnis: "Send a Message to Anis 💐",
     }
@@ -740,6 +777,13 @@ function ubahBahasa() {
     teksTampil.innerText = kamus[bahasaSekarang].teksTampil;
     }
     cetakBuku(); setTimeout(ambilDataLike, 500);
+    // Kalau lagi ada kata kunci pencarian, terapkan lagi ke kartu yang baru dicetak
+    const kotakCariUlang = document.getElementById("kolomCari");
+    if (kotakCariUlang && kotakCariUlang.value.trim() !== "") {
+        kotakCariUlang.dispatchEvent(new Event('input'));
+    } else {
+        perbaruiPesanKosong();
+    }
 }
 
 function ubahBahasaCerpen() {
@@ -760,6 +804,7 @@ function ubahBahasaCerpen() {
 }
 
 cetakPuisi(); cetakBuku();
+perbaruiPesanKosong();
 setTimeout(ambilDataLike, 500); 
     
 

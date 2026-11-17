@@ -103,7 +103,7 @@
 
         @media screen and (max-width: 600px) {
         .navbar {
-            justify-content: center;
+            justify-content: flex-start;
             padding-right: 0px;
             }
         }
@@ -311,6 +311,26 @@
             }
         }
 
+        /* Perbaikan galeri rajutan di HP (17 Nov 2026): tetap geser ke samping,
+           tapi kartu terakhir tidak kepotong — beri ruang di ujung kanan,
+           dan teks di dalam kartu tetap bisa membungkus. */
+        @media screen and (max-width: 768px) {
+        #galeri-rajutan > div {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            scroll-padding-left: 20px !important;
+            scroll-padding-right: 20px !important;
+            -webkit-overflow-scrolling: touch;
+            }
+        #galeri-rajutan > div::after {
+            content: "";
+            flex: 0 0 5px;
+            }
+        #galeri-rajutan .kartu-review {
+            white-space: normal !important;
+            }
+        }
+
         .kartu-khusus-buku, .kartu-review {
         min-width: 260px !important;
         flex-shrink: 0 !important;
@@ -489,6 +509,7 @@ html {
     .navbar {
         overflow-x: auto !important;
         white-space: nowrap !important;
+        justify-content: flex-start !important;
     }
     
     #tombol-bahasa {
@@ -592,7 +613,7 @@ html {
 <button id="tombol-bahasa" onclick="ubahBahasa()" style="position: fixed; top: 60px; right: 20px; z-index: 999; padding: 10px 20px; border-radius: 20px; cursor: pointer; border: none; background-color: #ff91a4; color: white; font-weight: bold;">
     EN
 </button>
-    <nav class="navbar" style="position: sticky; top: 0; z-index: 999; overflow: hidden;white-space: nowrap; background-color: #fffaf0;">
+    <nav class="navbar" style="position: sticky; top: 0; z-index: 999; overflow-x: auto;white-space: nowrap; background-color: #fffaf0;">
         <a href="#about-me" id="nav-about">About Me</a>
         <a href="#kutipan" id="nav-kutipan">Kutipan</a>
         <a href="#review-buku" id="nav-review">Review Buku</a>

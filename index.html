@@ -460,6 +460,87 @@
 .tema-gelap #sumber-kutipan {
     color: #ccc !important;
 }
+/* Statistik rak buku */
+.statistik-rak {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+.baris-statistik {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.kartu-statistik {
+    background: #fff0f6;
+    border-radius: 12px;
+    padding: 14px 10px;
+    text-align: center;
+    flex: 1 1 110px;
+}
+.angka-statistik {
+    font-size: 28px;
+    font-weight: 800;
+    color: #d6336c;
+    line-height: 1.1;
+}
+.label-statistik {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 4px;
+}
+.judul-genre-statistik {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+    text-align: left;
+    color: #2c3e50;
+}
+.bar-genre {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+.nama-genre {
+    width: 110px;
+    font-size: 12px;
+    text-align: left;
+    color: #2c3e50;
+}
+.lintasan-bar {
+    flex: 1;
+    height: 10px;
+    background: #f3d9e2;
+    border-radius: 5px;
+}
+.isi-bar {
+    display: block;
+    height: 10px;
+    background: #ff91a4;
+    border-radius: 5px;
+}
+.jumlah-genre {
+    width: 24px;
+    font-size: 12px;
+    text-align: right;
+    color: #2c3e50;
+}
+.tema-gelap .kartu-statistik {
+    background: #2d2d2d !important;
+}
+.tema-gelap .angka-statistik {
+    color: #f1f1f1 !important;
+}
+.tema-gelap .label-statistik {
+    color: #ccc !important;
+}
+.tema-gelap .judul-genre-statistik,
+.tema-gelap .nama-genre,
+.tema-gelap .jumlah-genre {
+    color: #f1f1f1 !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -650,6 +731,8 @@ html {
     </section>
 
     <h2 id="buku-baca">Buku Yang Sudah Selesai Kubaca 📖</h2>
+
+    <div id="statistik-rak" class="statistik-rak"></div>
 
 <div class="rak-tombol" style="text-align: center; margin-bottom: 30px;">
     <button class="tombol-genre" onclick="filterBuku('semua')" id="book1">Semua Buku</button>
@@ -896,7 +979,7 @@ html {
 
 
     
-    <script src="script.js?v=2.1"></script>
+    <script src="script.js?v=2.2"></script>
     <script src="kutipan.js?v=1.0"></script>
 
 <script data-goatcounter="https://anis-review.goatcounter.com/count"

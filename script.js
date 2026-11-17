@@ -1,3 +1,4 @@
+
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
@@ -685,6 +686,11 @@ const kamus = {
         teksTampil: "Lihat Selengkapnya 📚",
         pesanKosong: "Maaf, buku yang kamu cari belum ada di rak Anis. Coba kata kunci lain ya.",
         tombolResetCari: "Lihat Semua Buku 📚",
+        statistikBuku: "Buku Selesai Dibaca",
+        statistikGenre: "Genre",
+        statistikRating: "Rating Rata-rata",
+        statistikPenulis: "Penulis Berbeda",
+        statistikPerGenre: "Per genre:",
         rajutanku:"Galeri Rajutanku🌸", rajut1:"Tulip Pastel🪷🌷", rajut2:"Koleksi rajutan bunga dengan warna-warna pastel yang ceria",
         rajut3:"Tulip Biru💙", rajut4:"Koleksi rajutan bunga tulip bernuansa biru yang menenangkan.", rajut5:"Tulip Ungu🪻", rajut6:"Koleksi rajutan bunga tulip bernuansa ungu yang lembut.", rajut7:"Bunga Matahari🌻", rajut8:"Koleksi rajutan bunga matahari yang indah", rajut9:"Keychain Rajut😍" , rajut10:"Koleksi aksesoris gantungan kunci dan mini crochet",TeksFooter:"Hak Cipta &copy; 2026 Halaman Pribadi Anis. Dibuat dengan 💖 dan semangat belajar." , labelNama: "Nama (Boleh dikosongkan / Anonim):",placeholderNama: "Contoh: Penggemar Rahasia...", labelPesan: "Pesan / Saran:", placeholderPesan: "Tulis apresiasi atau ceritamu di sini", tombolKirim: "Kirim Pesan 💌",
         Lihat1:"Lihat Detail 👀", Lihat2:"Lihat Detail 👀",Lihat3:"Lihat Detail 👀",Lihat4:"Lihat Detail 👀",Lihat5:"Lihat Detail 👀", judulTata: "Tata Si Tapir 🌸", subTata: "Cerpen - Ditulis oleh Anis", judulPerca: "Kain Perca Pembalut Luka 🌸", subPerca: "Cerpen - Ditulis oleh Anis", btnCerpen: "Baca Cerpen", KirimAnis: "Kirim Pesan untuk Anis 💐",
@@ -704,10 +710,73 @@ const kamus = {
         teksTampil: "Show More 📚",
         pesanKosong: "Sorry, the book you're looking for isn't on Anis's shelf yet. Try another keyword.",
         tombolResetCari: "Show All Books 📚",
+        statistikBuku: "Books Finished",
+        statistikGenre: "Genres",
+        statistikRating: "Average Rating",
+        statistikPenulis: "Different Authors",
+        statistikPerGenre: "By genre:",
         rajutanku:"My Crochet Gallery🌸", rajut1:"Floral Tulips🪷🌷" , rajut2:"Handmade Pink and floral Crochet Collection", rajut3:"Blue Tulips💙",rajut4:"Handmade Charming Blue Crochet Collections", rajut5:"Purple Tulips🪻", rajut6:"Handmade beautiful purple collections", rajut7:"Sunflowers and yellow tone🌻" , rajut8:"A Radiant Collection of Crocheted Sunflowers", rajut9:"Keychain Crochet😍",rajut10:"Cute Mini Crochet & Keychain Accessories",TeksFooter:"Copyright © 2026 Anis's Personal Page. Crafted with 💖 and a love for learning.",
         Lihat1:"Show More 👀", Lihat2:"Show More 👀",Lihat3:"Show More 👀",Lihat4:"Show More 👀",Lihat5:"Show More 👀", judulTata: "Tata the Tapir 🌸", subTata: "Short Story - Written by Anis", judulPerca: "Patchwork of Healing 🌸", subPerca: "Short Story - Written by Anis", btnCerpen: "Read Story", labelNama: "Name (Optional / Anonymous):", placeholderNama: "e.g., Secret Admirer...", labelPesan: "Message / Suggestion:", placeholderPesan: "Write your appreciation or story here...", tombolKirim: "Send Message 💌", KirimAnis: "Send a Message to Anis 💐",
     }
 };
+
+// ============================================================
+// STATISTIK RAK BUKU — dihitung otomatis dari daftarBuku
+// Dipanggil sekali saat halaman dibuka dan setiap ganti bahasa,
+// jadi kalau Anis nambah buku baru, angkanya ikut berubah sendiri.
+// ============================================================
+function rapikanGenre(namaGenre) {
+    // Samakan huruf tiap kata (misalnya "keuangan" jadi "Keuangan"),
+    // tapi pertahankan tanda hubung: "Self-Improvement" tetap begitu,
+    // sesuai label genre yang dipakai di tombol filter
+    const nama = String(namaGenre || "").trim();
+    if (nama === "") return "";
+    return nama.split("-").map(function(kata) {
+        return kata.charAt(0).toUpperCase() + kata.slice(1).toLowerCase();
+    }).join("-");
+}
+
+function tampilkanStatistik() {
+    const wadah = document.getElementById("statistik-rak");
+    if (!wadah || !daftarBuku || daftarBuku.length === 0) return;
+    const teks = kamus[bahasaSekarang] || kamus.id;
+    const daftarGenre = bahasaSekarang === "en" ? "genreEN" : "genreID";
+
+    // Hitung genre (satu buku bisa masuk dua genre) dan penulis
+    const jumlahGenre = {};
+    const daftarPenulis = {};
+    let jumlahRating = 0;
+    let totalRating = 0;
+    for (const buku of daftarBuku) {
+        const genreBuku = Array.isArray(buku[daftarGenre]) ? buku[daftarGenre] : [buku[daftarGenre]];
+        for (const genre of genreBuku) {
+            const nama = rapikanGenre(genre);
+            if (nama !== "") jumlahGenre[nama] = (jumlahGenre[nama] || 0) + 1;
+        }
+        if (buku.penulis) daftarPenulis[buku.penulis] = true;
+        const cocok = String(buku.rating || "").match(/([\d.]+)\s*\/\s*5/);
+        if (cocok) { totalRating += parseFloat(cocok[1]); jumlahRating++; }
+    }
+    const rataRating = jumlahRating > 0 ? (totalRating / jumlahRating).toFixed(1) : "0.0";
+    const genreUrut = Object.keys(jumlahGenre).map(function(nama) {
+        return { nama: nama, jumlah: jumlahGenre[nama] };
+    }).sort(function(a, b) { return b.jumlah - a.jumlah; });
+    const terbanyak = genreUrut.length > 0 ? genreUrut[0].jumlah : 1;
+
+    let htmlKartu = "";
+    htmlKartu += '<div class="kartu-statistik"><div class="angka-statistik">' + daftarBuku.length + '</div><div class="label-statistik">' + teks.statistikBuku + '</div></div>';
+    htmlKartu += '<div class="kartu-statistik"><div class="angka-statistik">' + genreUrut.length + '</div><div class="label-statistik">' + teks.statistikGenre + '</div></div>';
+    htmlKartu += '<div class="kartu-statistik"><div class="angka-statistik">★ ' + rataRating + '</div><div class="label-statistik">' + teks.statistikRating + '</div></div>';
+    htmlKartu += '<div class="kartu-statistik"><div class="angka-statistik">' + Object.keys(daftarPenulis).length + '</div><div class="label-statistik">' + teks.statistikPenulis + '</div></div>';
+
+    let htmlGenre = '<div class="judul-genre-statistik">' + teks.statistikPerGenre + '</div>';
+    for (const genre of genreUrut) {
+        const lebar = Math.round((genre.jumlah / terbanyak) * 100);
+        htmlGenre += '<div class="bar-genre"><span class="nama-genre">' + genre.nama + '</span><span class="lintasan-bar"><span class="isi-bar" style="width: ' + lebar + '%;"></span></span><span class="jumlah-genre">' + genre.jumlah + '</span></div>';
+    }
+
+    wadah.innerHTML = '<div class="baris-statistik">' + htmlKartu + '</div>' + htmlGenre;
+}
 
 function ubahBahasa() {
     const tombol = document.getElementById("tombol-bahasa");
@@ -776,7 +845,7 @@ function ubahBahasa() {
     if (teksTampil) {
     teksTampil.innerText = kamus[bahasaSekarang].teksTampil;
     }
-    cetakBuku(); setTimeout(ambilDataLike, 500);
+    cetakBuku(); tampilkanStatistik(); setTimeout(ambilDataLike, 500);
     // Kalau lagi ada kata kunci pencarian, terapkan lagi ke kartu yang baru dicetak
     const kotakCariUlang = document.getElementById("kolomCari");
     if (kotakCariUlang && kotakCariUlang.value.trim() !== "") {
@@ -805,6 +874,7 @@ function ubahBahasaCerpen() {
 
 cetakPuisi(); cetakBuku();
 perbaruiPesanKosong();
+tampilkanStatistik();
 setTimeout(ambilDataLike, 500); 
     
 

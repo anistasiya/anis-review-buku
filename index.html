@@ -739,6 +739,48 @@ html {
     .hiasan-samping span { animation: none; }
     }
 
+    /* Tombol musik melayang: bulat pink di pojok kanan bawah, tampil di
+       semua ukuran layar. Pemutarnya disembunyikan (hanya suara), musik
+       baru jalan setelah tombol diklik karena browser melarang autoplay
+       bersuara. */
+    #tombol-musik {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff91a4;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    #tombol-musik.menyala {
+    background-color: #f0a8d0;
+    animation: denyut-musik 1.6s ease-in-out infinite;
+    }
+    @keyframes denyut-musik {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    }
+    #pemutar-musik {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+    }
+    body.tema-gelap #tombol-musik {
+    background-color: #d16b8a;
+    }
+    @media (prefers-reduced-motion: reduce) {
+    #tombol-musik.menyala { animation: none; }
+    }
+
 </style>
 
 </head>
@@ -748,6 +790,10 @@ html {
 <!-- Hiasan bunga di pinggir layar (hanya tampil di layar lebar, min. 1150px) -->
 <div class="hiasan-samping kiri" aria-hidden="true"><span>🌷</span><span>🌸</span><span>🪷</span><span>🌷</span><span>🌸</span></div>
 <div class="hiasan-samping kanan" aria-hidden="true"><span>🌸</span><span>🌷</span><span>🌻</span><span>🌸</span><span>🌷</span></div>
+
+<!-- Tombol musik melayang + pemutar tersembunyi (playlist lagu barat lembut, YouTube) -->
+<button id="tombol-musik" onclick="putarJedaMusik()" title="Putar musik 🎵" aria-label="Putar musik">🎵</button>
+<iframe id="pemutar-musik" src="https://www.youtube.com/embed/AexZGn-8kEU?enablejsapi=1&rel=0" title="Pemutar musik" allow="autoplay; encrypted-media" aria-hidden="true" tabindex="-1"></iframe>
 
 <button id="tombol-tema" onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
     🌛
@@ -1043,6 +1089,39 @@ html {
     
     <script src="script.js?v=2.3"></script>
     <script src="kutipan.js?v=1.0"></script>
+
+<script>
+    /* Musik latar: klik pertama memuat ulang pemutar dengan autoplay=1
+       (autoplay bersuara hanya diizinkan setelah klik pengunjung),
+       klik berikutnya memakai perintah play/pause YouTube. */
+    let musikMenyala = false;
+    let musikDimulai = false;
+    function putarJedaMusik() {
+        const tombol = document.getElementById("tombol-musik");
+        const pemutar = document.getElementById("pemutar-musik");
+        if (!tombol || !pemutar) return;
+        if (!musikMenyala) {
+            if (!musikDimulai) {
+                pemutar.src = "https://www.youtube.com/embed/AexZGn-8kEU?enablejsapi=1&rel=0&autoplay=1";
+                musikDimulai = true;
+            } else {
+                pemutar.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
+            }
+            tombol.textContent = "⏸";
+            tombol.classList.add("menyala");
+            tombol.title = "Jeda musik";
+            tombol.setAttribute("aria-label", "Jeda musik");
+            musikMenyala = true;
+        } else {
+            pemutar.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            tombol.textContent = "🎵";
+            tombol.classList.remove("menyala");
+            tombol.title = "Putar musik 🎵";
+            tombol.setAttribute("aria-label", "Putar musik");
+            musikMenyala = false;
+        }
+    }
+</script>
 
 <script data-goatcounter="https://anis-review.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>

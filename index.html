@@ -681,11 +681,73 @@ html {
     }
     }
 
+    /* --- HIASAN BUNGA DI PINGGIR (layar lebar saja) --- */
+    /* Kolom bunga kiri-kanan yang diam di pinggir layar. Hanya muncul
+       kalau layarnya cukup lebar (min. 1150px), jadi di HP/tablet dan
+       di laptop kecil tidak muncul dan tidak menutupi konten.
+       pointer-events: none supaya tidak bisa diklik dan tidak
+       menghalangi tombol/scroll; z-index rendah supaya tetap di
+       bawah navbar, tombol tema/bahasa, dan modal. */
+    .hiasan-samping {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+    z-index: 1;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0 40px;
+    box-sizing: border-box;
+    }
+    .hiasan-samping.kiri { left: 24px; }
+    .hiasan-samping.kanan { right: 24px; padding-top: 170px; }
+    .hiasan-samping::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    bottom: 30px;
+    left: 50%;
+    width: 2px;
+    background: linear-gradient(#f0a8d0, #ffb6c1, #f0a8d0);
+    opacity: 0.35;
+    }
+    .hiasan-samping span {
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    line-height: 1;
+    opacity: 0.9;
+    animation: goyang-bunga 5s ease-in-out infinite alternate;
+    }
+    .hiasan-samping span:nth-child(2) { animation-delay: -1.2s; font-size: 24px; }
+    .hiasan-samping span:nth-child(3) { animation-delay: -2.4s; font-size: 32px; }
+    .hiasan-samping span:nth-child(4) { animation-delay: -3.6s; font-size: 24px; }
+    .hiasan-samping span:nth-child(5) { animation-delay: -0.6s; font-size: 28px; }
+    @keyframes goyang-bunga {
+    from { transform: translateY(0) rotate(-6deg); }
+    to { transform: translateY(-10px) rotate(6deg); }
+    }
+    @media (min-width: 1150px) {
+    .hiasan-samping { display: flex; }
+    }
+    body.tema-gelap .hiasan-samping span { opacity: 0.55; }
+    body.tema-gelap .hiasan-samping::before { opacity: 0.2; }
+    @media (prefers-reduced-motion: reduce) {
+    .hiasan-samping span { animation: none; }
+    }
+
 </style>
 
 </head>
 
 <body>
+
+<!-- Hiasan bunga di pinggir layar (hanya tampil di layar lebar, min. 1150px) -->
+<div class="hiasan-samping kiri" aria-hidden="true"><span>🌷</span><span>🌸</span><span>🪷</span><span>🌷</span><span>🌸</span></div>
+<div class="hiasan-samping kanan" aria-hidden="true"><span>🌸</span><span>🌷</span><span>🌻</span><span>🌸</span><span>🌷</span></div>
 
 <button id="tombol-tema" onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
     🌛
@@ -979,7 +1041,7 @@ html {
 
 
     
-    <script src="script.js?v=2.2"></script>
+    <script src="script.js?v=2.3"></script>
     <script src="kutipan.js?v=1.0"></script>
 
 <script data-goatcounter="https://anis-review.goatcounter.com/count"

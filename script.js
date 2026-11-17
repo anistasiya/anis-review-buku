@@ -1,4 +1,3 @@
-
 let bahasaSekarang = "id"; let bukuTampilSemua = false;
 
 const daftarBuku = [
@@ -403,7 +402,7 @@ const daftarBuku = [
         judul: "The Art of Spending Money",
         penulis: "Morgan Housel", 
         penerbit: "Penerbit Baca",
-        genreID: ["Self-Improvement","keuangan"], genreEN:["Non-Fiction","Finance"],
+        genreID: ["Self-Improvement","Keuangan"], genreEN:["Self-Improvement","Finance"],
         rating: "⭐ 4.4/5",
         gambar: "gambar/buku/money.jpg", 
         teksReviewID:'Setelah sukses dengan The Psychology of Money, Morgan Housel kembali menghadirkan buku keuangan yang lebih berfokus pada bagaimana cara kita mengelola uang itu sendiri.<br><br>Buku ini tidak serta-merta mengajarkan cara instan untuk menjadi kaya, tetapi mengupas sisi lain di balik uang yang selama ini kerap membelenggu hidup kita. Kita diajak menyadari bahwa uang bukanlah segalanya, melainkan sebuah entitas yang jauh lebih kompleks daripada itu. Lebih lanjut, Housel juga mengangkat berbagai isu sosial yang sangat lekat dengan seni mengelola keuangan.<br><br>Menurut aku, di buku ini Morgan Housel pengin memperluas pemahaman kita soal uang setelah sukses di The Psychology of Money. Kita bukan cuma menghabiskan uang tanpa rencana, tapi diajak menghargai setiap dolar yang kita keluarkan.',

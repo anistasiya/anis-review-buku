@@ -791,9 +791,10 @@ html {
 <div class="hiasan-samping kiri" aria-hidden="true"><span>🌷</span><span>🌸</span><span>🪷</span><span>🌷</span><span>🌸</span></div>
 <div class="hiasan-samping kanan" aria-hidden="true"><span>🌸</span><span>🌷</span><span>🌻</span><span>🌸</span><span>🌷</span></div>
 
-<!-- Tombol musik melayang + pemutar tersembunyi (playlist lagu barat lembut, YouTube) -->
+<!-- Tombol musik melayang + pemutar tersembunyi (YouTube): dimulai dari
+     Unintended (Muse), lalu kompilasi lagu lama yang lembut, lalu mengulang -->
 <button id="tombol-musik" onclick="putarJedaMusik()" title="Putar musik 🎵" aria-label="Putar musik">🎵</button>
-<iframe id="pemutar-musik" src="https://www.youtube.com/embed/AexZGn-8kEU?enablejsapi=1&rel=0" title="Pemutar musik" allow="autoplay; encrypted-media" aria-hidden="true" tabindex="-1"></iframe>
+<div id="pemutar-musik" aria-hidden="true"></div>
 
 <button id="tombol-tema" onclick="ubahTema()" style="position: fixed; top: 100px; right: 20px; z-index: 999; padding: 10px 10px; border-radius: 20px; cursor: pointer; border: none; background-color: rgb(182, 179, 179); font-weight: bold;">
     🌛
@@ -1090,30 +1091,51 @@ html {
     <script src="script.js?v=2.3"></script>
     <script src="kutipan.js?v=1.0"></script>
 
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
-    /* Musik latar: klik pertama memuat ulang pemutar dengan autoplay=1
-       (autoplay bersuara hanya diizinkan setelah klik pengunjung),
-       klik berikutnya memakai perintah play/pause YouTube. */
+    /* Daftar putar musik latar: dimulai dari Unintended (Muse), lalu
+       lanjut ke kompilasi lagu lama yang lembut, lalu mengulang dari awal.
+       Musik baru jalan setelah tombol diklik karena browser melarang
+       autoplay bersuara. */
+    const daftarLaguMusik = ["5Goc96ZNtck", "sU8tg4RacJ8"];
+    let pemutarMusik = null;
+    let laguMusikKe = 0;
+    let pemutarSiap = false;
     let musikMenyala = false;
-    let musikDimulai = false;
+    let mauMainMusik = false;
+    function onYouTubeIframeAPIReady() {
+        pemutarMusik = new YT.Player("pemutar-musik", {
+            videoId: daftarLaguMusik[0],
+            playerVars: { rel: 0 },
+            events: {
+                onReady: function () {
+                    pemutarMusik.getIframe().setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+                    pemutarSiap = true;
+                    if (mauMainMusik) pemutarMusik.playVideo();
+                },
+                onStateChange: function (e) {
+                    if (e.data === YT.PlayerState.ENDED) {
+                        laguMusikKe = (laguMusikKe + 1) % daftarLaguMusik.length;
+                        pemutarMusik.loadVideoById(daftarLaguMusik[laguMusikKe]);
+                    }
+                }
+            }
+        });
+    }
     function putarJedaMusik() {
         const tombol = document.getElementById("tombol-musik");
-        const pemutar = document.getElementById("pemutar-musik");
-        if (!tombol || !pemutar) return;
+        if (!tombol) return;
         if (!musikMenyala) {
-            if (!musikDimulai) {
-                pemutar.src = "https://www.youtube.com/embed/AexZGn-8kEU?enablejsapi=1&rel=0&autoplay=1";
-                musikDimulai = true;
-            } else {
-                pemutar.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
-            }
+            mauMainMusik = true;
+            if (pemutarSiap && pemutarMusik) pemutarMusik.playVideo();
             tombol.textContent = "⏸";
             tombol.classList.add("menyala");
             tombol.title = "Jeda musik";
             tombol.setAttribute("aria-label", "Jeda musik");
             musikMenyala = true;
         } else {
-            pemutar.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+            mauMainMusik = false;
+            if (pemutarSiap && pemutarMusik) pemutarMusik.pauseVideo();
             tombol.textContent = "🎵";
             tombol.classList.remove("menyala");
             tombol.title = "Putar musik 🎵";
